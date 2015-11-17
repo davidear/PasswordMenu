@@ -4,3 +4,5 @@
 #import "ReSideMenu.h"
 #import "Colours.h"
 #import "MMConstant.h"
+#import "VENTouchLock.h"
+#import "MMTouchLockSplashViewController.h"

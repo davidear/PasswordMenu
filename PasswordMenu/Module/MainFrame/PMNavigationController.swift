@@ -1,5 +1,5 @@
 //
-//  RootViewControlelr.swift
+//  PMNavigationController.swift
 //  PasswordMenu
 //
 //  Created by DaiFengyi on 15/11/17.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class RootViewControlelr: RESideMenu {
-    override func awakeFromNib() {
-        self.contentViewController = self.storyboard?.instantiateInitialViewController()
-    }
+class PMNavigationController: UINavigationController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

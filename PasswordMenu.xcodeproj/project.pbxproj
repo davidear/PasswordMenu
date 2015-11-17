@@ -14,8 +14,11 @@
 		B263DC0B1BFB2A8200CD8D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC091BFB2A8200CD8D9A /* LaunchScreen.storyboard */; };
 		B263DC161BFB2A8200CD8D9A /* PasswordMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC151BFB2A8200CD8D9A /* PasswordMenuTests.swift */; };
 		B263DC211BFB2A8200CD8D9A /* PasswordMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */; };
-		B263DC3B1BFB2F5A00CD8D9A /* RootViewControlelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC371BFB2F5A00CD8D9A /* RootViewControlelr.swift */; };
+		B263DC3B1BFB2F5A00CD8D9A /* PMSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC371BFB2F5A00CD8D9A /* PMSideMenu.swift */; };
 		B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B263DC3A1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m */; };
+		B263DC3F1BFB35F600CD8D9A /* PMLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */; };
+		B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC401BFB368400CD8D9A /* PMNavigationController.swift */; };
+		B263DC431BFB3C4C00CD8D9A /* PMTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +55,13 @@
 		B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMenuUITests.swift; sourceTree = "<group>"; };
 		B263DC221BFB2A8200CD8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B263DC301BFB2E1D00CD8D9A /* PasswordMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordMenu-Bridging-Header.h"; sourceTree = "<group>"; };
-		B263DC371BFB2F5A00CD8D9A /* RootViewControlelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControlelr.swift; sourceTree = "<group>"; };
+		B263DC371BFB2F5A00CD8D9A /* PMSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSideMenu.swift; sourceTree = "<group>"; };
 		B263DC391BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTouchLockSplashViewController.h; sourceTree = "<group>"; };
 		B263DC3A1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTouchLockSplashViewController.m; sourceTree = "<group>"; };
 		B263DC3D1BFB332100CD8D9A /* MMConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMConstant.h; sourceTree = "<group>"; };
+		B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
+		B263DC401BFB368400CD8D9A /* PMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationController.swift; sourceTree = "<group>"; };
+		B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +173,10 @@
 		B263DC361BFB2F5A00CD8D9A /* MainFrame */ = {
 			isa = PBXGroup;
 			children = (
-				B263DC371BFB2F5A00CD8D9A /* RootViewControlelr.swift */,
+				B263DC371BFB2F5A00CD8D9A /* PMSideMenu.swift */,
+				B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */,
+				B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */,
+				B263DC401BFB368400CD8D9A /* PMNavigationController.swift */,
 			);
 			path = MainFrame;
 			sourceTree = "<group>";
@@ -372,8 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B263DC3B1BFB2F5A00CD8D9A /* RootViewControlelr.swift in Sources */,
+				B263DC3B1BFB2F5A00CD8D9A /* PMSideMenu.swift in Sources */,
+				B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */,
+				B263DC3F1BFB35F600CD8D9A /* PMLeftController.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
+				B263DC431BFB3C4C00CD8D9A /* PMTableController.swift in Sources */,
 				B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

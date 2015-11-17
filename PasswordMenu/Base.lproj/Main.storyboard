@@ -8,7 +8,7 @@
         <!--Side Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RESideMenu" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PMSideMenu" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,10 +24,74 @@
             </objects>
             <point key="canvasLocation" x="-453" y="-280"/>
         </scene>
+        <!--Touch Lock Splash View Controller-->
+        <scene sceneID="dIV-Ec-Xga">
+            <objects>
+                <viewController storyboardIdentifier="MMTouchLockSplashViewController" id="wms-ne-sVY" customClass="MMTouchLockSplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n8b-Fa-Sj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="vPV-ma-sML"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xo2-Cx-b0g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pwf-Po-1C9">
+                                <rect key="frame" x="0.0" y="205" width="600" height="80"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dG0-vj-ExQ"/>
+                                </constraints>
+                                <state key="normal" image="iconfont-augiczhiwentubiao">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-Lf-KbD">
+                                <rect key="frame" x="0.0" y="285" width="600" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ri8-rF-Ykn"/>
+                                </constraints>
+                                <state key="normal" title="点击进行指纹解锁">
+                                    <color key="titleColor" red="0.35294117650000001" green="0.47450980390000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJ6-Ob-c0F">
+                                <rect key="frame" x="8" y="550" width="584" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qBI-Ie-82e"/>
+                                </constraints>
+                                <state key="normal" title="使用密码登陆">
+                                    <color key="titleColor" red="0.35294117650000001" green="0.47450980390000003" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pwf-Po-1C9" secondAttribute="trailing" id="3k4-PW-1ag"/>
+                            <constraint firstAttribute="trailing" secondItem="tOF-Lf-KbD" secondAttribute="trailing" id="AjK-w9-kf6"/>
+                            <constraint firstItem="Pwf-Po-1C9" firstAttribute="leading" secondItem="xo2-Cx-b0g" secondAttribute="leading" id="WEr-vx-qNn"/>
+                            <constraint firstAttribute="trailing" secondItem="CJ6-Ob-c0F" secondAttribute="trailing" constant="8" id="X6R-V3-fo0"/>
+                            <constraint firstItem="vPV-ma-sML" firstAttribute="top" secondItem="CJ6-Ob-c0F" secondAttribute="bottom" constant="20" id="b8Y-PP-bWj"/>
+                            <constraint firstItem="tOF-Lf-KbD" firstAttribute="top" secondItem="Pwf-Po-1C9" secondAttribute="bottom" id="cHf-jI-g97"/>
+                            <constraint firstAttribute="centerY" secondItem="tOF-Lf-KbD" secondAttribute="centerY" id="kgV-KU-SLb"/>
+                            <constraint firstItem="tOF-Lf-KbD" firstAttribute="leading" secondItem="xo2-Cx-b0g" secondAttribute="leading" id="mRF-ba-ecy"/>
+                            <constraint firstItem="CJ6-Ob-c0F" firstAttribute="leading" secondItem="xo2-Cx-b0g" secondAttribute="leading" constant="8" id="sLA-ne-2Ba"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZPN-68-8jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-453" y="493"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="Oh5-NJ-xi6">
             <objects>
-                <tableViewController id="HQu-eH-IO5" sceneMemberID="viewController">
+                <tableViewController id="HQu-eH-IO5" customClass="PMTableController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="CD6-fR-Rvd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +123,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HhL-kz-ck3">
             <objects>
-                <navigationController id="uWx-pT-0Pv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ContentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uWx-pT-0Pv" customClass="PMNavigationController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MwW-8e-i5v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -73,5 +137,39 @@
             </objects>
             <point key="canvasLocation" x="262" y="-280"/>
         </scene>
+        <!--Left Controller-->
+        <scene sceneID="UlS-Sp-9iL">
+            <objects>
+                <tableViewController storyboardIdentifier="LeftMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Reh-Qv-VUw" customClass="PMLeftController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lHQ-X2-UnW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VOs-w2-4ci">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VOs-w2-4ci" id="pff-M5-01k">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Reh-Qv-VUw" id="GNz-cx-Spv"/>
+                            <outlet property="delegate" destination="Reh-Qv-VUw" id="bGa-GU-kwz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2W-0N-uyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="493"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="iconfont-augiczhiwentubiao" width="64" height="64"/>
+    </resources>
 </document>
