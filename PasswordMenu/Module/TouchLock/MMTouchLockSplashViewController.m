@@ -7,7 +7,9 @@
 //
 
 #import "MMTouchLockSplashViewController.h"
-
+#import "Colours.h"
+#import "MMConstant.h"
+#import "Masonry.h"
 @interface MMTouchLockSplashViewController ()
 
 @end

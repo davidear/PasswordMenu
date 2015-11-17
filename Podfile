@@ -8,6 +8,7 @@ pod 'VENTouchLock', '~> 1.0'
 pod 'MBProgressHUD', '~> 0.9.1'
 pod 'RESideMenu'
 pod 'Colours'
+pod 'Masonry'
 end
 
 target 'PasswordMenuTests' do
