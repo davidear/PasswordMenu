@@ -7,237 +7,386 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0637BAFCE1B163CE02969B2F1F475031 /* VENTouchLockEnterPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9787FB4635AEB577AFD9618CE4226316 /* VENTouchLockEnterPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C7CABB9034995A122795897DD31EFB4 /* VENTouchLockSplashViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0D869B6FCFDB0666AB2860063490F18 /* VENTouchLockSplashViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		118436B535E8553AB8807CC56159E294 /* UIViewController+VENTouchLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BEBDC6E649440C64F74779D742A311 /* UIViewController+VENTouchLock.m */; };
-		182AC876EB653D33B77DA66717D43AD5 /* VENTouchLockCreatePasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5771046C5FE52659B1477D069B257EE /* VENTouchLockCreatePasscodeViewController.m */; };
-		1952435E37740B14665177EE434237EF /* VENTouchLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD39838B40E49ACCFBA9D0517AF7F454 /* VENTouchLock-dummy.m */; };
-		1CC4FA0DFBE62656D11653DDE161DA66 /* VENTouchLockPasscodeCharacterView.h in Headers */ = {isa = PBXBuildFile; fileRef = E965C20114BFD19722A4AD75B7C3C3D4 /* VENTouchLockPasscodeCharacterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21F19CD787105D3E6CE47268A365EBEB /* VENTouchLockAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 0434CF6D997431C5E74707BAF26D94B5 /* VENTouchLockAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C1063CF9C4398834780D238831D639 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2969499DFA66E4EE4AE0411308380DE9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B28CEEF784AE142224FCEABE4BA69FB /* LocalAuthentication.framework */; };
-		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BAAE6A6B8D1E46BD571326548E85D5E9 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E4E59185E4FE88FBB0C28DE0A84F968 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CF1EA9B12C25D739CB97D6631AF247 /* MASConstraintMaker.m */; };
-		372B8D53A61537AAA612E97BD1061615 /* SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BC33117BCA5DE80B6A9CC1B2D7B6350 /* SSKeychain-dummy.m */; };
-		3B8148CE6EF3169DB4C4753D2BC77AD1 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = ED6703DD1458A7406536FFAAE818207D /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 254F4CEDD36AD6A6D1FC65FBF2C5A577 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F825F3E1F2CDE0B6A15B0A227AA2BA5 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECDA2C27A3AF5C9378AD28B296124CA /* UIViewController+RESideMenu.m */; };
-		410D43D459480F15010983E0B4A799FE /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5B97D3EB746284FFD232F879BB0FDE /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 81199696ECAA0049D0AB3FA66D888047 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44881E93E0DFCC9EC3801F6232857866 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C867CC12FA66818772EBEA0F25D3438E /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4503E24F5E5C34FBCEE3DF147A2A8AA3 /* VENTouchLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 28294814463F6FFA01D9D0D6787725E9 /* VENTouchLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5228B793BE7985BD1E25E42305069F97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD50994CC79D9D906157857E5C862E9B /* NSArray+MASAdditions.m */; };
-		559CE78F1A9ABF7C61463619FA89388B /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = B80E2580D44DD96113B8095D17BA8BA4 /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5610E8E23CF3D86DD09B5DC0E9AA1EE9 /* VENTouchLockCreatePasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A14CC1BFB9C62FD24A1E82AAFD54465B /* VENTouchLockCreatePasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C8CCA881D147AA56E0B67B20EAEC5A /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FF660654EEA6241A49766D79945999A /* VENTouchLockPasscodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7791E0152F1976D1A8CEEBB070328A2D /* VENTouchLockPasscodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60FBDB30405B4CEA80328665F0E772B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		667BE7B49468CE56C71431DF7C5CF3BA /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D88A7010028F8C8DBFFA0DD7133C86D6 /* RESideMenu.m */; };
-		673F92E4739D9EC6D7C0852E58D22923 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8435EFAA355770E744C55AD7478DE81C /* RECommonFunctions.m */; };
-		67BA15D269A25039BBFD3BDC4EA83020 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64651495116DB08949FFB612E8F739F6 /* QuartzCore.framework */; };
-		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD41D26F7D6EB02C493E32A0FFF12EC /* CoreGraphics.framework */; };
-		723B7BFCC9C71647FB7649B6FB75AA2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		782C445A0ECCC404BED5EDE9C2B20214 /* VENTouchLockPasscodeCharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABAC66C75A935DB5EC2C1512474B228 /* VENTouchLockPasscodeCharacterView.m */; };
-		812A5286E834CB5ADA5F8DB89817FD6E /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 09932AB599F2FCEF243A7DBCCF420523 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 252FFD17244735EC3F1C636E81EC0535 /* View+MASAdditions.m */; };
-		81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9554AD88A51FD9745CBC3A2CD38FA7 /* Masonry-dummy.m */; };
-		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2FFAA34A18EF952E65BED89D35705 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8FF6F0E530DF916D1DCB3E89DB39FEF1 /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD29BC12CD1BE0546EC4B70877495C1 /* RESideMenu-dummy.m */; };
-		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = E57F4C76284E4C2924CE962AC7C4551B /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9228AE1C3A7FC54F6465ED25A7BE3A03 /* VENTouchLockPasscodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE871DBC18BAD600BDEA9A21CEE8D40 /* VENTouchLockPasscodeView.m */; };
-		93743796D458854FB9E9AD91E1C2410B /* UIViewController+VENTouchLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 874694BB4CCA0B62F45965966A0695B7 /* UIViewController+VENTouchLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		996CD6F01B9929D5799679BA772A8261 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B949C07636E467F5AA3910D68D4BA1 /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D9D2859F5F496732E3349C5F676688 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B48987B5255EEB47EEB0109F9F9812 /* UIKit.framework */; };
-		A0507A0075E3E07F38F479C324BC0C0F /* Colours.h in Headers */ = {isa = PBXBuildFile; fileRef = EFE5F5BD1FDD43A1C0E6279B2C3A9797 /* Colours.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0150DB62EF7C915AA35C86964539EA34 /* MASViewAttribute.m */; };
-		A729D7AFFA1EDB5BA6AF13848D8CF568 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC295A614C42C522CFC1707623286E8 /* Security.framework */; };
-		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A93A4C47EA8F2D8AE83062941B60080F /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB346BAAB8D948AD69FC50213429DDC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A73973253148F36F5CC1A15BBD24B1DF /* ViewController+MASAdditions.m */; };
-		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CF2ED12729CD98DB9D8B4D709321B8F7 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6444C06B50AB5DD18FD7078FF024A9B /* VENTouchLockSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0334BA888B195E61482D79D2F14FDB6 /* VENTouchLockSplashViewController.m */; };
-		B8A065715E0F5DE89376BB173F868F5F /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E8379FCB38D5DDE57355B27488DB81B4 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 459F29F35962426ACAE1C357D74428E9 /* MASCompositeConstraint.m */; };
-		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 576E4979AAF771DF76CA2918EE0BA34D /* MASLayoutConstraint.m */; };
-		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 643F9317FFE0C4789A616BF3B7F461D7 /* MASConstraint.m */; };
-		BE2F8D8A2AAF4BF186BB6ADC7F0F84BB /* VENTouchLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB64F59685725E237D24B20DD1F88A6 /* VENTouchLock.m */; };
-		C48092F81586541C840E0018EC969D31 /* VENTouchLockEnterPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F603D505212A1F1EF3C7385A0C2A3C /* VENTouchLockEnterPasscodeViewController.m */; };
-		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 400A4B710F7C8E8F3A4FB457F2700BA1 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD81C534197595DB79D3750CE98A3646 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D12913B19B17E783230659B7C75271 /* Colours.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D1781362E1360E61A0CFF2C4FE3FEC14 /* Pods-PasswordMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A17665A717B55E0438DC36923039D0 /* Pods-PasswordMenu-dummy.m */; };
-		D342F58F1AC7C3D0437135E8315220CA /* VENTouchLockPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508F43B4544E0D4520C6A86F9C8852A6 /* VENTouchLockPasscodeViewController.m */; };
-		D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A87E9E7D9601BC94ECA8F0059B4CA49 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		D683EA1ABEA0456FD9772400BC20468F /* Colours-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFE5794802A835DCA3DF04F88403F7C /* Colours-dummy.m */; };
-		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A0DD59AAA97F4714547E0185F87891 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7EA0881E9711FEA9161870F54B6D /* MASViewConstraint.m */; };
-		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F14C601CCDF412B6264DCFF2296C198 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DF9DF69BD35F2F7573CC760749ED3C /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE0A8454E5B82C6140CBF3F9B0CF365F /* VENTouchLockPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 82F29229AF995C8A713CBB9FA1F5AEFF /* VENTouchLockPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F02BB3EE72D11E401A6DCA13E0067F8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */; };
-		FB60FD2B9CE3E5C50856B7C2879D53F4 /* VENTouchLockAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 09863B7CE69934929074FD5D8D4FAD43 /* VENTouchLockAppearance.m */; };
-		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AF96A793BC73FB130849E7CE85536D /* MBProgressHUD-dummy.m */; };
-		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A97C6011532BC24A9B329D366F6B2E78 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA080BE04B4F041860BC5A95CDFE1A1 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06A4D26C8620B1A3C874AD935E3D5939 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = FC203782056BFC39A74735F8EA902D0C /* NSManagedObjectContext+MagicalRecord.m */; };
+		0CB013E7A53D87E5977DBD4E811729B6 /* MagicalRecord+ShorthandMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 97F4F7D9721C02A41ECBA901F6873E81 /* MagicalRecord+ShorthandMethods.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CC68122FC72F8CA85AF3CB31E13D48A /* NSEntityDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FDF0D003AEFBD4D6EF5A6BF575ECF0D /* NSEntityDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F514C78FB46E4B77E8DC429F32D8D40 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 164261853015024E7FC8CB9C3FD5400A /* MagicalImportFunctions.m */; };
+		0F825D87179754AB7C4FF2F93C98E8F6 /* VENTouchLockEnterPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DCB8FB03302A20A831F6096D0F8DB283 /* VENTouchLockEnterPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FDC92DD370B285150E8C817973E5607 /* NSString+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0DBE2F784898FB558425EE2B909F97 /* NSString+MagicalDataImport.m */; };
+		12D81544B504091EEBE14BB68DD7A17C /* NSManagedObject+MagicalFinders.m in Sources */ = {isa = PBXBuildFile; fileRef = 3381AC36075EC8D51284325A1B244B84 /* NSManagedObject+MagicalFinders.m */; };
+		1424AECD8860014D96B32DD8303A7316 /* VENTouchLockPasscodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77817A6E370C392852F415A38E02995E /* VENTouchLockPasscodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE390111F74BF38304EC8AB094CD9C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714BAA3CF6944D4F7FA2E6257165A96 /* RECommonFunctions.m */; };
+		181A6219B32A7631438FBC8F9684D48B /* VENTouchLockSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A53C6B1A91086D83086A200E0C4E0 /* VENTouchLockSplashViewController.m */; };
+		1A059B902901D0A9F4AAFB2B44F24F85 /* VENTouchLockAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BE9545F141D307FA95425ECB0C4311 /* VENTouchLockAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B854600A1DC64047BB7E7B3E2C8602E /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFF40FFB8A109CD73CE55EAA930D71B /* NSManagedObject+MagicalDataImport.m */; };
+		1C0C204A12EE245F005B522F24779AB2 /* NSManagedObjectContext+MagicalObserving.h in Headers */ = {isa = PBXBuildFile; fileRef = B74BED9CFB6C33B68BBAE23D10FCCDA2 /* NSManagedObjectContext+MagicalObserving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24FCBB9B9A04DC30C96B60B547374E0E /* NSManagedObjectContext+MagicalChainSave.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9E208DCB0D4E86E3D2317F5B5DDE89 /* NSManagedObjectContext+MagicalChainSave.m */; };
+		287F78FD999EEF50441CC944527A3400 /* VENTouchLockCreatePasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD0585B737546907005C1F1CF1431A4 /* VENTouchLockCreatePasscodeViewController.m */; };
+		28BD1167DA55C23B74212513033A0B7D /* NSNumber+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F98D1A92EA51BC34FE14E3E95DBA05C /* NSNumber+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5964F30F2C86B7F71360D9F720AF7923 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EA59CC30AA06B26A05C999C6156048AA /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		29D3C11F430E00C2A452C320881A68FE /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C6B3EE908727EB9DF2D8EF056496F5 /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D0821796ADCCFE3B2A115ECF9CDAA8 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4BB72DE2D8A1674C527B77B0B0D5C0 /* MASConstraintMaker.m */; };
+		3753EB107B56EBB2B4CA243DD6266388 /* VENTouchLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FCDF411AF9D4685C857E61C5EFFED8 /* VENTouchLock-dummy.m */; };
+		3BA5D00ABB3F39A21F29F2E94F125BDB /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAB5FE99E2CABAE5DE7376FFB5C8EFF /* NSManagedObject+MagicalRecord.m */; };
+		3ED54F714A24960C1879D69AA8D78BEC /* VENTouchLockPasscodeCharacterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4A2A13235C3DAD0396DDD236C437B9 /* VENTouchLockPasscodeCharacterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE0350048678AD2896C82E57D8F12EF /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41B1887B83020F9BC422058BDF4435E1 /* NSNumber+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B400965B4F2BE7798AA320DE5E36D2 /* NSNumber+MagicalDataImport.m */; };
+		41BCAD6C6D73EC6126824F84A3A84759 /* UIViewController+VENTouchLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 7838D52C0C25934226BEC21D3560E952 /* UIViewController+VENTouchLock.m */; };
+		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFC245D0AD10B2DF80CA2AC77843196 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454CA8010FDB5FE895E10D6095383841 /* NSManagedObject+MagicalAggregation.m in Sources */ = {isa = PBXBuildFile; fileRef = D218CA5C148DDFAC5FD45DD448D62337 /* NSManagedObject+MagicalAggregation.m */; };
+		46EB2849ECF7D04820BE4532C9D61AB0 /* VENTouchLockPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67E3463FD871F347F35A5454A54F091 /* VENTouchLockPasscodeViewController.m */; };
+		475CF2630B8E305C25F0AA067B9B43F7 /* UIViewController+VENTouchLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 84664C38AD9ECB9EC12C1F1F97AC7ADB /* UIViewController+VENTouchLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A675A2B2176CB71CB4A531DFC3F1933 /* NSManagedObject+MagicalRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = D40FA8BF62DDB225EA06D1AFA0C92417 /* NSManagedObject+MagicalRequests.m */; };
+		4A699BDEB51F41F8BAF5CFC486E9A8EC /* Pods-PasswordMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A17665A717B55E0438DC36923039D0 /* Pods-PasswordMenu-dummy.m */; };
+		4BB80FAF34FCCED1EA4E6004267FD9D1 /* MagicalRecord+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E75F8D97A9E6026DC38D89CDBDEAF /* MagicalRecord+Options.m */; };
+		4D46F1FB1ADB87891C87B094EE13471A /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 079A68AD8906F0B3B7767DC1BEE71D92 /* SSKeychain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4E62900F86FE0EE438F9D324970C2D00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		503437F9985748C4CE533F93BB940EED /* NSManagedObjectContext+MagicalThreading.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0760FD4239394C5127895F32542D86 /* NSManagedObjectContext+MagicalThreading.m */; };
+		5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6696520AA45502236D62C7C3898AC /* NSArray+MASAdditions.m */; };
+		54B4A4A953FF6F54D36341A79914E8A6 /* VENTouchLockAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BA675CE1C6573EB474FC124728B555 /* VENTouchLockAppearance.m */; };
+		553A81C9EAAF826E11D861C497E05D3E /* VENTouchLockPasscodeCharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B64A3DA80F51AFDCE68EB628666805 /* VENTouchLockPasscodeCharacterView.m */; };
+		55B8E6D5B487508D715BDC40931BA27B /* MagicalRecord+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE28520060ACF46990B6C764884AF70 /* MagicalRecord+Setup.m */; };
+		55D5F4E96E58E80A9BE075A62B99B3E5 /* MagicalRecord+ErrorHandling.h in Headers */ = {isa = PBXBuildFile; fileRef = 03750B1B61C2EC4FAE90CB2FBADDD1F1 /* MagicalRecord+ErrorHandling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CB61EB8F692967D7EB2D7DC482AEAB4 /* NSManagedObject+MagicalFinders.h in Headers */ = {isa = PBXBuildFile; fileRef = E838A9D434F4927FDF1A2E095AAC7FB8 /* NSManagedObject+MagicalFinders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DEE5A8FC16E2D0E9008B9369753F96F /* NSManagedObject+MagicalRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D95EFEB6CE83A341EAE9390FB94D298 /* NSManagedObject+MagicalRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E6B243AC21BB73DCAA34307D2C62AEE /* SSKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E9D5A8BF4CF4DFDDE5894FB7E04DF8 /* SSKeychain-dummy.m */; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B793FDBC7F83F8793C2654BF762FF725 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6137C86206A6717EF04C9A564AAD1CB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC8A44230B32E033CF8AF20E20430E4 /* QuartzCore.framework */; };
+		61939A655FD23A7E5766B4CD61B85403 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 009DB75D591D3476600899896D2A3DA5 /* NSPersistentStoreCoordinator+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61DA81B9E9FF9A70CC3FEDE77D787F0D /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D18244191A1FD90997F57F72DED8E08 /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		631C3CF6E0F5635B7AE5A5D3DFE7CFB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		6616F67DDA5E34472FA21242C748AA03 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3880925379C48DA7732F8FBD6506EE85 /* LocalAuthentication.framework */; };
+		6ACA8DF898BE1D9CA88E31C9B5D5A0D6 /* NSManagedObjectContext+MagicalSaves.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE23F1D9CB2BA2CCCBCBD8753A029F5 /* NSManagedObjectContext+MagicalSaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B46840CEE52037706A3A02ED9CA6D76 /* MagicalRecordLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = D77E2C0962FA37BEB8FC25676533FEEC /* MagicalRecordLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C8BEF90485453BADD69ABC31327E370 /* MagicalRecord+Actions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2420FF66482EF30B3914716CCD518B44 /* MagicalRecord+Actions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C541CBFE08F0DBA146B7DF8A728458E /* CoreGraphics.framework */; };
+		723B7BFCC9C71647FB7649B6FB75AA2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		7396D260E247A059E560F4D711435166 /* MagicalRecord+iCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 104826534CAC88363C650EB9099660AC /* MagicalRecord+iCloud.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7873559748CF83ECA98B290906A2A1CB /* MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DFEE27518B8136B68165314A0ABDAA /* MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C57680A76CB068E08E59F0755190D6 /* View+MASAdditions.m */; };
+		81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FF4A1BDC56D3DB285214F490D251CA /* Masonry-dummy.m */; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 87802A59D30EC1FA2BE64BD674AAA40A /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8396CB5D6172F0536109191068752B62 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3C63929D8B11F5257F94B1B9E3A9E8 /* NSPersistentStore+MagicalRecord.m */; };
+		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B827AD61A857554EC3EB90422C4690B /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94646AED7EE109AA07397CAA26738D47 /* NSManagedObjectContext+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = E358C4280D0B68FE443BD9D4B53D09FF /* NSManagedObjectContext+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		962EC9D94AFF62D548D8FEEA76D9C1E1 /* VENTouchLockSplashViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F08B47524A5D4BCDDC02E73BC44F46D2 /* VENTouchLockSplashViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0698F0B003B9C99BE53E43334873AE /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8B7781777CB46D254E7A047571663E /* UIKit.framework */; };
+		9AA4AC0E8E3BDC1750CEB828F232F37B /* NSAttributeDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = B33B0378914864DBEBDEFE1E1B7250BA /* NSAttributeDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0507A0075E3E07F38F479C324BC0C0F /* Colours.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA19DC1F6EE2865D8383F678669CF4E /* Colours.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2E9964C2BBF30F0F0F00212DF34915F /* VENTouchLockCreatePasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F0FAFE38FA45431DE5B4BC6CBB3684 /* VENTouchLockCreatePasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3C03D25F1E09497B4D0D99198C6EDB0 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 82ADF5A26741DD1930791227AC70FF9B /* NSEntityDescription+MagicalDataImport.m */; };
+		A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E4EA11E2B9AD245D030130195CC428D5 /* MASViewAttribute.m */; };
+		A4C5A1EB495718E37C952F969237AFB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		A4D818AAE9D413BA2071E7A5916CDEB0 /* NSPersistentStore+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = AC89F18F3673D58CE1A46070A87831CE /* NSPersistentStore+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9C2C7447CA0798A43E6589E79ADCC2 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE2A33408A2208B94B23EDBA508C3278 /* VENTouchLockEnterPasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CF2053479D9CB9AEDAAB66AECBBFC /* VENTouchLockEnterPasscodeViewController.m */; };
+		AE4031B01EA85FDBB750FA0A08145352 /* VENTouchLockPasscodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB8EC5A0103CE025485D02CD5A3F5E7 /* VENTouchLockPasscodeView.m */; };
+		AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46312B30F5B5E0B48464862E1817ADAF /* ViewController+MASAdditions.m */; };
+		B02A9A4E97038E9DCB887654B227CC78 /* MagicalRecordInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C14BC0F224A2A65FF71B992377E9249 /* MagicalRecordInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B10AE5E8483B7C21613040402C6DA27A /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAB60D7CD87B49A797D60BE8F7DBD08 /* SSKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B12B1AF86093EFE4733E87F510DB84AF /* NSManagedObjectContext+MagicalSaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 468B66F6B324C9BDC68C6450A2D72A24 /* NSManagedObjectContext+MagicalSaves.m */; };
+		B16F4224F8CACBFC91D07BBCF381C8AA /* MagicalRecord+Setup.h in Headers */ = {isa = PBXBuildFile; fileRef = C132DF65D57F99890442138856B5E63F /* MagicalRecord+Setup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B22B9DD749E73BFA9C955D5FA34FE77A /* VENTouchLock.m in Sources */ = {isa = PBXBuildFile; fileRef = D24C1368AA366AF943A825E4AA3BA24E /* VENTouchLock.m */; };
+		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A578A71FD972CCF698FEEF0C0D3D5D /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8BA9CCE7C2B9D181C1FCC5991594757 /* MagicalRecord+iCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 202AD156972F108C9DE57519B29DFB88 /* MagicalRecord+iCloud.m */; };
+		B95BDFF24815E9B73F2BDD7F01C988C6 /* NSManagedObject+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D95749523AA1B87BFDC5EC8C8AD2BC /* NSManagedObject+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB1D4955819F9773B179CAFD8CDAD9D5 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5547B45EBFFACCF6BF321A38D09C62D8 /* UIViewController+RESideMenu.m */; };
+		BC65B4A2BEB04297F8768D4E9C074402 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A637AFB21022D58D649C735B1933FB61 /* SSKeychainQuery.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EC0063EC8F67512722E648E1D05278 /* MASCompositeConstraint.m */; };
+		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DB68D6DB5B8EE99A5D7A85914AD643 /* MASLayoutConstraint.m */; };
+		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8297B6E483E848AB92CD02193F85D3 /* MASConstraint.m */; };
+		C03E1C4990D92786437C316F46B4B790 /* MagicalRecordDeprecationMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1581BB80CEDC6397A167892A2A5CFE /* MagicalRecordDeprecationMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0C7A99BE3C6745AF5B20BB5A521CE3F /* NSObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = ED647229F036D64E0FD5218EA3251BA6 /* NSObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C973F18E66FE719EF478CC72208970C /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7225BD91D67910CCA5DBF62A641208C /* NSRelationshipDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = A650A384D749912DE34152DA29683FBC /* NSRelationshipDescription+MagicalDataImport.m */; };
+		CAC876BD0E7AF852D97A992D016F808C /* VENTouchLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 74CCB04838318A7168DAE4BFB5EF44DF /* VENTouchLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB8ADEA4F62DD66212CFE27EC1E1B412 /* NSObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = AF12C21B8A9119CCFCEDF0303A280AA4 /* NSObject+MagicalDataImport.m */; };
+		CD81C534197595DB79D3750CE98A3646 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE31919A69B812621DF37F46609098E /* Colours.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CDB1D6D80039C0A064983A8CE5EF516E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9F7F8AFE081FB8E433590D21192343 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		D253AFA70796C022EB7E2F373EA1B465 /* MagicalRecordInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = FE49BCB9DCF84CBB72CADE026235FBCA /* MagicalRecordInternal.m */; };
+		D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDACB9803DDDE40073C7FA5F31475F6 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D3F136F1B4F9D924666030FAB608F33D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C17D0EE8567056642F5E913F3F953B7D /* Security.framework */; };
+		D43288DE15B97A4F15AAFA5B492CD855 /* MagicalRecord+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FB1F7B30FF9B0622C565B88E9B2BF3 /* MagicalRecord+Actions.m */; };
+		D683EA1ABEA0456FD9772400BC20468F /* Colours-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B316304CD8D18066C58F54B3422EAF70 /* Colours-dummy.m */; };
+		D795AEBC2A157E970C5D14E505E6ABA9 /* NSManagedObject+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 09BBE3535C1E74D77B9FE1E4E48179B0 /* NSManagedObject+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9E95AE77AE7234C96443D44FDE89EC3 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 727AE326BE51A0656DDA41BC77D02A92 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB8D6BABE5069CFDC22A75EB9E325FB5 /* MagicalRecord+ErrorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E6A90CBB86DE7B4F3F3D575F4D53E8 /* MagicalRecord+ErrorHandling.m */; };
+		DB918F24C2FEF4BF10CFC439E456E802 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F99606943B1F47C97D5F2502269204 /* NSManagedObjectModel+MagicalRecord.m */; };
+		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ECBFF946F2BB4631251BA9B2B22164 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDCB6A9A9741E00E7EA5F0FE032A076C /* SSKeychainQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BCEBFCEE6EC825C63F688ACB9BB1A61 /* SSKeychainQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E070E83B8A151FE5612D14E256ACDFBD /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BBE880E0D87AA680BD832C4ABF6793 /* RESideMenu-dummy.m */; };
+		E3CE6F6036186199B494709BD7A254FB /* VENTouchLockPasscodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8080AB915C3B2E5F1704486CA7C51D9 /* VENTouchLockPasscodeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E665A405CE7E7E5795E2D98DAC78338A /* NSManagedObjectContext+MagicalChainSave.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0F33C23DD9E2922CFED7F1681EBAD7 /* NSManagedObjectContext+MagicalChainSave.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A6286D154F691E47E0DECA5FEB935DDE /* MASViewConstraint.m */; };
+		E813DC2098F7B887127FCB055ECCD34D /* NSManagedObject+MagicalAggregation.h in Headers */ = {isa = PBXBuildFile; fileRef = A45AE4D25E65C15F0B632ACBC20570FC /* NSManagedObject+MagicalAggregation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E89ED93BC0FB4D295BAE9F11B5B21FBE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA32848B83AE49B8BF18EFF6F5217123 /* CoreData.framework */; };
+		E9F1A8BCA9E652429525F9C46F41ECAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		EA5502D4BED26E9DA8407C44FC8F1882 /* NSString+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = EAEE6B7487F97C2622AF90774A3AFB30 /* NSString+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FAB8EE3A9F8EC0104FFCB9F0C85541 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = CF16628FD0FEC2AFB1EA7F34362C343A /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEFCDFB937C4D9E3C89EDD0485D628BC /* MagicalRecord+Options.h in Headers */ = {isa = PBXBuildFile; fileRef = F6374518E1C31DBF60C202F0D50CF816 /* MagicalRecord+Options.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F41AD49B45C81B64FC92CA86551E0D94 /* MagicalRecordShorthandMethodAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD2E0686B9F94902EF0562ECA914513 /* MagicalRecordShorthandMethodAliases.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54F4AB79E07F915DF48943A0DD3E105 /* NSRelationshipDescription+MagicalDataImport.h in Headers */ = {isa = PBXBuildFile; fileRef = 32FA1AA42A425A3AF0BA39BEAFEF7C38 /* NSRelationshipDescription+MagicalDataImport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F827A96A5AEAC8C9D30E7B2B00A2100E /* NSManagedObjectModel+MagicalRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DD1F5A55EBFAC1FAB9334F48C208A3 /* NSManagedObjectModel+MagicalRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9913CD88631EC2F3747484527439371 /* NSManagedObjectContext+MagicalObserving.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FF06D4B45A19C972C092FDED73EB7 /* NSManagedObjectContext+MagicalObserving.m */; };
+		F9A02E8724718E66B61C06C4140C3713 /* MagicalRecord+ShorthandMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D19C24BAFC6E2EC1999D39F899CBBB /* MagicalRecord+ShorthandMethods.m */; };
+		F9EF28F4E21707E183DEC7B29C4A4084 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB0D8849A56152E15E8CF72A5CF4F07 /* RESideMenu.m */; };
+		FB0B947DB0CA0491233AEFC571D0AAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */; };
+		FB9E135707483737B2509DFA10868212 /* MagicalRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4463316421694C4D1A1752613C035B3 /* MagicalRecord-dummy.m */; };
+		FBA604D6E0B895EE30CE400A1507997B /* MagicalImportFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 60094E063B772020805270B976C49902 /* MagicalImportFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55B8FC087990E79A3E7475F1EDBAB1 /* MBProgressHUD-dummy.m */; };
+		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8520360BF1F6A520D08E36BE608E8E5D /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDE7B323829C52FE96BE691BFCBCD2FE /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = E201C2D1204C0811EF70A3F4DC07BAAC /* NSAttributeDescription+MagicalDataImport.m */; };
+		FF1349EF9EF8B9A0E5BD1B1E3465E182 /* NSManagedObjectContext+MagicalThreading.h in Headers */ = {isa = PBXBuildFile; fileRef = FD675FE72FDB7BC019A0FF456255DE46 /* NSManagedObjectContext+MagicalThreading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC06D3E389C2D12FBBEE35AE3969040 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A9D3111EA3B3FEBA66D87BBEB8CE778 /* PBXContainerItemProxy */ = {
+		2B975D7178B61C8F387D6CD1FF87ADD8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 75DD817639EA15E893BDC9C67156FF39;
+			remoteGlobalIDString = BCE3572EAD756EEC553C151B83E51F6C;
 			remoteInfo = SSKeychain;
 		};
-		26B0A9E13E3E275E8BA5CD28A30985A3 /* PBXContainerItemProxy */ = {
+		7C81E1D2189BBB012A6B129E773FCA42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
-			remoteInfo = Masonry;
-		};
-		350C289D3D11FC170723C269EF9D9E43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D014FE4FB33F404620217C7F31E6C52;
-			remoteInfo = VENTouchLock;
-		};
-		9730AFAD20D3116128766D6D5E8F6673 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75DD817639EA15E893BDC9C67156FF39;
-			remoteInfo = SSKeychain;
-		};
-		986994A7320D5926F550AB6FEF19EC83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D2C63F68DED2B8CE768151FF240E7B2;
+			remoteGlobalIDString = 606FD8AAC624A25CE63F229517BDAF44;
 			remoteInfo = RESideMenu;
 		};
-		FAA03CB0DCB48E37252C64FE1536B7CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
-			remoteInfo = MBProgressHUD;
-		};
-		FE36DD30EEE5CFAD349E91A6293DF5AE /* PBXContainerItemProxy */ = {
+		8BF22E0911F57313E5B06AF89A208D30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 14D2008578FFE471DE50AE7147D301A4;
 			remoteInfo = Colours;
 		};
+		C7FB96960D653C19AA1915D6F212CFD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCE3572EAD756EEC553C151B83E51F6C;
+			remoteInfo = SSKeychain;
+		};
+		CAFBD53D9360C86705819C3A747459CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
+			remoteInfo = Masonry;
+		};
+		D6C0171BED2A4396DC781611E924A35A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
+		};
+		DD36E466E8C0F0CA56DF1D81C6F43B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D54AB3ECEB9A8FBA15D4F73CBE326692;
+			remoteInfo = MagicalRecord;
+		};
+		ECAE762FF2DAFDFA566F6B818FD5CA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80528BF07D7928170B91B277905694CE;
+			remoteInfo = VENTouchLock;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0150DB62EF7C915AA35C86964539EA34 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		0348D6D830ABAFD3D8706429DB92D9AA /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		0434CF6D997431C5E74707BAF26D94B5 /* VENTouchLockAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockAppearance.h; path = VENTouchLock/Models/VENTouchLockAppearance.h; sourceTree = "<group>"; };
-		04F603D505212A1F1EF3C7385A0C2A3C /* VENTouchLockEnterPasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockEnterPasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockEnterPasscodeViewController.m; sourceTree = "<group>"; };
-		097B517EA2633CE6583E5CFD35527CEF /* libSSKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		09863B7CE69934929074FD5D8D4FAD43 /* VENTouchLockAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockAppearance.m; path = VENTouchLock/Models/VENTouchLockAppearance.m; sourceTree = "<group>"; };
-		09932AB599F2FCEF243A7DBCCF420523 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
-		09B48987B5255EEB47EEB0109F9F9812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0A1317F52411BB438DB48B4451735D68 /* libPods-PasswordMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ABAC66C75A935DB5EC2C1512474B228 /* VENTouchLockPasscodeCharacterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeCharacterView.m; path = VENTouchLock/Views/VENTouchLockPasscodeCharacterView.m; sourceTree = "<group>"; };
+		009DB75D591D3476600899896D2A3DA5 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		018444E07DA2E008DAAA1EFFA4CCEA0A /* libVENTouchLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENTouchLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FF4A1BDC56D3DB285214F490D251CA /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		03750B1B61C2EC4FAE90CB2FBADDD1F1 /* MagicalRecord+ErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ErrorHandling.h"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.h"; sourceTree = "<group>"; };
+		03DFEE27518B8136B68165314A0ABDAA /* MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecord.h; path = MagicalRecord/MagicalRecord.h; sourceTree = "<group>"; };
+		042AAC6467F40442A30817DECB1A85CB /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		072ACB1387E2C36FAAB5A96B12AC5478 /* MagicalRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-prefix.pch"; sourceTree = "<group>"; };
+		079A68AD8906F0B3B7767DC1BEE71D92 /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
+		08DCBB244E54F285B402413A2D90175C /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BBE3535C1E74D77B9FE1E4E48179B0 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		0A0DBE2F784898FB558425EE2B909F97 /* NSString+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.m"; sourceTree = "<group>"; };
+		0A9E208DCB0D4E86E3D2317F5B5DDE89 /* NSManagedObjectContext+MagicalChainSave.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalChainSave.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.m"; sourceTree = "<group>"; };
 		0BC12FC5DDE92BAB44AF8CD89F3E5EBE /* Pods-PasswordMenu-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PasswordMenu-resources.sh"; sourceTree = "<group>"; };
-		0BC33117BCA5DE80B6A9CC1B2D7B6350 /* SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain-dummy.m"; sourceTree = "<group>"; };
-		0CF9B550C9B45C70D6ED7CC97202D2F4 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0F33C23DD9E2922CFED7F1681EBAD7 /* NSManagedObjectContext+MagicalChainSave.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalChainSave.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"; sourceTree = "<group>"; };
+		0D55B8FC087990E79A3E7475F1EDBAB1 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		0DD00D0A930BA04467EC14A270CC50AD /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
-		10A0DD59AAA97F4714547E0185F87891 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		104826534CAC88363C650EB9099660AC /* MagicalRecord+iCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+iCloud.h"; path = "MagicalRecord/Core/MagicalRecord+iCloud.h"; sourceTree = "<group>"; };
+		11B64A3DA80F51AFDCE68EB628666805 /* VENTouchLockPasscodeCharacterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeCharacterView.m; path = VENTouchLock/Views/VENTouchLockPasscodeCharacterView.m; sourceTree = "<group>"; };
+		11ECBFF946F2BB4631251BA9B2B22164 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		137632D003BAAC0CF4AA8E93C202837E /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		164261853015024E7FC8CB9C3FD5400A /* MagicalImportFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalImportFunctions.m; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.m; sourceTree = "<group>"; };
 		18A17665A717B55E0438DC36923039D0 /* Pods-PasswordMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PasswordMenu-dummy.m"; sourceTree = "<group>"; };
-		1A87E9E7D9601BC94ECA8F0059B4CA49 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		1E4E59185E4FE88FBB0C28DE0A84F968 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		21BEBDC6E649440C64F74779D742A311 /* UIViewController+VENTouchLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+VENTouchLock.m"; path = "VENTouchLock/Categories/UIViewController+VENTouchLock.m"; sourceTree = "<group>"; };
-		252FFD17244735EC3F1C636E81EC0535 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		254F4CEDD36AD6A6D1FC65FBF2C5A577 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		26FA7EA0881E9711FEA9161870F54B6D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		28294814463F6FFA01D9D0D6787725E9 /* VENTouchLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLock.h; path = VENTouchLock/VENTouchLock.h; sourceTree = "<group>"; };
-		2DE871DBC18BAD600BDEA9A21CEE8D40 /* VENTouchLockPasscodeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeView.m; path = VENTouchLock/Views/VENTouchLockPasscodeView.m; sourceTree = "<group>"; };
-		3CC295A614C42C522CFC1707623286E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		400A4B710F7C8E8F3A4FB457F2700BA1 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		18ACA2C875E4728DE8BCB5AA06F4E5A6 /* VENTouchLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VENTouchLock.xcconfig; sourceTree = "<group>"; };
+		1AC8A44230B32E033CF8AF20E20430E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1C14BC0F224A2A65FF71B992377E9249 /* MagicalRecordInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordInternal.h; path = MagicalRecord/Core/MagicalRecordInternal.h; sourceTree = "<group>"; };
+		1D18244191A1FD90997F57F72DED8E08 /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		1E9C2C7447CA0798A43E6589E79ADCC2 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1EAB5FE99E2CABAE5DE7376FFB5C8EFF /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		202AD156972F108C9DE57519B29DFB88 /* MagicalRecord+iCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+iCloud.m"; path = "MagicalRecord/Core/MagicalRecord+iCloud.m"; sourceTree = "<group>"; };
+		2420FF66482EF30B3914716CCD518B44 /* MagicalRecord+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Actions.h"; path = "MagicalRecord/Core/MagicalRecord+Actions.h"; sourceTree = "<group>"; };
+		27E6A90CBB86DE7B4F3F3D575F4D53E8 /* MagicalRecord+ErrorHandling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ErrorHandling.m"; path = "MagicalRecord/Core/MagicalRecord+ErrorHandling.m"; sourceTree = "<group>"; };
+		291C721E7A2987D7AAE31D8502A76E50 /* Colours-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Colours-prefix.pch"; sourceTree = "<group>"; };
+		2A1E75F8D97A9E6026DC38D89CDBDEAF /* MagicalRecord+Options.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Options.m"; path = "MagicalRecord/Core/MagicalRecord+Options.m"; sourceTree = "<group>"; };
+		2A6A53C6B1A91086D83086A200E0C4E0 /* VENTouchLockSplashViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockSplashViewController.m; path = VENTouchLock/Controllers/VENTouchLockSplashViewController.m; sourceTree = "<group>"; };
+		2CE4E02C4B8ABE1CCD383F5817FBB47F /* MagicalRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MagicalRecord.xcconfig; sourceTree = "<group>"; };
+		2DAB60D7CD87B49A797D60BE8F7DBD08 /* SSKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychain.h; path = SSKeychain/SSKeychain.h; sourceTree = "<group>"; };
+		2EB6696520AA45502236D62C7C3898AC /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2ED73FA6404317B91EEBAE813FBBD220 /* Colours.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Colours.xcconfig; sourceTree = "<group>"; };
+		2F98D1A92EA51BC34FE14E3E95DBA05C /* NSNumber+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"; sourceTree = "<group>"; };
+		2FE23F1D9CB2BA2CCCBCBD8753A029F5 /* NSManagedObjectContext+MagicalSaves.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalSaves.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"; sourceTree = "<group>"; };
+		32FA1AA42A425A3AF0BA39BEAFEF7C38 /* NSRelationshipDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSRelationshipDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		3381AC36075EC8D51284325A1B244B84 /* NSManagedObject+MagicalFinders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalFinders.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.m"; sourceTree = "<group>"; };
+		36C57680A76CB068E08E59F0755190D6 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		3723D944749952660606CB5BBC9C3113 /* libSSKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3880925379C48DA7732F8FBD6506EE85 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		389503ACD4386115E0059BF1F7754B62 /* SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSKeychain.xcconfig; sourceTree = "<group>"; };
+		3B4A2A13235C3DAD0396DDD236C437B9 /* VENTouchLockPasscodeCharacterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeCharacterView.h; path = VENTouchLock/Views/VENTouchLockPasscodeCharacterView.h; sourceTree = "<group>"; };
+		3D0760FD4239394C5127895F32542D86 /* NSManagedObjectContext+MagicalThreading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalThreading.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.m"; sourceTree = "<group>"; };
+		3D1581BB80CEDC6397A167892A2A5CFE /* MagicalRecordDeprecationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordDeprecationMacros.h; path = MagicalRecord/Core/MagicalRecordDeprecationMacros.h; sourceTree = "<group>"; };
+		3D95EFEB6CE83A341EAE9390FB94D298 /* NSManagedObject+MagicalRequests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRequests.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"; sourceTree = "<group>"; };
+		3FDF0D003AEFBD4D6EF5A6BF575ECF0D /* NSEntityDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
 		419B5CB1F3919F1694DF51F6BC813331 /* Pods-PasswordMenu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PasswordMenu-frameworks.sh"; sourceTree = "<group>"; };
-		459F29F35962426ACAE1C357D74428E9 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		4B8903E578272F23D7AAB1C654E4AD0C /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
-		4ECDA2C27A3AF5C9378AD28B296124CA /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		4F14C601CCDF412B6264DCFF2296C198 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		508F43B4544E0D4520C6A86F9C8852A6 /* VENTouchLockPasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockPasscodeViewController.m; sourceTree = "<group>"; };
-		54DCBA3C1483A801C2F739B81961A381 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		576E4979AAF771DF76CA2918EE0BA34D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		58C1063CF9C4398834780D238831D639 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		5971AFD5FBEB284437F7C116717647A4 /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B28CEEF784AE142224FCEABE4BA69FB /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
-		5BD29BC12CD1BE0546EC4B70877495C1 /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
-		623D53029821BCFDBDC5C475D9615AEF /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		643F9317FFE0C4789A616BF3B7F461D7 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		64651495116DB08949FFB612E8F739F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		64D9D2859F5F496732E3349C5F676688 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		69FCDE21C239B9E7EE053D44AF43C587 /* Colours-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Colours-prefix.pch"; sourceTree = "<group>"; };
-		7791E0152F1976D1A8CEEBB070328A2D /* VENTouchLockPasscodeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeView.h; path = VENTouchLock/Views/VENTouchLockPasscodeView.h; sourceTree = "<group>"; };
-		7C01D2224EFEC17B0EC5F9385BDB4226 /* libColours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libColours.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB64F59685725E237D24B20DD1F88A6 /* VENTouchLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLock.m; path = VENTouchLock/VENTouchLock.m; sourceTree = "<group>"; };
-		81199696ECAA0049D0AB3FA66D888047 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		82F29229AF995C8A713CBB9FA1F5AEFF /* VENTouchLockPasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockPasscodeViewController.h; sourceTree = "<group>"; };
-		8435EFAA355770E744C55AD7478DE81C /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
-		874694BB4CCA0B62F45965966A0695B7 /* UIViewController+VENTouchLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+VENTouchLock.h"; path = "VENTouchLock/Categories/UIViewController+VENTouchLock.h"; sourceTree = "<group>"; };
-		8BA080BE04B4F041860BC5A95CDFE1A1 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		8C5B97D3EB746284FFD232F879BB0FDE /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
-		901B3D75A3585A8B886159CB4195562D /* libVENTouchLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVENTouchLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9680129804777E05DA1C35667135F13F /* VENTouchLockPasscodeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = VENTouchLockPasscodeView.xib; path = VENTouchLock/Views/VENTouchLockPasscodeView.xib; sourceTree = "<group>"; };
-		96E2FFAA34A18EF952E65BED89D35705 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		9787FB4635AEB577AFD9618CE4226316 /* VENTouchLockEnterPasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockEnterPasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockEnterPasscodeViewController.h; sourceTree = "<group>"; };
+		44FAB8EE3A9F8EC0104FFCB9F0C85541 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		45BBE880E0D87AA680BD832C4ABF6793 /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		46312B30F5B5E0B48464862E1817ADAF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		468B66F6B324C9BDC68C6450A2D72A24 /* NSManagedObjectContext+MagicalSaves.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalSaves.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.m"; sourceTree = "<group>"; };
+		4714BAA3CF6944D4F7FA2E6257165A96 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
+		47D19C24BAFC6E2EC1999D39F899CBBB /* MagicalRecord+ShorthandMethods.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+ShorthandMethods.m"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.m"; sourceTree = "<group>"; };
+		4BA19DC1F6EE2865D8383F678669CF4E /* Colours.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		4BCEBFCEE6EC825C63F688ACB9BB1A61 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		4D4BB72DE2D8A1674C527B77B0B0D5C0 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		4EE0F471082C9289DFB1EFF161C8EFD2 /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		548FF06D4B45A19C972C092FDED73EB7 /* NSManagedObjectContext+MagicalObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalObserving.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.m"; sourceTree = "<group>"; };
+		54D0821796ADCCFE3B2A115ECF9CDAA8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		5547B45EBFFACCF6BF321A38D09C62D8 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		5964F30F2C86B7F71360D9F720AF7923 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		5CFC245D0AD10B2DF80CA2AC77843196 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		60094E063B772020805270B976C49902 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalImportFunctions.h; path = MagicalRecord/Categories/DataImport/MagicalImportFunctions.h; sourceTree = "<group>"; };
+		60FB1F7B30FF9B0622C565B88E9B2BF3 /* MagicalRecord+Actions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Actions.m"; path = "MagicalRecord/Core/MagicalRecord+Actions.m"; sourceTree = "<group>"; };
+		6C8B7781777CB46D254E7A047571663E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6D37E5A788B8B5F5A7C9FEE67E0D8256 /* VENTouchLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VENTouchLock-prefix.pch"; sourceTree = "<group>"; };
+		6DC06D3E389C2D12FBBEE35AE3969040 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		70B79B2F735C110DFF417315CAADA22B /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		727AE326BE51A0656DDA41BC77D02A92 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		74CCB04838318A7168DAE4BFB5EF44DF /* VENTouchLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLock.h; path = VENTouchLock/VENTouchLock.h; sourceTree = "<group>"; };
+		77817A6E370C392852F415A38E02995E /* VENTouchLockPasscodeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeView.h; path = VENTouchLock/Views/VENTouchLockPasscodeView.h; sourceTree = "<group>"; };
+		77B400965B4F2BE7798AA320DE5E36D2 /* NSNumber+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.m"; sourceTree = "<group>"; };
+		7838D52C0C25934226BEC21D3560E952 /* UIViewController+VENTouchLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+VENTouchLock.m"; path = "VENTouchLock/Categories/UIViewController+VENTouchLock.m"; sourceTree = "<group>"; };
+		795671C509B76436211977DE3B159111 /* libPods-PasswordMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6CF2053479D9CB9AEDAAB66AECBBFC /* VENTouchLockEnterPasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockEnterPasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockEnterPasscodeViewController.m; sourceTree = "<group>"; };
+		7C973F18E66FE719EF478CC72208970C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		7CE31919A69B812621DF37F46609098E /* Colours.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		814BD6F797FD3A0257EA6BD6E6DCD745 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		82ADF5A26741DD1930791227AC70FF9B /* NSEntityDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		84664C38AD9ECB9EC12C1F1F97AC7ADB /* UIViewController+VENTouchLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+VENTouchLock.h"; path = "VENTouchLock/Categories/UIViewController+VENTouchLock.h"; sourceTree = "<group>"; };
+		8520360BF1F6A520D08E36BE608E8E5D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		87802A59D30EC1FA2BE64BD674AAA40A /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8BD2E0686B9F94902EF0562ECA914513 /* MagicalRecordShorthandMethodAliases.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordShorthandMethodAliases.h; path = MagicalRecord/Core/MagicalRecordShorthandMethodAliases.h; sourceTree = "<group>"; };
+		97F4F7D9721C02A41ECBA901F6873E81 /* MagicalRecord+ShorthandMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+ShorthandMethods.h"; path = "MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"; sourceTree = "<group>"; };
 		99A1C1626E171BEF72751D10A4805A69 /* Pods-PasswordMenu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PasswordMenu-acknowledgements.plist"; sourceTree = "<group>"; };
-		9FD41D26F7D6EB02C493E32A0FFF12EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		A14CC1BFB9C62FD24A1E82AAFD54465B /* VENTouchLockCreatePasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockCreatePasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockCreatePasscodeViewController.h; sourceTree = "<group>"; };
-		A5771046C5FE52659B1477D069B257EE /* VENTouchLockCreatePasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockCreatePasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockCreatePasscodeViewController.m; sourceTree = "<group>"; };
-		A6DF9DF69BD35F2F7573CC760749ED3C /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		A73973253148F36F5CC1A15BBD24B1DF /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		A93A4C47EA8F2D8AE83062941B60080F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		A97C6011532BC24A9B329D366F6B2E78 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		AADE221A98DD2E0CE6338472AD2027D1 /* VENTouchLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VENTouchLock-prefix.pch"; sourceTree = "<group>"; };
-		AD50994CC79D9D906157857E5C862E9B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		B0334BA888B195E61482D79D2F14FDB6 /* VENTouchLockSplashViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockSplashViewController.m; path = VENTouchLock/Controllers/VENTouchLockSplashViewController.m; sourceTree = "<group>"; };
-		B80E2580D44DD96113B8095D17BA8BA4 /* SSKeychainQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSKeychainQuery.h; path = SSKeychain/SSKeychainQuery.h; sourceTree = "<group>"; };
+		9B29E80D7132413F499B96542BA2DDE4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		9B827AD61A857554EC3EB90422C4690B /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		9C3C63929D8B11F5257F94B1B9E3A9E8 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		9C541CBFE08F0DBA146B7DF8A728458E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		9E0698F0B003B9C99BE53E43334873AE /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		A45AE4D25E65C15F0B632ACBC20570FC /* NSManagedObject+MagicalAggregation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalAggregation.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"; sourceTree = "<group>"; };
+		A5EC0063EC8F67512722E648E1D05278 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		A6286D154F691E47E0DECA5FEB935DDE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		A637AFB21022D58D649C735B1933FB61 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
+		A650A384D749912DE34152DA29683FBC /* NSRelationshipDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSRelationshipDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		A67E3463FD871F347F35A5454A54F091 /* VENTouchLockPasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockPasscodeViewController.m; sourceTree = "<group>"; };
+		A6DB68D6DB5B8EE99A5D7A85914AD643 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		ABD0585B737546907005C1F1CF1431A4 /* VENTouchLockCreatePasscodeViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockCreatePasscodeViewController.m; path = VENTouchLock/Controllers/VENTouchLockCreatePasscodeViewController.m; sourceTree = "<group>"; };
+		AC89F18F3673D58CE1A46070A87831CE /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+MagicalRecord.h"; path = "MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		AF12C21B8A9119CCFCEDF0303A280AA4 /* NSObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		AFB0D8849A56152E15E8CF72A5CF4F07 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
+		B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B316304CD8D18066C58F54B3422EAF70 /* Colours-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Colours-dummy.m"; sourceTree = "<group>"; };
+		B33B0378914864DBEBDEFE1E1B7250BA /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
+		B3DD1F5A55EBFAC1FAB9334F48C208A3 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectModel+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		B4463316421694C4D1A1752613C035B3 /* MagicalRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MagicalRecord-dummy.m"; sourceTree = "<group>"; };
+		B5C6B3EE908727EB9DF2D8EF056496F5 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		B74BED9CFB6C33B68BBAE23D10FCCDA2 /* NSManagedObjectContext+MagicalObserving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalObserving.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"; sourceTree = "<group>"; };
+		B793FDBC7F83F8793C2654BF762FF725 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAAE6A6B8D1E46BD571326548E85D5E9 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		BFDACB9803DDDE40073C7FA5F31475F6 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		BFE0350048678AD2896C82E57D8F12EF /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		C018DC56924CEB4DF5A57EC497D70B44 /* Pods-PasswordMenu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PasswordMenu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0D869B6FCFDB0666AB2860063490F18 /* VENTouchLockSplashViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockSplashViewController.h; path = VENTouchLock/Controllers/VENTouchLockSplashViewController.h; sourceTree = "<group>"; };
-		C318543D17A4CB10CD85696461CCD301 /* VENTouchLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VENTouchLock.xcconfig; sourceTree = "<group>"; };
-		C5AF96A793BC73FB130849E7CE85536D /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		C7ACC8FA2F1E6DC6E3AEFEEB64CE1354 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
-		C7B2D0B23FCF4404FB70736414EB3942 /* Colours.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Colours.xcconfig; sourceTree = "<group>"; };
-		C867CC12FA66818772EBEA0F25D3438E /* SSKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychain.m; path = SSKeychain/SSKeychain.m; sourceTree = "<group>"; };
-		CB9554AD88A51FD9745CBC3A2CD38FA7 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		CDFE5794802A835DCA3DF04F88403F7C /* Colours-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Colours-dummy.m"; sourceTree = "<group>"; };
-		CF2ED12729CD98DB9D8B4D709321B8F7 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		D6B949C07636E467F5AA3910D68D4BA1 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		D88A7010028F8C8DBFFA0DD7133C86D6 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
-		DB80C352DA6716C4E05A7EFC07CF62B0 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		DD39838B40E49ACCFBA9D0517AF7F454 /* VENTouchLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VENTouchLock-dummy.m"; sourceTree = "<group>"; };
-		E4C8CCA881D147AA56E0B67B20EAEC5A /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		E57F4C76284E4C2924CE962AC7C4551B /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		E8379FCB38D5DDE57355B27488DB81B4 /* SSKeychainQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSKeychainQuery.m; path = SSKeychain/SSKeychainQuery.m; sourceTree = "<group>"; };
-		E9519014B671790A97A1497FAC70F4A1 /* SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-prefix.pch"; sourceTree = "<group>"; };
-		E965C20114BFD19722A4AD75B7C3C3D4 /* VENTouchLockPasscodeCharacterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeCharacterView.h; path = VENTouchLock/Views/VENTouchLockPasscodeCharacterView.h; sourceTree = "<group>"; };
+		C0A578A71FD972CCF698FEEF0C0D3D5D /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		C132DF65D57F99890442138856B5E63F /* MagicalRecord+Setup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Setup.h"; path = "MagicalRecord/Core/MagicalRecord+Setup.h"; sourceTree = "<group>"; };
+		C1453DDC474C4D0C5182F905964F1DA9 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17D0EE8567056642F5E913F3F953B7D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C426BBCB79E31F56CEF4048B8A4EA4B3 /* VENTouchLockPasscodeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = VENTouchLockPasscodeView.xib; path = VENTouchLock/Views/VENTouchLockPasscodeView.xib; sourceTree = "<group>"; };
+		C4F0FAFE38FA45431DE5B4BC6CBB3684 /* VENTouchLockCreatePasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockCreatePasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockCreatePasscodeViewController.h; sourceTree = "<group>"; };
+		C5BE9545F141D307FA95425ECB0C4311 /* VENTouchLockAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockAppearance.h; path = VENTouchLock/Models/VENTouchLockAppearance.h; sourceTree = "<group>"; };
+		C7FCDF411AF9D4685C857E61C5EFFED8 /* VENTouchLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VENTouchLock-dummy.m"; sourceTree = "<group>"; };
+		C8080AB915C3B2E5F1704486CA7C51D9 /* VENTouchLockPasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockPasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockPasscodeViewController.h; sourceTree = "<group>"; };
+		C9177F8D757EA6D1BF2FC02FA9949C7D /* SSKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSKeychain-prefix.pch"; sourceTree = "<group>"; };
+		C9D95749523AA1B87BFDC5EC8C8AD2BC /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		CA32848B83AE49B8BF18EFF6F5217123 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		CAE28520060ACF46990B6C764884AF70 /* MagicalRecord+Setup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MagicalRecord+Setup.m"; path = "MagicalRecord/Core/MagicalRecord+Setup.m"; sourceTree = "<group>"; };
+		CAFF40FFB8A109CD73CE55EAA930D71B /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalDataImport.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		CCB8EC5A0103CE025485D02CD5A3F5E7 /* VENTouchLockPasscodeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockPasscodeView.m; path = VENTouchLock/Views/VENTouchLockPasscodeView.m; sourceTree = "<group>"; };
+		CF16628FD0FEC2AFB1EA7F34362C343A /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		D218CA5C148DDFAC5FD45DD448D62337 /* NSManagedObject+MagicalAggregation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalAggregation.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.m"; sourceTree = "<group>"; };
+		D24C1368AA366AF943A825E4AA3BA24E /* VENTouchLock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLock.m; path = VENTouchLock/VENTouchLock.m; sourceTree = "<group>"; };
+		D3E9D5A8BF4CF4DFDDE5894FB7E04DF8 /* SSKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSKeychain-dummy.m"; sourceTree = "<group>"; };
+		D40FA8BF62DDB225EA06D1AFA0C92417 /* NSManagedObject+MagicalRequests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+MagicalRequests.m"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.m"; sourceTree = "<group>"; };
+		D77E2C0962FA37BEB8FC25676533FEEC /* MagicalRecordLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MagicalRecordLogging.h; path = MagicalRecord/Core/MagicalRecordLogging.h; sourceTree = "<group>"; };
+		D7D018C12393991F2BDA873C4D803AEE /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		DCB8FB03302A20A831F6096D0F8DB283 /* VENTouchLockEnterPasscodeViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockEnterPasscodeViewController.h; path = VENTouchLock/Controllers/VENTouchLockEnterPasscodeViewController.h; sourceTree = "<group>"; };
+		E108A25E66296399AF1C5802C70F2F22 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
+		E201C2D1204C0811EF70A3F4DC07BAAC /* NSAttributeDescription+MagicalDataImport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+MagicalDataImport.m"; path = "MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.m"; sourceTree = "<group>"; };
+		E358C4280D0B68FE443BD9D4B53D09FF /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalRecord.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		E4EA11E2B9AD245D030130195CC428D5 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		E4F99606943B1F47C97D5F2502269204 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectModel+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		E838A9D434F4927FDF1A2E095AAC7FB8 /* NSManagedObject+MagicalFinders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+MagicalFinders.h"; path = "MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"; sourceTree = "<group>"; };
+		EA59CC30AA06B26A05C999C6156048AA /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		EAEE6B7487F97C2622AF90774A3AFB30 /* NSString+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"; sourceTree = "<group>"; };
+		EB8297B6E483E848AB92CD02193F85D3 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		EC9F7F8AFE081FB8E433590D21192343 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+MagicalRecord.m"; path = "MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
 		ECDB9CE33BC3BFE646BB92C00805E0F3 /* Pods-PasswordMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PasswordMenu.release.xcconfig"; sourceTree = "<group>"; };
-		ED6703DD1458A7406536FFAAE818207D /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
-		EFE5F5BD1FDD43A1C0E6279B2C3A9797 /* Colours.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
-		F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F2CF1EA9B12C25D739CB97D6631AF247 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		F7A1BF70E12BA3BB473FC7AA18FCD2C7 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
-		F8D12913B19B17E783230659B7C75271 /* Colours.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
-		FD8395C3E258A2CBB2AB01097C99768B /* SSKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSKeychain.xcconfig; sourceTree = "<group>"; };
+		ED647229F036D64E0FD5218EA3251BA6 /* NSObject+MagicalDataImport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MagicalDataImport.h"; path = "MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		F08B47524A5D4BCDDC02E73BC44F46D2 /* VENTouchLockSplashViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VENTouchLockSplashViewController.h; path = VENTouchLock/Controllers/VENTouchLockSplashViewController.h; sourceTree = "<group>"; };
+		F6374518E1C31DBF60C202F0D50CF816 /* MagicalRecord+Options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MagicalRecord+Options.h"; path = "MagicalRecord/Core/MagicalRecord+Options.h"; sourceTree = "<group>"; };
+		F6BA675CE1C6573EB474FC124728B555 /* VENTouchLockAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VENTouchLockAppearance.m; path = VENTouchLock/Models/VENTouchLockAppearance.m; sourceTree = "<group>"; };
+		FC203782056BFC39A74735F8EA902D0C /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+MagicalRecord.m"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		FC3EAA20E8CBB0C3FEE5240E593D406A /* libColours.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libColours.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD675FE72FDB7BC019A0FF456255DE46 /* NSManagedObjectContext+MagicalThreading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+MagicalThreading.h"; path = "MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"; sourceTree = "<group>"; };
+		FE49BCB9DCF84CBB72CADE026235FBCA /* MagicalRecordInternal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MagicalRecordInternal.m; path = MagicalRecord/Core/MagicalRecordInternal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		027FA21B2BC258A7DFC620B396169EFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C5A1EB495718E37C952F969237AFB0 /* Foundation.framework in Frameworks */,
+				D3F136F1B4F9D924666030FAB608F33D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08B3E641A452897ACCFC17DFB5EB7B1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89ED93BC0FB4D295BAE9F11B5B21FBE /* CoreData.framework in Frameworks */,
+				E9F1A8BCA9E652429525F9C46F41ECAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1096C46191B341DA1CEEBFDDC13EC944 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,29 +395,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65D5AE0737123E037EEB2F812E12A48A /* Frameworks */ = {
+		168D2F4F98A115433037FA5E72AAD383 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02BB3EE72D11E401A6DCA13E0067F8A /* Foundation.framework in Frameworks */,
-				67BA15D269A25039BBFD3BDC4EA83020 /* QuartzCore.framework in Frameworks */,
+				FB0B947DB0CA0491233AEFC571D0AAB4 /* Foundation.framework in Frameworks */,
+				6137C86206A6717EF04C9A564AAD1CB0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A003101548541A1C0931909414350491 /* Frameworks */ = {
+		3A9F9355DE425A829A7489AEE1EB4EA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60FBDB30405B4CEA80328665F0E772B2 /* Foundation.framework in Frameworks */,
+				4E62900F86FE0EE438F9D324970C2D00 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E341BD316FBFB9E2CB39312158564499 /* Frameworks */ = {
+		61ACD6CAEFFF29D50F5C69545F0A8D88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB346BAAB8D948AD69FC50213429DDC3 /* Foundation.framework in Frameworks */,
-				A729D7AFFA1EDB5BA6AF13848D8CF568 /* Security.framework in Frameworks */,
+				631C3CF6E0F5635B7AE5A5D3DFE7CFB9 /* Foundation.framework in Frameworks */,
+				6616F67DDA5E34472FA21242C748AA03 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,149 +439,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5425817532AFC52C24F949A1485105 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5228B793BE7985BD1E25E42305069F97 /* Foundation.framework in Frameworks */,
-				2969499DFA66E4EE4AE0411308380DE9 /* LocalAuthentication.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043FD5F19526A9584FDF4F6E33D5B110 /* Masonry */ = {
+		1216A3F9BB1D0546658CC6AC6D8373BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				64D9D2859F5F496732E3349C5F676688 /* MASCompositeConstraint.h */,
-				459F29F35962426ACAE1C357D74428E9 /* MASCompositeConstraint.m */,
-				58C1063CF9C4398834780D238831D639 /* MASConstraint.h */,
-				643F9317FFE0C4789A616BF3B7F461D7 /* MASConstraint.m */,
-				CF2ED12729CD98DB9D8B4D709321B8F7 /* MASConstraint+Private.h */,
-				A6DF9DF69BD35F2F7573CC760749ED3C /* MASConstraintMaker.h */,
-				F2CF1EA9B12C25D739CB97D6631AF247 /* MASConstraintMaker.m */,
-				400A4B710F7C8E8F3A4FB457F2700BA1 /* MASLayoutConstraint.h */,
-				576E4979AAF771DF76CA2918EE0BA34D /* MASLayoutConstraint.m */,
-				E57F4C76284E4C2924CE962AC7C4551B /* Masonry.h */,
-				8BA080BE04B4F041860BC5A95CDFE1A1 /* MASUtilities.h */,
-				254F4CEDD36AD6A6D1FC65FBF2C5A577 /* MASViewAttribute.h */,
-				0150DB62EF7C915AA35C86964539EA34 /* MASViewAttribute.m */,
-				4F14C601CCDF412B6264DCFF2296C198 /* MASViewConstraint.h */,
-				26FA7EA0881E9711FEA9161870F54B6D /* MASViewConstraint.m */,
-				A97C6011532BC24A9B329D366F6B2E78 /* NSArray+MASAdditions.h */,
-				AD50994CC79D9D906157857E5C862E9B /* NSArray+MASAdditions.m */,
-				A93A4C47EA8F2D8AE83062941B60080F /* NSArray+MASShorthandAdditions.h */,
-				BAAE6A6B8D1E46BD571326548E85D5E9 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				1A87E9E7D9601BC94ECA8F0059B4CA49 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				10A0DD59AAA97F4714547E0185F87891 /* View+MASAdditions.h */,
-				252FFD17244735EC3F1C636E81EC0535 /* View+MASAdditions.m */,
-				81199696ECAA0049D0AB3FA66D888047 /* View+MASShorthandAdditions.h */,
-				1E4E59185E4FE88FBB0C28DE0A84F968 /* ViewController+MASAdditions.h */,
-				A73973253148F36F5CC1A15BBD24B1DF /* ViewController+MASAdditions.m */,
-				35BEA0D681FBBE72B27A8D9F091DB91D /* Support Files */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		0BEF1F783377DBA09911AE698537D6D1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9FD41D26F7D6EB02C493E32A0FFF12EC /* CoreGraphics.framework */,
-				F2A15FAA10AB3ACD5C0D7157EEC6D206 /* Foundation.framework */,
-				5B28CEEF784AE142224FCEABE4BA69FB /* LocalAuthentication.framework */,
-				64651495116DB08949FFB612E8F739F6 /* QuartzCore.framework */,
-				3CC295A614C42C522CFC1707623286E8 /* Security.framework */,
-				09B48987B5255EEB47EEB0109F9F9812 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0BEF1F783377DBA09911AE698537D6D1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A4DF4D561CD4FE774206E60EEF7D203 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9680129804777E05DA1C35667135F13F /* VENTouchLockPasscodeView.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1CCDA0316259142A2FB61FA3EAC14CCA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7ACC8FA2F1E6DC6E3AEFEEB64CE1354 /* RESideMenu.xcconfig */,
-				5BD29BC12CD1BE0546EC4B70877495C1 /* RESideMenu-dummy.m */,
-				4B8903E578272F23D7AAB1C654E4AD0C /* RESideMenu-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/RESideMenu";
-			sourceTree = "<group>";
-		};
-		2058699B7B6C9EA8112EB721C39BF8EC /* Colours */ = {
-			isa = PBXGroup;
-			children = (
-				EFE5F5BD1FDD43A1C0E6279B2C3A9797 /* Colours.h */,
-				F8D12913B19B17E783230659B7C75271 /* Colours.m */,
-				E97D95E8BFF90FDE72D5D50651EF7D5B /* Support Files */,
-			);
-			path = Colours;
-			sourceTree = "<group>";
-		};
-		237D516B66003D9BA258A9155F436D51 /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				ED6703DD1458A7406536FFAAE818207D /* RECommonFunctions.h */,
-				8435EFAA355770E744C55AD7478DE81C /* RECommonFunctions.m */,
-				8C5B97D3EB746284FFD232F879BB0FDE /* RESideMenu.h */,
-				D88A7010028F8C8DBFFA0DD7133C86D6 /* RESideMenu.m */,
-				D6B949C07636E467F5AA3910D68D4BA1 /* UIViewController+RESideMenu.h */,
-				4ECDA2C27A3AF5C9378AD28B296124CA /* UIViewController+RESideMenu.m */,
-				1CCDA0316259142A2FB61FA3EAC14CCA /* Support Files */,
-			);
-			path = RESideMenu;
-			sourceTree = "<group>";
-		};
-		254D34F2382BC922856F3E5EF608B7DD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DB80C352DA6716C4E05A7EFC07CF62B0 /* MBProgressHUD.xcconfig */,
-				C5AF96A793BC73FB130849E7CE85536D /* MBProgressHUD-dummy.m */,
-				0348D6D830ABAFD3D8706429DB92D9AA /* MBProgressHUD-prefix.pch */,
+				137632D003BAAC0CF4AA8E93C202837E /* MBProgressHUD.xcconfig */,
+				0D55B8FC087990E79A3E7475F1EDBAB1 /* MBProgressHUD-dummy.m */,
+				D7D018C12393991F2BDA873C4D803AEE /* MBProgressHUD-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
-		279BF1A238A1494DEB1F13F39C3D3BAE /* Products */ = {
+		17C5A90107024E2766FC067BAE822F31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7C01D2224EFEC17B0EC5F9385BDB4226 /* libColours.a */,
-				0CF9B550C9B45C70D6ED7CC97202D2F4 /* libMasonry.a */,
-				623D53029821BCFDBDC5C475D9615AEF /* libMBProgressHUD.a */,
-				0A1317F52411BB438DB48B4451735D68 /* libPods-PasswordMenu.a */,
-				5971AFD5FBEB284437F7C116717647A4 /* libRESideMenu.a */,
-				097B517EA2633CE6583E5CFD35527CEF /* libSSKeychain.a */,
-				901B3D75A3585A8B886159CB4195562D /* libVENTouchLock.a */,
+				C426BBCB79E31F56CEF4048B8A4EA4B3 /* VENTouchLockPasscodeView.xib */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		35BEA0D681FBBE72B27A8D9F091DB91D /* Support Files */ = {
+		33B3194B7740250B4D95B8195A80038C /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				F7A1BF70E12BA3BB473FC7AA18FCD2C7 /* Masonry.xcconfig */,
-				CB9554AD88A51FD9745CBC3A2CD38FA7 /* Masonry-dummy.m */,
-				54DCBA3C1483A801C2F739B81961A381 /* Masonry-prefix.pch */,
+				2DAB60D7CD87B49A797D60BE8F7DBD08 /* SSKeychain.h */,
+				079A68AD8906F0B3B7767DC1BEE71D92 /* SSKeychain.m */,
+				4BCEBFCEE6EC825C63F688ACB9BB1A61 /* SSKeychainQuery.h */,
+				A637AFB21022D58D649C735B1933FB61 /* SSKeychainQuery.m */,
+				3FE2895888E6A9CCD4DEE56F966E1EDE /* Support Files */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+		3FE2895888E6A9CCD4DEE56F966E1EDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				389503ACD4386115E0059BF1F7754B62 /* SSKeychain.xcconfig */,
+				D3E9D5A8BF4CF4DFDDE5894FB7E04DF8 /* SSKeychain-dummy.m */,
+				C9177F8D757EA6D1BF2FC02FA9949C7D /* SSKeychain-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			path = "../Target Support Files/SSKeychain";
 			sourceTree = "<group>";
 		};
 		40C2BA71ABFD98D90CC8C84BD541C454 /* Targets Support Files */ = {
@@ -443,110 +492,259 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6F82261CC1C8361186F75232FB41B52E /* MBProgressHUD */ = {
+		4EE2178432EE7EB416AB624CB0E8D603 /* Colours */ = {
 			isa = PBXGroup;
 			children = (
-				E4C8CCA881D147AA56E0B67B20EAEC5A /* MBProgressHUD.h */,
-				96E2FFAA34A18EF952E65BED89D35705 /* MBProgressHUD.m */,
-				254D34F2382BC922856F3E5EF608B7DD /* Support Files */,
+				4BA19DC1F6EE2865D8383F678669CF4E /* Colours.h */,
+				7CE31919A69B812621DF37F46609098E /* Colours.m */,
+				62FA34CDA3216B5250583D2A9D4F9349 /* Support Files */,
 			);
-			path = MBProgressHUD;
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		62FA34CDA3216B5250583D2A9D4F9349 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ED73FA6404317B91EEBAE813FBBD220 /* Colours.xcconfig */,
+				B316304CD8D18066C58F54B3422EAF70 /* Colours-dummy.m */,
+				291C721E7A2987D7AAE31D8502A76E50 /* Colours-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Colours";
+			sourceTree = "<group>";
+		};
+		735C85091A08888DA6F9930A56C67464 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18ACA2C875E4728DE8BCB5AA06F4E5A6 /* VENTouchLock.xcconfig */,
+				C7FCDF411AF9D4685C857E61C5EFFED8 /* VENTouchLock-dummy.m */,
+				6D37E5A788B8B5F5A7C9FEE67E0D8256 /* VENTouchLock-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VENTouchLock";
+			sourceTree = "<group>";
+		};
+		7636B62EA66ED6A6FD655FD6CBF8CE37 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E108A25E66296399AF1C5802C70F2F22 /* RESideMenu.xcconfig */,
+				45BBE880E0D87AA680BD832C4ABF6793 /* RESideMenu-dummy.m */,
+				4EE0F471082C9289DFB1EFF161C8EFD2 /* RESideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RESideMenu";
+			sourceTree = "<group>";
+		};
+		77BEBE84AEBA16AB0CE61790FAD8A3DD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				814BD6F797FD3A0257EA6BD6E6DCD745 /* Masonry.xcconfig */,
+				01FF4A1BDC56D3DB285214F490D251CA /* Masonry-dummy.m */,
+				9B29E80D7132413F499B96542BA2DDE4 /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				853839C3DCEF577A0CA076BC1CF6E9A9 /* Pods */,
-				279BF1A238A1494DEB1F13F39C3D3BAE /* Products */,
+				F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */,
+				BAB83B4941C0C72E1854DAAA6C56B4C0 /* Pods */,
+				BDED514A8349644B3D9A632DC8D61F68 /* Products */,
 				40C2BA71ABFD98D90CC8C84BD541C454 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81D79ABE14CE8FFFFE33953A0D849F0B /* VENTouchLock */ = {
+		806EEBB6EE88F2541DA718CF0526E080 /* MagicalRecord */ = {
 			isa = PBXGroup;
 			children = (
-				874694BB4CCA0B62F45965966A0695B7 /* UIViewController+VENTouchLock.h */,
-				21BEBDC6E649440C64F74779D742A311 /* UIViewController+VENTouchLock.m */,
-				28294814463F6FFA01D9D0D6787725E9 /* VENTouchLock.h */,
-				7FB64F59685725E237D24B20DD1F88A6 /* VENTouchLock.m */,
-				0434CF6D997431C5E74707BAF26D94B5 /* VENTouchLockAppearance.h */,
-				09863B7CE69934929074FD5D8D4FAD43 /* VENTouchLockAppearance.m */,
-				A14CC1BFB9C62FD24A1E82AAFD54465B /* VENTouchLockCreatePasscodeViewController.h */,
-				A5771046C5FE52659B1477D069B257EE /* VENTouchLockCreatePasscodeViewController.m */,
-				9787FB4635AEB577AFD9618CE4226316 /* VENTouchLockEnterPasscodeViewController.h */,
-				04F603D505212A1F1EF3C7385A0C2A3C /* VENTouchLockEnterPasscodeViewController.m */,
-				E965C20114BFD19722A4AD75B7C3C3D4 /* VENTouchLockPasscodeCharacterView.h */,
-				0ABAC66C75A935DB5EC2C1512474B228 /* VENTouchLockPasscodeCharacterView.m */,
-				7791E0152F1976D1A8CEEBB070328A2D /* VENTouchLockPasscodeView.h */,
-				2DE871DBC18BAD600BDEA9A21CEE8D40 /* VENTouchLockPasscodeView.m */,
-				82F29229AF995C8A713CBB9FA1F5AEFF /* VENTouchLockPasscodeViewController.h */,
-				508F43B4544E0D4520C6A86F9C8852A6 /* VENTouchLockPasscodeViewController.m */,
-				C0D869B6FCFDB0666AB2860063490F18 /* VENTouchLockSplashViewController.h */,
-				B0334BA888B195E61482D79D2F14FDB6 /* VENTouchLockSplashViewController.m */,
-				1A4DF4D561CD4FE774206E60EEF7D203 /* Resources */,
-				8C60785257E1F14EEA718AD3E3245331 /* Support Files */,
+				60094E063B772020805270B976C49902 /* MagicalImportFunctions.h */,
+				164261853015024E7FC8CB9C3FD5400A /* MagicalImportFunctions.m */,
+				03DFEE27518B8136B68165314A0ABDAA /* MagicalRecord.h */,
+				2420FF66482EF30B3914716CCD518B44 /* MagicalRecord+Actions.h */,
+				60FB1F7B30FF9B0622C565B88E9B2BF3 /* MagicalRecord+Actions.m */,
+				03750B1B61C2EC4FAE90CB2FBADDD1F1 /* MagicalRecord+ErrorHandling.h */,
+				27E6A90CBB86DE7B4F3F3D575F4D53E8 /* MagicalRecord+ErrorHandling.m */,
+				104826534CAC88363C650EB9099660AC /* MagicalRecord+iCloud.h */,
+				202AD156972F108C9DE57519B29DFB88 /* MagicalRecord+iCloud.m */,
+				F6374518E1C31DBF60C202F0D50CF816 /* MagicalRecord+Options.h */,
+				2A1E75F8D97A9E6026DC38D89CDBDEAF /* MagicalRecord+Options.m */,
+				C132DF65D57F99890442138856B5E63F /* MagicalRecord+Setup.h */,
+				CAE28520060ACF46990B6C764884AF70 /* MagicalRecord+Setup.m */,
+				97F4F7D9721C02A41ECBA901F6873E81 /* MagicalRecord+ShorthandMethods.h */,
+				47D19C24BAFC6E2EC1999D39F899CBBB /* MagicalRecord+ShorthandMethods.m */,
+				3D1581BB80CEDC6397A167892A2A5CFE /* MagicalRecordDeprecationMacros.h */,
+				1C14BC0F224A2A65FF71B992377E9249 /* MagicalRecordInternal.h */,
+				FE49BCB9DCF84CBB72CADE026235FBCA /* MagicalRecordInternal.m */,
+				D77E2C0962FA37BEB8FC25676533FEEC /* MagicalRecordLogging.h */,
+				8BD2E0686B9F94902EF0562ECA914513 /* MagicalRecordShorthandMethodAliases.h */,
+				B33B0378914864DBEBDEFE1E1B7250BA /* NSAttributeDescription+MagicalDataImport.h */,
+				E201C2D1204C0811EF70A3F4DC07BAAC /* NSAttributeDescription+MagicalDataImport.m */,
+				3FDF0D003AEFBD4D6EF5A6BF575ECF0D /* NSEntityDescription+MagicalDataImport.h */,
+				82ADF5A26741DD1930791227AC70FF9B /* NSEntityDescription+MagicalDataImport.m */,
+				A45AE4D25E65C15F0B632ACBC20570FC /* NSManagedObject+MagicalAggregation.h */,
+				D218CA5C148DDFAC5FD45DD448D62337 /* NSManagedObject+MagicalAggregation.m */,
+				09BBE3535C1E74D77B9FE1E4E48179B0 /* NSManagedObject+MagicalDataImport.h */,
+				CAFF40FFB8A109CD73CE55EAA930D71B /* NSManagedObject+MagicalDataImport.m */,
+				E838A9D434F4927FDF1A2E095AAC7FB8 /* NSManagedObject+MagicalFinders.h */,
+				3381AC36075EC8D51284325A1B244B84 /* NSManagedObject+MagicalFinders.m */,
+				C9D95749523AA1B87BFDC5EC8C8AD2BC /* NSManagedObject+MagicalRecord.h */,
+				1EAB5FE99E2CABAE5DE7376FFB5C8EFF /* NSManagedObject+MagicalRecord.m */,
+				3D95EFEB6CE83A341EAE9390FB94D298 /* NSManagedObject+MagicalRequests.h */,
+				D40FA8BF62DDB225EA06D1AFA0C92417 /* NSManagedObject+MagicalRequests.m */,
+				0D0F33C23DD9E2922CFED7F1681EBAD7 /* NSManagedObjectContext+MagicalChainSave.h */,
+				0A9E208DCB0D4E86E3D2317F5B5DDE89 /* NSManagedObjectContext+MagicalChainSave.m */,
+				B74BED9CFB6C33B68BBAE23D10FCCDA2 /* NSManagedObjectContext+MagicalObserving.h */,
+				548FF06D4B45A19C972C092FDED73EB7 /* NSManagedObjectContext+MagicalObserving.m */,
+				E358C4280D0B68FE443BD9D4B53D09FF /* NSManagedObjectContext+MagicalRecord.h */,
+				FC203782056BFC39A74735F8EA902D0C /* NSManagedObjectContext+MagicalRecord.m */,
+				2FE23F1D9CB2BA2CCCBCBD8753A029F5 /* NSManagedObjectContext+MagicalSaves.h */,
+				468B66F6B324C9BDC68C6450A2D72A24 /* NSManagedObjectContext+MagicalSaves.m */,
+				FD675FE72FDB7BC019A0FF456255DE46 /* NSManagedObjectContext+MagicalThreading.h */,
+				3D0760FD4239394C5127895F32542D86 /* NSManagedObjectContext+MagicalThreading.m */,
+				B3DD1F5A55EBFAC1FAB9334F48C208A3 /* NSManagedObjectModel+MagicalRecord.h */,
+				E4F99606943B1F47C97D5F2502269204 /* NSManagedObjectModel+MagicalRecord.m */,
+				2F98D1A92EA51BC34FE14E3E95DBA05C /* NSNumber+MagicalDataImport.h */,
+				77B400965B4F2BE7798AA320DE5E36D2 /* NSNumber+MagicalDataImport.m */,
+				ED647229F036D64E0FD5218EA3251BA6 /* NSObject+MagicalDataImport.h */,
+				AF12C21B8A9119CCFCEDF0303A280AA4 /* NSObject+MagicalDataImport.m */,
+				AC89F18F3673D58CE1A46070A87831CE /* NSPersistentStore+MagicalRecord.h */,
+				9C3C63929D8B11F5257F94B1B9E3A9E8 /* NSPersistentStore+MagicalRecord.m */,
+				009DB75D591D3476600899896D2A3DA5 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				EC9F7F8AFE081FB8E433590D21192343 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+				32FA1AA42A425A3AF0BA39BEAFEF7C38 /* NSRelationshipDescription+MagicalDataImport.h */,
+				A650A384D749912DE34152DA29683FBC /* NSRelationshipDescription+MagicalDataImport.m */,
+				EAEE6B7487F97C2622AF90774A3AFB30 /* NSString+MagicalDataImport.h */,
+				0A0DBE2F784898FB558425EE2B909F97 /* NSString+MagicalDataImport.m */,
+				AB0C11258891D1D7E71B117C68DFEF9D /* Support Files */,
+			);
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
+		AB0C11258891D1D7E71B117C68DFEF9D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CE4E02C4B8ABE1CCD383F5817FBB47F /* MagicalRecord.xcconfig */,
+				B4463316421694C4D1A1752613C035B3 /* MagicalRecord-dummy.m */,
+				072ACB1387E2C36FAAB5A96B12AC5478 /* MagicalRecord-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MagicalRecord";
+			sourceTree = "<group>";
+		};
+		B6F98439BE295B0BCF49F9E5599168D9 /* VENTouchLock */ = {
+			isa = PBXGroup;
+			children = (
+				84664C38AD9ECB9EC12C1F1F97AC7ADB /* UIViewController+VENTouchLock.h */,
+				7838D52C0C25934226BEC21D3560E952 /* UIViewController+VENTouchLock.m */,
+				74CCB04838318A7168DAE4BFB5EF44DF /* VENTouchLock.h */,
+				D24C1368AA366AF943A825E4AA3BA24E /* VENTouchLock.m */,
+				C5BE9545F141D307FA95425ECB0C4311 /* VENTouchLockAppearance.h */,
+				F6BA675CE1C6573EB474FC124728B555 /* VENTouchLockAppearance.m */,
+				C4F0FAFE38FA45431DE5B4BC6CBB3684 /* VENTouchLockCreatePasscodeViewController.h */,
+				ABD0585B737546907005C1F1CF1431A4 /* VENTouchLockCreatePasscodeViewController.m */,
+				DCB8FB03302A20A831F6096D0F8DB283 /* VENTouchLockEnterPasscodeViewController.h */,
+				7C6CF2053479D9CB9AEDAAB66AECBBFC /* VENTouchLockEnterPasscodeViewController.m */,
+				3B4A2A13235C3DAD0396DDD236C437B9 /* VENTouchLockPasscodeCharacterView.h */,
+				11B64A3DA80F51AFDCE68EB628666805 /* VENTouchLockPasscodeCharacterView.m */,
+				77817A6E370C392852F415A38E02995E /* VENTouchLockPasscodeView.h */,
+				CCB8EC5A0103CE025485D02CD5A3F5E7 /* VENTouchLockPasscodeView.m */,
+				C8080AB915C3B2E5F1704486CA7C51D9 /* VENTouchLockPasscodeViewController.h */,
+				A67E3463FD871F347F35A5454A54F091 /* VENTouchLockPasscodeViewController.m */,
+				F08B47524A5D4BCDDC02E73BC44F46D2 /* VENTouchLockSplashViewController.h */,
+				2A6A53C6B1A91086D83086A200E0C4E0 /* VENTouchLockSplashViewController.m */,
+				17C5A90107024E2766FC067BAE822F31 /* Resources */,
+				735C85091A08888DA6F9930A56C67464 /* Support Files */,
 			);
 			path = VENTouchLock;
 			sourceTree = "<group>";
 		};
-		853839C3DCEF577A0CA076BC1CF6E9A9 /* Pods */ = {
+		BAB83B4941C0C72E1854DAAA6C56B4C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2058699B7B6C9EA8112EB721C39BF8EC /* Colours */,
-				043FD5F19526A9584FDF4F6E33D5B110 /* Masonry */,
-				6F82261CC1C8361186F75232FB41B52E /* MBProgressHUD */,
-				237D516B66003D9BA258A9155F436D51 /* RESideMenu */,
-				B83D7DA4EA4569BA38BCDFA2D3301E77 /* SSKeychain */,
-				81D79ABE14CE8FFFFE33953A0D849F0B /* VENTouchLock */,
+				4EE2178432EE7EB416AB624CB0E8D603 /* Colours */,
+				806EEBB6EE88F2541DA718CF0526E080 /* MagicalRecord */,
+				CBA044B2AC4EBB21C0D3643CC351C76D /* Masonry */,
+				BF304F00E18C7D9AB2F9C8A046931F59 /* MBProgressHUD */,
+				BD6C7800E27E9B0E20222A1A22F0CFA5 /* RESideMenu */,
+				33B3194B7740250B4D95B8195A80038C /* SSKeychain */,
+				B6F98439BE295B0BCF49F9E5599168D9 /* VENTouchLock */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8C60785257E1F14EEA718AD3E3245331 /* Support Files */ = {
+		BD6C7800E27E9B0E20222A1A22F0CFA5 /* RESideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C318543D17A4CB10CD85696461CCD301 /* VENTouchLock.xcconfig */,
-				DD39838B40E49ACCFBA9D0517AF7F454 /* VENTouchLock-dummy.m */,
-				AADE221A98DD2E0CE6338472AD2027D1 /* VENTouchLock-prefix.pch */,
+				727AE326BE51A0656DDA41BC77D02A92 /* RECommonFunctions.h */,
+				4714BAA3CF6944D4F7FA2E6257165A96 /* RECommonFunctions.m */,
+				1D18244191A1FD90997F57F72DED8E08 /* RESideMenu.h */,
+				AFB0D8849A56152E15E8CF72A5CF4F07 /* RESideMenu.m */,
+				B5C6B3EE908727EB9DF2D8EF056496F5 /* UIViewController+RESideMenu.h */,
+				5547B45EBFFACCF6BF321A38D09C62D8 /* UIViewController+RESideMenu.m */,
+				7636B62EA66ED6A6FD655FD6CBF8CE37 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/VENTouchLock";
+			path = RESideMenu;
 			sourceTree = "<group>";
 		};
-		B83D7DA4EA4569BA38BCDFA2D3301E77 /* SSKeychain */ = {
+		BDED514A8349644B3D9A632DC8D61F68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09932AB599F2FCEF243A7DBCCF420523 /* SSKeychain.h */,
-				C867CC12FA66818772EBEA0F25D3438E /* SSKeychain.m */,
-				B80E2580D44DD96113B8095D17BA8BA4 /* SSKeychainQuery.h */,
-				E8379FCB38D5DDE57355B27488DB81B4 /* SSKeychainQuery.m */,
-				E2132AA3A61344774A9D22B732547FCE /* Support Files */,
+				FC3EAA20E8CBB0C3FEE5240E593D406A /* libColours.a */,
+				70B79B2F735C110DFF417315CAADA22B /* libMagicalRecord.a */,
+				042AAC6467F40442A30817DECB1A85CB /* libMasonry.a */,
+				C1453DDC474C4D0C5182F905964F1DA9 /* libMBProgressHUD.a */,
+				795671C509B76436211977DE3B159111 /* libPods-PasswordMenu.a */,
+				08DCBB244E54F285B402413A2D90175C /* libRESideMenu.a */,
+				3723D944749952660606CB5BBC9C3113 /* libSSKeychain.a */,
+				018444E07DA2E008DAAA1EFFA4CCEA0A /* libVENTouchLock.a */,
 			);
-			path = SSKeychain;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		E2132AA3A61344774A9D22B732547FCE /* Support Files */ = {
+		BF304F00E18C7D9AB2F9C8A046931F59 /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				FD8395C3E258A2CBB2AB01097C99768B /* SSKeychain.xcconfig */,
-				0BC33117BCA5DE80B6A9CC1B2D7B6350 /* SSKeychain-dummy.m */,
-				E9519014B671790A97A1497FAC70F4A1 /* SSKeychain-prefix.pch */,
+				B793FDBC7F83F8793C2654BF762FF725 /* MBProgressHUD.h */,
+				87802A59D30EC1FA2BE64BD674AAA40A /* MBProgressHUD.m */,
+				1216A3F9BB1D0546658CC6AC6D8373BD /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SSKeychain";
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		E97D95E8BFF90FDE72D5D50651EF7D5B /* Support Files */ = {
+		CBA044B2AC4EBB21C0D3643CC351C76D /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
-				C7B2D0B23FCF4404FB70736414EB3942 /* Colours.xcconfig */,
-				CDFE5794802A835DCA3DF04F88403F7C /* Colours-dummy.m */,
-				69FCDE21C239B9E7EE053D44AF43C587 /* Colours-prefix.pch */,
+				9E0698F0B003B9C99BE53E43334873AE /* MASCompositeConstraint.h */,
+				A5EC0063EC8F67512722E648E1D05278 /* MASCompositeConstraint.m */,
+				5964F30F2C86B7F71360D9F720AF7923 /* MASConstraint.h */,
+				EB8297B6E483E848AB92CD02193F85D3 /* MASConstraint.m */,
+				C0A578A71FD972CCF698FEEF0C0D3D5D /* MASConstraint+Private.h */,
+				CF16628FD0FEC2AFB1EA7F34362C343A /* MASConstraintMaker.h */,
+				4D4BB72DE2D8A1674C527B77B0B0D5C0 /* MASConstraintMaker.m */,
+				7C973F18E66FE719EF478CC72208970C /* MASLayoutConstraint.h */,
+				A6DB68D6DB5B8EE99A5D7A85914AD643 /* MASLayoutConstraint.m */,
+				9B827AD61A857554EC3EB90422C4690B /* Masonry.h */,
+				6DC06D3E389C2D12FBBEE35AE3969040 /* MASUtilities.h */,
+				BFE0350048678AD2896C82E57D8F12EF /* MASViewAttribute.h */,
+				E4EA11E2B9AD245D030130195CC428D5 /* MASViewAttribute.m */,
+				44FAB8EE3A9F8EC0104FFCB9F0C85541 /* MASViewConstraint.h */,
+				A6286D154F691E47E0DECA5FEB935DDE /* MASViewConstraint.m */,
+				8520360BF1F6A520D08E36BE608E8E5D /* NSArray+MASAdditions.h */,
+				2EB6696520AA45502236D62C7C3898AC /* NSArray+MASAdditions.m */,
+				1E9C2C7447CA0798A43E6589E79ADCC2 /* NSArray+MASShorthandAdditions.h */,
+				EA59CC30AA06B26A05C999C6156048AA /* NSLayoutConstraint+MASDebugAdditions.h */,
+				BFDACB9803DDDE40073C7FA5F31475F6 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				11ECBFF946F2BB4631251BA9B2B22164 /* View+MASAdditions.h */,
+				36C57680A76CB068E08E59F0755190D6 /* View+MASAdditions.m */,
+				5CFC245D0AD10B2DF80CA2AC77843196 /* View+MASShorthandAdditions.h */,
+				54D0821796ADCCFE3B2A115ECF9CDAA8 /* ViewController+MASAdditions.h */,
+				46312B30F5B5E0B48464862E1817ADAF /* ViewController+MASAdditions.m */,
+				77BEBE84AEBA16AB0CE61790FAD8A3DD /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Colours";
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		EA092E6B4C638090C4862145010F8888 /* Pods-PasswordMenu */ = {
@@ -564,9 +762,85 @@
 			path = "Target Support Files/Pods-PasswordMenu";
 			sourceTree = "<group>";
 		};
+		F4CDA5FA9197A41E0081E84F932906EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDE830D3C0C3C25FFB3206A7B35579C8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDE830D3C0C3C25FFB3206A7B35579C8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CA32848B83AE49B8BF18EFF6F5217123 /* CoreData.framework */,
+				9C541CBFE08F0DBA146B7DF8A728458E /* CoreGraphics.framework */,
+				B15EEEFDA5399990B9B4CF91B4942C59 /* Foundation.framework */,
+				3880925379C48DA7732F8FBD6506EE85 /* LocalAuthentication.framework */,
+				1AC8A44230B32E033CF8AF20E20430E4 /* QuartzCore.framework */,
+				C17D0EE8567056642F5E913F3F953B7D /* Security.framework */,
+				6C8B7781777CB46D254E7A047571663E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1C30479A710FF118D01DD9594B50833A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA604D6E0B895EE30CE400A1507997B /* MagicalImportFunctions.h in Headers */,
+				6C8BEF90485453BADD69ABC31327E370 /* MagicalRecord+Actions.h in Headers */,
+				55D5F4E96E58E80A9BE075A62B99B3E5 /* MagicalRecord+ErrorHandling.h in Headers */,
+				7396D260E247A059E560F4D711435166 /* MagicalRecord+iCloud.h in Headers */,
+				EEFCDFB937C4D9E3C89EDD0485D628BC /* MagicalRecord+Options.h in Headers */,
+				B16F4224F8CACBFC91D07BBCF381C8AA /* MagicalRecord+Setup.h in Headers */,
+				0CB013E7A53D87E5977DBD4E811729B6 /* MagicalRecord+ShorthandMethods.h in Headers */,
+				7873559748CF83ECA98B290906A2A1CB /* MagicalRecord.h in Headers */,
+				C03E1C4990D92786437C316F46B4B790 /* MagicalRecordDeprecationMacros.h in Headers */,
+				B02A9A4E97038E9DCB887654B227CC78 /* MagicalRecordInternal.h in Headers */,
+				6B46840CEE52037706A3A02ED9CA6D76 /* MagicalRecordLogging.h in Headers */,
+				F41AD49B45C81B64FC92CA86551E0D94 /* MagicalRecordShorthandMethodAliases.h in Headers */,
+				9AA4AC0E8E3BDC1750CEB828F232F37B /* NSAttributeDescription+MagicalDataImport.h in Headers */,
+				0CC68122FC72F8CA85AF3CB31E13D48A /* NSEntityDescription+MagicalDataImport.h in Headers */,
+				E813DC2098F7B887127FCB055ECCD34D /* NSManagedObject+MagicalAggregation.h in Headers */,
+				D795AEBC2A157E970C5D14E505E6ABA9 /* NSManagedObject+MagicalDataImport.h in Headers */,
+				5CB61EB8F692967D7EB2D7DC482AEAB4 /* NSManagedObject+MagicalFinders.h in Headers */,
+				B95BDFF24815E9B73F2BDD7F01C988C6 /* NSManagedObject+MagicalRecord.h in Headers */,
+				5DEE5A8FC16E2D0E9008B9369753F96F /* NSManagedObject+MagicalRequests.h in Headers */,
+				E665A405CE7E7E5795E2D98DAC78338A /* NSManagedObjectContext+MagicalChainSave.h in Headers */,
+				1C0C204A12EE245F005B522F24779AB2 /* NSManagedObjectContext+MagicalObserving.h in Headers */,
+				94646AED7EE109AA07397CAA26738D47 /* NSManagedObjectContext+MagicalRecord.h in Headers */,
+				6ACA8DF898BE1D9CA88E31C9B5D5A0D6 /* NSManagedObjectContext+MagicalSaves.h in Headers */,
+				FF1349EF9EF8B9A0E5BD1B1E3465E182 /* NSManagedObjectContext+MagicalThreading.h in Headers */,
+				F827A96A5AEAC8C9D30E7B2B00A2100E /* NSManagedObjectModel+MagicalRecord.h in Headers */,
+				28BD1167DA55C23B74212513033A0B7D /* NSNumber+MagicalDataImport.h in Headers */,
+				C0C7A99BE3C6745AF5B20BB5A521CE3F /* NSObject+MagicalDataImport.h in Headers */,
+				A4D818AAE9D413BA2071E7A5916CDEB0 /* NSPersistentStore+MagicalRecord.h in Headers */,
+				61939A655FD23A7E5766B4CD61B85403 /* NSPersistentStoreCoordinator+MagicalRecord.h in Headers */,
+				F54F4AB79E07F915DF48943A0DD3E105 /* NSRelationshipDescription+MagicalDataImport.h in Headers */,
+				EA5502D4BED26E9DA8407C44FC8F1882 /* NSString+MagicalDataImport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0D1D6D4BD6EBB951C4CFE3E5850159 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475CF2630B8E305C25F0AA067B9B43F7 /* UIViewController+VENTouchLock.h in Headers */,
+				CAC876BD0E7AF852D97A992D016F808C /* VENTouchLock.h in Headers */,
+				1A059B902901D0A9F4AAFB2B44F24F85 /* VENTouchLockAppearance.h in Headers */,
+				A2E9964C2BBF30F0F0F00212DF34915F /* VENTouchLockCreatePasscodeViewController.h in Headers */,
+				0F825D87179754AB7C4FF2F93C98E8F6 /* VENTouchLockEnterPasscodeViewController.h in Headers */,
+				3ED54F714A24960C1879D69AA8D78BEC /* VENTouchLockPasscodeCharacterView.h in Headers */,
+				1424AECD8860014D96B32DD8303A7316 /* VENTouchLockPasscodeView.h in Headers */,
+				E3CE6F6036186199B494709BD7A254FB /* VENTouchLockPasscodeViewController.h in Headers */,
+				962EC9D94AFF62D548D8FEEA76D9C1E1 /* VENTouchLockSplashViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		657D857047A6A935B5A2E9BD049194F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -589,38 +863,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71C8D49524619F947C6E6D639C1F6F07 /* Headers */ = {
+		7A1AB4F2857A91C94EBF31C6224BE147 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93743796D458854FB9E9AD91E1C2410B /* UIViewController+VENTouchLock.h in Headers */,
-				4503E24F5E5C34FBCEE3DF147A2A8AA3 /* VENTouchLock.h in Headers */,
-				21F19CD787105D3E6CE47268A365EBEB /* VENTouchLockAppearance.h in Headers */,
-				5610E8E23CF3D86DD09B5DC0E9AA1EE9 /* VENTouchLockCreatePasscodeViewController.h in Headers */,
-				0637BAFCE1B163CE02969B2F1F475031 /* VENTouchLockEnterPasscodeViewController.h in Headers */,
-				1CC4FA0DFBE62656D11653DDE161DA66 /* VENTouchLockPasscodeCharacterView.h in Headers */,
-				5FF660654EEA6241A49766D79945999A /* VENTouchLockPasscodeView.h in Headers */,
-				EE0A8454E5B82C6140CBF3F9B0CF365F /* VENTouchLockPasscodeViewController.h in Headers */,
-				0C7CABB9034995A122795897DD31EFB4 /* VENTouchLockSplashViewController.h in Headers */,
+				B10AE5E8483B7C21613040402C6DA27A /* SSKeychain.h in Headers */,
+				DDCB6A9A9741E00E7EA5F0FE032A076C /* SSKeychainQuery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C31CAE6A7D781DCA91ACB1C610954CD9 /* Headers */ = {
+		DB11D36B4EA54C5DEEB572DB747ADD8B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812A5286E834CB5ADA5F8DB89817FD6E /* SSKeychain.h in Headers */,
-				559CE78F1A9ABF7C61463619FA89388B /* SSKeychainQuery.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D727A6FDAF77B384D387EAF6A3BDE665 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B8148CE6EF3169DB4C4753D2BC77AD1 /* RECommonFunctions.h in Headers */,
-				410D43D459480F15010983E0B4A799FE /* RESideMenu.h in Headers */,
-				996CD6F01B9929D5799679BA772A8261 /* UIViewController+RESideMenu.h in Headers */,
+				D9E95AE77AE7234C96443D44FDE89EC3 /* RECommonFunctions.h in Headers */,
+				61DA81B9E9FF9A70CC3FEDE77D787F0D /* RESideMenu.h in Headers */,
+				29D3C11F430E00C2A452C320881A68FE /* UIViewController+RESideMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,24 +915,7 @@
 			);
 			name = Colours;
 			productName = Colours;
-			productReference = 7C01D2224EFEC17B0EC5F9385BDB4226 /* libColours.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2D2C63F68DED2B8CE768151FF240E7B2 /* RESideMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B43967FA137A3EF3E7B993DC6A0CBBF /* Build configuration list for PBXNativeTarget "RESideMenu" */;
-			buildPhases = (
-				1DC8232394AB1CB439EE7E4CB3143B0D /* Sources */,
-				65D5AE0737123E037EEB2F812E12A48A /* Frameworks */,
-				D727A6FDAF77B384D387EAF6A3BDE665 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RESideMenu;
-			productName = RESideMenu;
-			productReference = 5971AFD5FBEB284437F7C116717647A4 /* libRESideMenu.a */;
+			productReference = FC3EAA20E8CBB0C3FEE5240E593D406A /* libColours.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		53480ED0BE09FF49E34B1702D485CAAB /* Masonry */ = {
@@ -691,16 +932,51 @@
 			);
 			name = Masonry;
 			productName = Masonry;
-			productReference = 0CF9B550C9B45C70D6ED7CC97202D2F4 /* libMasonry.a */;
+			productReference = 042AAC6467F40442A30817DECB1A85CB /* libMasonry.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		75DD817639EA15E893BDC9C67156FF39 /* SSKeychain */ = {
+		606FD8AAC624A25CE63F229517BDAF44 /* RESideMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8DC2E80C04352205AA498094B549A0B /* Build configuration list for PBXNativeTarget "SSKeychain" */;
+			buildConfigurationList = A717CA38EF02DA108D4AE82E5F3F28C0 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
 			buildPhases = (
-				283080E40CB748B606307E4B3A2D711A /* Sources */,
-				E341BD316FBFB9E2CB39312158564499 /* Frameworks */,
-				C31CAE6A7D781DCA91ACB1C610954CD9 /* Headers */,
+				DCC55BFF5634A49A9EBD686E2EF86534 /* Sources */,
+				168D2F4F98A115433037FA5E72AAD383 /* Frameworks */,
+				DB11D36B4EA54C5DEEB572DB747ADD8B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RESideMenu;
+			productName = RESideMenu;
+			productReference = 08DCBB244E54F285B402413A2D90175C /* libRESideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		80528BF07D7928170B91B277905694CE /* VENTouchLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99357FA5131526AC3C8BB39C71790EB4 /* Build configuration list for PBXNativeTarget "VENTouchLock" */;
+			buildPhases = (
+				AE7F184A5282FD32D01A0BD2A52C7EF9 /* Sources */,
+				61ACD6CAEFFF29D50F5C69545F0A8D88 /* Frameworks */,
+				4E0D1D6D4BD6EBB951C4CFE3E5850159 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B29630177F861D73D9F3AD38F8BFDD10 /* PBXTargetDependency */,
+			);
+			name = VENTouchLock;
+			productName = VENTouchLock;
+			productReference = 018444E07DA2E008DAAA1EFFA4CCEA0A /* libVENTouchLock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BCE3572EAD756EEC553C151B83E51F6C /* SSKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26D1E8A606D88210D352E1EB85483C7 /* Build configuration list for PBXNativeTarget "SSKeychain" */;
+			buildPhases = (
+				8877F7C0073D97208C7B6DDAE92CADFB /* Sources */,
+				027FA21B2BC258A7DFC620B396169EFD /* Frameworks */,
+				7A1AB4F2857A91C94EBF31C6224BE147 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -708,47 +984,47 @@
 			);
 			name = SSKeychain;
 			productName = SSKeychain;
-			productReference = 097B517EA2633CE6583E5CFD35527CEF /* libSSKeychain.a */;
+			productReference = 3723D944749952660606CB5BBC9C3113 /* libSSKeychain.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8D014FE4FB33F404620217C7F31E6C52 /* VENTouchLock */ = {
+		D2F747D82BF787CCB3B59B6A8D046B2F /* Pods-PasswordMenu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 199A608E68D35269292E5A5B870A23BF /* Build configuration list for PBXNativeTarget "VENTouchLock" */;
+			buildConfigurationList = 625453D22277B913B991ADBCAB6BF446 /* Build configuration list for PBXNativeTarget "Pods-PasswordMenu" */;
 			buildPhases = (
-				2A3B71B6D54E3F50A004D0DA78D17B57 /* Sources */,
-				FB5425817532AFC52C24F949A1485105 /* Frameworks */,
-				71C8D49524619F947C6E6D639C1F6F07 /* Headers */,
+				89B9E2B3DF9AD2AE5F027E79E5E55A79 /* Sources */,
+				3A9F9355DE425A829A7489AEE1EB4EA7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2B7ED6ECE8497CFAC60A92CB9D5F07C /* PBXTargetDependency */,
-			);
-			name = VENTouchLock;
-			productName = VENTouchLock;
-			productReference = 901B3D75A3585A8B886159CB4195562D /* libVENTouchLock.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A538FA952DC80480F58ACCAB79C66791 /* Pods-PasswordMenu */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2EA7C4C7B8335AF2DE341D1B007D4B89 /* Build configuration list for PBXNativeTarget "Pods-PasswordMenu" */;
-			buildPhases = (
-				E18E38D9100048B46C90A3679B364DC8 /* Sources */,
-				A003101548541A1C0931909414350491 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				436BF30513C42B415F8387C15EA403A9 /* PBXTargetDependency */,
-				D4DA40B65179F4B95F675527DA1DFF81 /* PBXTargetDependency */,
-				094F1DA3C36EC4CF11E29680B157D9B9 /* PBXTargetDependency */,
-				1A483CC93725659981FBDD37B691ED8D /* PBXTargetDependency */,
-				473B24889B0C85FEBF3FE5B3DE342AD6 /* PBXTargetDependency */,
-				C412F2C73F6728B09CC84F77EA1C3AA3 /* PBXTargetDependency */,
+				8BCDE65BCCA035EEF96472570F1796FC /* PBXTargetDependency */,
+				8057226AEE84DBE77E7AB0A0DCBECF67 /* PBXTargetDependency */,
+				C9CF21A0AB137682ABD42FBB01C4610B /* PBXTargetDependency */,
+				4602A0DAB9010181596DDDABF0F7922E /* PBXTargetDependency */,
+				D32C70DF81C80841F1A2DBAFFBCB0104 /* PBXTargetDependency */,
+				8232D8087AE72602FC046ECE9BCB6329 /* PBXTargetDependency */,
+				F55C73C809439F6BE3B07DAA7CDB56B3 /* PBXTargetDependency */,
 			);
 			name = "Pods-PasswordMenu";
 			productName = "Pods-PasswordMenu";
-			productReference = 0A1317F52411BB438DB48B4451735D68 /* libPods-PasswordMenu.a */;
+			productReference = 795671C509B76436211977DE3B159111 /* libPods-PasswordMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A82A958F02B972797A1AA7A1D549C7CF /* Build configuration list for PBXNativeTarget "MagicalRecord" */;
+			buildPhases = (
+				36210F3CA5E3C65DECFE396841EDE840 /* Sources */,
+				08B3E641A452897ACCFC17DFB5EB7B1A /* Frameworks */,
+				1C30479A710FF118D01DD9594B50833A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicalRecord;
+			productName = MagicalRecord;
+			productReference = 70B79B2F735C110DFF417315CAADA22B /* libMagicalRecord.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
@@ -765,7 +1041,7 @@
 			);
 			name = MBProgressHUD;
 			productName = MBProgressHUD;
-			productReference = 623D53029821BCFDBDC5C475D9615AEF /* libMBProgressHUD.a */;
+			productReference = C1453DDC474C4D0C5182F905964F1DA9 /* libMBProgressHUD.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -785,17 +1061,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 279BF1A238A1494DEB1F13F39C3D3BAE /* Products */;
+			productRefGroup = BDED514A8349644B3D9A632DC8D61F68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				14D2008578FFE471DE50AE7147D301A4 /* Colours */,
+				D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */,
 				53480ED0BE09FF49E34B1702D485CAAB /* Masonry */,
 				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
-				A538FA952DC80480F58ACCAB79C66791 /* Pods-PasswordMenu */,
-				2D2C63F68DED2B8CE768151FF240E7B2 /* RESideMenu */,
-				75DD817639EA15E893BDC9C67156FF39 /* SSKeychain */,
-				8D014FE4FB33F404620217C7F31E6C52 /* VENTouchLock */,
+				D2F747D82BF787CCB3B59B6A8D046B2F /* Pods-PasswordMenu */,
+				606FD8AAC624A25CE63F229517BDAF44 /* RESideMenu */,
+				BCE3572EAD756EEC553C151B83E51F6C /* SSKeychain */,
+				80528BF07D7928170B91B277905694CE /* VENTouchLock */,
 			);
 		};
 /* End PBXProject section */
@@ -810,41 +1087,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DC8232394AB1CB439EE7E4CB3143B0D /* Sources */ = {
+		36210F3CA5E3C65DECFE396841EDE840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673F92E4739D9EC6D7C0852E58D22923 /* RECommonFunctions.m in Sources */,
-				8FF6F0E530DF916D1DCB3E89DB39FEF1 /* RESideMenu-dummy.m in Sources */,
-				667BE7B49468CE56C71431DF7C5CF3BA /* RESideMenu.m in Sources */,
-				3F825F3E1F2CDE0B6A15B0A227AA2BA5 /* UIViewController+RESideMenu.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		283080E40CB748B606307E4B3A2D711A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				372B8D53A61537AAA612E97BD1061615 /* SSKeychain-dummy.m in Sources */,
-				44881E93E0DFCC9EC3801F6232857866 /* SSKeychain.m in Sources */,
-				B8A065715E0F5DE89376BB173F868F5F /* SSKeychainQuery.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2A3B71B6D54E3F50A004D0DA78D17B57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				118436B535E8553AB8807CC56159E294 /* UIViewController+VENTouchLock.m in Sources */,
-				1952435E37740B14665177EE434237EF /* VENTouchLock-dummy.m in Sources */,
-				BE2F8D8A2AAF4BF186BB6ADC7F0F84BB /* VENTouchLock.m in Sources */,
-				FB60FD2B9CE3E5C50856B7C2879D53F4 /* VENTouchLockAppearance.m in Sources */,
-				182AC876EB653D33B77DA66717D43AD5 /* VENTouchLockCreatePasscodeViewController.m in Sources */,
-				C48092F81586541C840E0018EC969D31 /* VENTouchLockEnterPasscodeViewController.m in Sources */,
-				782C445A0ECCC404BED5EDE9C2B20214 /* VENTouchLockPasscodeCharacterView.m in Sources */,
-				9228AE1C3A7FC54F6465ED25A7BE3A03 /* VENTouchLockPasscodeView.m in Sources */,
-				D342F58F1AC7C3D0437135E8315220CA /* VENTouchLockPasscodeViewController.m in Sources */,
-				B6444C06B50AB5DD18FD7078FF024A9B /* VENTouchLockSplashViewController.m in Sources */,
+				0F514C78FB46E4B77E8DC429F32D8D40 /* MagicalImportFunctions.m in Sources */,
+				D43288DE15B97A4F15AAFA5B492CD855 /* MagicalRecord+Actions.m in Sources */,
+				DB8D6BABE5069CFDC22A75EB9E325FB5 /* MagicalRecord+ErrorHandling.m in Sources */,
+				B8BA9CCE7C2B9D181C1FCC5991594757 /* MagicalRecord+iCloud.m in Sources */,
+				4BB80FAF34FCCED1EA4E6004267FD9D1 /* MagicalRecord+Options.m in Sources */,
+				55B8E6D5B487508D715BDC40931BA27B /* MagicalRecord+Setup.m in Sources */,
+				F9A02E8724718E66B61C06C4140C3713 /* MagicalRecord+ShorthandMethods.m in Sources */,
+				FB9E135707483737B2509DFA10868212 /* MagicalRecord-dummy.m in Sources */,
+				D253AFA70796C022EB7E2F373EA1B465 /* MagicalRecordInternal.m in Sources */,
+				FDE7B323829C52FE96BE691BFCBCD2FE /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				A3C03D25F1E09497B4D0D99198C6EDB0 /* NSEntityDescription+MagicalDataImport.m in Sources */,
+				454CA8010FDB5FE895E10D6095383841 /* NSManagedObject+MagicalAggregation.m in Sources */,
+				1B854600A1DC64047BB7E7B3E2C8602E /* NSManagedObject+MagicalDataImport.m in Sources */,
+				12D81544B504091EEBE14BB68DD7A17C /* NSManagedObject+MagicalFinders.m in Sources */,
+				3BA5D00ABB3F39A21F29F2E94F125BDB /* NSManagedObject+MagicalRecord.m in Sources */,
+				4A675A2B2176CB71CB4A531DFC3F1933 /* NSManagedObject+MagicalRequests.m in Sources */,
+				24FCBB9B9A04DC30C96B60B547374E0E /* NSManagedObjectContext+MagicalChainSave.m in Sources */,
+				F9913CD88631EC2F3747484527439371 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
+				06A4D26C8620B1A3C874AD935E3D5939 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				B12B1AF86093EFE4733E87F510DB84AF /* NSManagedObjectContext+MagicalSaves.m in Sources */,
+				503437F9985748C4CE533F93BB940EED /* NSManagedObjectContext+MagicalThreading.m in Sources */,
+				DB918F24C2FEF4BF10CFC439E456E802 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				41B1887B83020F9BC422058BDF4435E1 /* NSNumber+MagicalDataImport.m in Sources */,
+				CB8ADEA4F62DD66212CFE27EC1E1B412 /* NSObject+MagicalDataImport.m in Sources */,
+				8396CB5D6172F0536109191068752B62 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				CDB1D6D80039C0A064983A8CE5EF516E /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				C7225BD91D67910CCA5DBF62A641208C /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
+				0FDC92DD370B285150E8C817973E5607 /* NSString+MagicalDataImport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +1128,41 @@
 			files = (
 				D683EA1ABEA0456FD9772400BC20468F /* Colours-dummy.m in Sources */,
 				CD81C534197595DB79D3750CE98A3646 /* Colours.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8877F7C0073D97208C7B6DDAE92CADFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6B243AC21BB73DCAA34307D2C62AEE /* SSKeychain-dummy.m in Sources */,
+				4D46F1FB1ADB87891C87B094EE13471A /* SSKeychain.m in Sources */,
+				BC65B4A2BEB04297F8768D4E9C074402 /* SSKeychainQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B9E2B3DF9AD2AE5F027E79E5E55A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A699BDEB51F41F8BAF5CFC486E9A8EC /* Pods-PasswordMenu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7F184A5282FD32D01A0BD2A52C7EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41BCAD6C6D73EC6126824F84A3A84759 /* UIViewController+VENTouchLock.m in Sources */,
+				3753EB107B56EBB2B4CA243DD6266388 /* VENTouchLock-dummy.m in Sources */,
+				B22B9DD749E73BFA9C955D5FA34FE77A /* VENTouchLock.m in Sources */,
+				54B4A4A953FF6F54D36341A79914E8A6 /* VENTouchLockAppearance.m in Sources */,
+				287F78FD999EEF50441CC944527A3400 /* VENTouchLockCreatePasscodeViewController.m in Sources */,
+				AE2A33408A2208B94B23EDBA508C3278 /* VENTouchLockEnterPasscodeViewController.m in Sources */,
+				553A81C9EAAF826E11D861C497E05D3E /* VENTouchLockPasscodeCharacterView.m in Sources */,
+				AE4031B01EA85FDBB750FA0A08145352 /* VENTouchLockPasscodeView.m in Sources */,
+				46EB2849ECF7D04820BE4532C9D61AB0 /* VENTouchLockPasscodeViewController.m in Sources */,
+				181A6219B32A7631438FBC8F9684D48B /* VENTouchLockSplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,83 +1184,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E18E38D9100048B46C90A3679B364DC8 /* Sources */ = {
+		DCC55BFF5634A49A9EBD686E2EF86534 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1781362E1360E61A0CFF2C4FE3FEC14 /* Pods-PasswordMenu-dummy.m in Sources */,
+				17EE390111F74BF38304EC8AB094CD9C /* RECommonFunctions.m in Sources */,
+				E070E83B8A151FE5612D14E256ACDFBD /* RESideMenu-dummy.m in Sources */,
+				F9EF28F4E21707E183DEC7B29C4A4084 /* RESideMenu.m in Sources */,
+				BB1D4955819F9773B179CAFD8CDAD9D5 /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		094F1DA3C36EC4CF11E29680B157D9B9 /* PBXTargetDependency */ = {
+		4602A0DAB9010181596DDDABF0F7922E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 53480ED0BE09FF49E34B1702D485CAAB /* Masonry */;
-			targetProxy = 26B0A9E13E3E275E8BA5CD28A30985A3 /* PBXContainerItemProxy */;
+			targetProxy = CAFBD53D9360C86705819C3A747459CE /* PBXContainerItemProxy */;
 		};
-		1A483CC93725659981FBDD37B691ED8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RESideMenu;
-			target = 2D2C63F68DED2B8CE768151FF240E7B2 /* RESideMenu */;
-			targetProxy = 986994A7320D5926F550AB6FEF19EC83 /* PBXContainerItemProxy */;
-		};
-		436BF30513C42B415F8387C15EA403A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Colours;
-			target = 14D2008578FFE471DE50AE7147D301A4 /* Colours */;
-			targetProxy = FE36DD30EEE5CFAD349E91A6293DF5AE /* PBXContainerItemProxy */;
-		};
-		473B24889B0C85FEBF3FE5B3DE342AD6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SSKeychain;
-			target = 75DD817639EA15E893BDC9C67156FF39 /* SSKeychain */;
-			targetProxy = 0A9D3111EA3B3FEBA66D87BBEB8CE778 /* PBXContainerItemProxy */;
-		};
-		C412F2C73F6728B09CC84F77EA1C3AA3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = VENTouchLock;
-			target = 8D014FE4FB33F404620217C7F31E6C52 /* VENTouchLock */;
-			targetProxy = 350C289D3D11FC170723C269EF9D9E43 /* PBXContainerItemProxy */;
-		};
-		D2B7ED6ECE8497CFAC60A92CB9D5F07C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SSKeychain;
-			target = 75DD817639EA15E893BDC9C67156FF39 /* SSKeychain */;
-			targetProxy = 9730AFAD20D3116128766D6D5E8F6673 /* PBXContainerItemProxy */;
-		};
-		D4DA40B65179F4B95F675527DA1DFF81 /* PBXTargetDependency */ = {
+		8057226AEE84DBE77E7AB0A0DCBECF67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBProgressHUD;
 			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
-			targetProxy = FAA03CB0DCB48E37252C64FE1536B7CB /* PBXContainerItemProxy */;
+			targetProxy = D6C0171BED2A4396DC781611E924A35A /* PBXContainerItemProxy */;
+		};
+		8232D8087AE72602FC046ECE9BCB6329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSKeychain;
+			target = BCE3572EAD756EEC553C151B83E51F6C /* SSKeychain */;
+			targetProxy = C7FB96960D653C19AA1915D6F212CFD5 /* PBXContainerItemProxy */;
+		};
+		8BCDE65BCCA035EEF96472570F1796FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Colours;
+			target = 14D2008578FFE471DE50AE7147D301A4 /* Colours */;
+			targetProxy = 8BF22E0911F57313E5B06AF89A208D30 /* PBXContainerItemProxy */;
+		};
+		B29630177F861D73D9F3AD38F8BFDD10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSKeychain;
+			target = BCE3572EAD756EEC553C151B83E51F6C /* SSKeychain */;
+			targetProxy = 2B975D7178B61C8F387D6CD1FF87ADD8 /* PBXContainerItemProxy */;
+		};
+		C9CF21A0AB137682ABD42FBB01C4610B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MagicalRecord;
+			target = D54AB3ECEB9A8FBA15D4F73CBE326692 /* MagicalRecord */;
+			targetProxy = DD36E466E8C0F0CA56DF1D81C6F43B78 /* PBXContainerItemProxy */;
+		};
+		D32C70DF81C80841F1A2DBAFFBCB0104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RESideMenu;
+			target = 606FD8AAC624A25CE63F229517BDAF44 /* RESideMenu */;
+			targetProxy = 7C81E1D2189BBB012A6B129E773FCA42 /* PBXContainerItemProxy */;
+		};
+		F55C73C809439F6BE3B07DAA7CDB56B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VENTouchLock;
+			target = 80528BF07D7928170B91B277905694CE /* VENTouchLock */;
+			targetProxy = ECAE762FF2DAFDFA566F6B818FD5CA48 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0544CCFA2CA255EACB7BBC6AD07DCB4A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ACC8FA2F1E6DC6E3AEFEEB64CE1354 /* RESideMenu.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		0651B527A262089F1FACCA47DD1E1FBE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB80C352DA6716C4E05A7EFC07CF62B0 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 137632D003BAAC0CF4AA8E93C202837E /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -967,18 +1267,19 @@
 			};
 			name = Release;
 		};
-		076FCB16829C75AF1CC99680DD8E2C91 /* Debug */ = {
+		103363A1E3E926DC268F17F9D54FB7AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD00D0A930BA04467EC14A270CC50AD /* Pods-PasswordMenu.debug.xcconfig */;
+			baseConfigurationReference = 2CE4E02C4B8ABE1CCD383F5817FBB47F /* MagicalRecord.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -986,7 +1287,7 @@
 		};
 		1CDE44210422AA6A63FBB843C41F2581 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB80C352DA6716C4E05A7EFC07CF62B0 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = 137632D003BAAC0CF4AA8E93C202837E /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
@@ -1002,9 +1303,44 @@
 			};
 			name = Debug;
 		};
+		2EFFC644053E9595DBCA0764002B7C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18ACA2C875E4728DE8BCB5AA06F4E5A6 /* VENTouchLock.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VENTouchLock/VENTouchLock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		33D092771B34A3FF4C4D482A1E873FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDB9CE33BC3BFE646BB92C00805E0F3 /* Pods-PasswordMenu.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3AE8D652463BDF64FAC68D509C03F700 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7A1BF70E12BA3BB473FC7AA18FCD2C7 /* Masonry.xcconfig */;
+			baseConfigurationReference = 814BD6F797FD3A0257EA6BD6E6DCD745 /* Masonry.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
@@ -1022,7 +1358,7 @@
 		};
 		3B98619D88B1946D2C23BDB23684414E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B2D0B23FCF4404FB70736414EB3942 /* Colours.xcconfig */;
+			baseConfigurationReference = 2ED73FA6404317B91EEBAE813FBBD220 /* Colours.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Colours/Colours-prefix.pch";
@@ -1040,7 +1376,7 @@
 		};
 		4D8770C87AB72FE52243D1849D3AFB45 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7A1BF70E12BA3BB473FC7AA18FCD2C7 /* Masonry.xcconfig */;
+			baseConfigurationReference = 814BD6F797FD3A0257EA6BD6E6DCD745 /* Masonry.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
@@ -1056,62 +1392,9 @@
 			};
 			name = Debug;
 		};
-		57D8893B5328B902FD9D8F7C2FE10E29 /* Release */ = {
+		677D19182346FA9E371A689FFC8B6D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECDB9CE33BC3BFE646BB92C00805E0F3 /* Pods-PasswordMenu.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		5C9DCA5FB0F360409E06A0246BE18833 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C318543D17A4CB10CD85696461CCD301 /* VENTouchLock.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VENTouchLock/VENTouchLock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		66D59614AD783A8EA6F69AD619C8796D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7ACC8FA2F1E6DC6E3AEFEEB64CE1354 /* RESideMenu.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8357DEF2D0F4AAD09E1D1A50AC347E7F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD8395C3E258A2CBB2AB01097C99768B /* SSKeychain.xcconfig */;
+			baseConfigurationReference = 389503ACD4386115E0059BF1F7754B62 /* SSKeychain.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SSKeychain/SSKeychain-prefix.pch";
@@ -1127,9 +1410,62 @@
 			};
 			name = Debug;
 		};
+		7D50F7452199A7AF1D1FC9D94C5A94AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E108A25E66296399AF1C5802C70F2F22 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9BD635431407D4299A6024A47CA81474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389503ACD4386115E0059BF1F7754B62 /* SSKeychain.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SSKeychain/SSKeychain-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A3DBF9902B7FC50B24C08832B359E1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD00D0A930BA04467EC14A270CC50AD /* Pods-PasswordMenu.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		A6FBE70A2560DEB7038A7F0AFD8C20DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7B2D0B23FCF4404FB70736414EB3942 /* Colours.xcconfig */;
+			baseConfigurationReference = 2ED73FA6404317B91EEBAE813FBBD220 /* Colours.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Colours/Colours-prefix.pch";
@@ -1144,6 +1480,24 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		B7BB01D600674EE0D1EEB3E62CFA4C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E108A25E66296399AF1C5802C70F2F22 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		C074F63C9EE7CB4D8C618390A32CEC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1184,12 +1538,30 @@
 			};
 			name = Debug;
 		};
-		C867B22BEFBE4FF6F1F38FA62EB81F04 /* Release */ = {
+		C12BEBADCE0037BC833DE3BE04D1BC4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD8395C3E258A2CBB2AB01097C99768B /* SSKeychain.xcconfig */;
+			baseConfigurationReference = 2CE4E02C4B8ABE1CCD383F5817FBB47F /* MagicalRecord.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SSKeychain/SSKeychain-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/MagicalRecord/MagicalRecord-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D30AAF5CAD01E7D7133F26A0901064DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18ACA2C875E4728DE8BCB5AA06F4E5A6 /* VENTouchLock.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VENTouchLock/VENTouchLock-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -1236,36 +1608,9 @@
 			};
 			name = Release;
 		};
-		F2891D03F414E0EC1798F4CE50338DAF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C318543D17A4CB10CD85696461CCD301 /* VENTouchLock.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/VENTouchLock/VENTouchLock-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		199A608E68D35269292E5A5B870A23BF /* Build configuration list for PBXNativeTarget "VENTouchLock" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C9DCA5FB0F360409E06A0246BE18833 /* Debug */,
-				F2891D03F414E0EC1798F4CE50338DAF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1275,20 +1620,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2EA7C4C7B8335AF2DE341D1B007D4B89 /* Build configuration list for PBXNativeTarget "Pods-PasswordMenu" */ = {
+		625453D22277B913B991ADBCAB6BF446 /* Build configuration list for PBXNativeTarget "Pods-PasswordMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				076FCB16829C75AF1CC99680DD8E2C91 /* Debug */,
-				57D8893B5328B902FD9D8F7C2FE10E29 /* Release */,
+				A3DBF9902B7FC50B24C08832B359E1D5 /* Debug */,
+				33D092771B34A3FF4C4D482A1E873FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B43967FA137A3EF3E7B993DC6A0CBBF /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+		99357FA5131526AC3C8BB39C71790EB4 /* Build configuration list for PBXNativeTarget "VENTouchLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0544CCFA2CA255EACB7BBC6AD07DCB4A /* Debug */,
-				66D59614AD783A8EA6F69AD619C8796D /* Release */,
+				2EFFC644053E9595DBCA0764002B7C30 /* Debug */,
+				D30AAF5CAD01E7D7133F26A0901064DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A717CA38EF02DA108D4AE82E5F3F28C0 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D50F7452199A7AF1D1FC9D94C5A94AA /* Debug */,
+				B7BB01D600674EE0D1EEB3E62CFA4C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A82A958F02B972797A1AA7A1D549C7CF /* Build configuration list for PBXNativeTarget "MagicalRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				103363A1E3E926DC268F17F9D54FB7AB /* Debug */,
+				C12BEBADCE0037BC833DE3BE04D1BC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1302,20 +1665,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8DC2E80C04352205AA498094B549A0B /* Build configuration list for PBXNativeTarget "SSKeychain" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8357DEF2D0F4AAD09E1D1A50AC347E7F /* Debug */,
-				C867B22BEFBE4FF6F1F38FA62EB81F04 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DF1A92FB0EA2F1ACB5DE7E4D6CC73080 /* Build configuration list for PBXNativeTarget "Colours" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6FBE70A2560DEB7038A7F0AFD8C20DD /* Debug */,
 				3B98619D88B1946D2C23BDB23684414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26D1E8A606D88210D352E1EB85483C7 /* Build configuration list for PBXNativeTarget "SSKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				677D19182346FA9E371A689FFC8B6D6F /* Debug */,
+				9BD635431407D4299A6024A47CA81474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

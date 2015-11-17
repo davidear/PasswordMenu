@@ -9,6 +9,7 @@ pod 'MBProgressHUD', '~> 0.9.1'
 pod 'RESideMenu'
 pod 'Colours'
 pod 'Masonry'
+pod 'MagicalRecord'
 end
 
 target 'PasswordMenuTests' do
