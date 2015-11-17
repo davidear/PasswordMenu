@@ -1,4 +1,5 @@
 PODS:
+  - Colours (5.8.0)
   - MBProgressHUD (0.9.1)
   - RESideMenu (4.0.7)
   - SSKeychain (1.2.3)
@@ -6,11 +7,13 @@ PODS:
     - SSKeychain (~> 1.0)
 
 DEPENDENCIES:
+  - Colours
   - MBProgressHUD (~> 0.9.1)
   - RESideMenu
   - VENTouchLock (~> 1.0)
 
 SPEC CHECKSUMS:
+  Colours: c186cc76afa2ca86f5ca5e68f610f9be17b48337
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
