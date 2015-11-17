@@ -1,1 +1,16 @@
+PODS:
+  - MBProgressHUD (0.9.1)
+  - SSKeychain (1.2.3)
+  - VENTouchLock (1.11.0):
+    - SSKeychain (~> 1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 0.9.1)
+  - VENTouchLock (~> 1.0)
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  VENTouchLock: f3145d6fbff243d6692dfb1107b88db06dc216c9
+
 COCOAPODS: 0.39.0

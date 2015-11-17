@@ -4,7 +4,8 @@
 # use_frameworks!
 
 target 'PasswordMenu' do
-
+pod 'VENTouchLock', '~> 1.0'
+pod 'MBProgressHUD', '~> 0.9.1'
 end
 
 target 'PasswordMenuTests' do
