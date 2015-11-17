@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
+		B263DC031BFB2A8200CD8D9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC021BFB2A8200CD8D9A /* ViewController.swift */; };
+		B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC041BFB2A8200CD8D9A /* Main.storyboard */; };
+		B263DC081BFB2A8200CD8D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B263DC071BFB2A8200CD8D9A /* Assets.xcassets */; };
+		B263DC0B1BFB2A8200CD8D9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC091BFB2A8200CD8D9A /* LaunchScreen.storyboard */; };
+		B263DC161BFB2A8200CD8D9A /* PasswordMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC151BFB2A8200CD8D9A /* PasswordMenuTests.swift */; };
+		B263DC211BFB2A8200CD8D9A /* PasswordMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B263DC121BFB2A8200CD8D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B263DBF51BFB2A8200CD8D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B263DBFC1BFB2A8200CD8D9A;
+			remoteInfo = PasswordMenu;
+		};
+		B263DC1D1BFB2A8200CD8D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B263DBF51BFB2A8200CD8D9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B263DBFC1BFB2A8200CD8D9A;
+			remoteInfo = PasswordMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B263DC021BFB2A8200CD8D9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B263DC051BFB2A8200CD8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B263DC071BFB2A8200CD8D9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B263DC0A1BFB2A8200CD8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B263DC0C1BFB2A8200CD8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B263DC111BFB2A8200CD8D9A /* PasswordMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B263DC151BFB2A8200CD8D9A /* PasswordMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMenuTests.swift; sourceTree = "<group>"; };
+		B263DC171BFB2A8200CD8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B263DC1C1BFB2A8200CD8D9A /* PasswordMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMenuUITests.swift; sourceTree = "<group>"; };
+		B263DC221BFB2A8200CD8D9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B263DBFA1BFB2A8200CD8D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC0E1BFB2A8200CD8D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC191BFB2A8200CD8D9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B263DBF41BFB2A8200CD8D9A = {
+			isa = PBXGroup;
+			children = (
+				B263DBFF1BFB2A8200CD8D9A /* PasswordMenu */,
+				B263DC141BFB2A8200CD8D9A /* PasswordMenuTests */,
+				B263DC1F1BFB2A8200CD8D9A /* PasswordMenuUITests */,
+				B263DBFE1BFB2A8200CD8D9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B263DBFE1BFB2A8200CD8D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */,
+				B263DC111BFB2A8200CD8D9A /* PasswordMenuTests.xctest */,
+				B263DC1C1BFB2A8200CD8D9A /* PasswordMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B263DBFF1BFB2A8200CD8D9A /* PasswordMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */,
+				B263DC021BFB2A8200CD8D9A /* ViewController.swift */,
+				B263DC041BFB2A8200CD8D9A /* Main.storyboard */,
+				B263DC071BFB2A8200CD8D9A /* Assets.xcassets */,
+				B263DC091BFB2A8200CD8D9A /* LaunchScreen.storyboard */,
+				B263DC0C1BFB2A8200CD8D9A /* Info.plist */,
+			);
+			path = PasswordMenu;
+			sourceTree = "<group>";
+		};
+		B263DC141BFB2A8200CD8D9A /* PasswordMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				B263DC151BFB2A8200CD8D9A /* PasswordMenuTests.swift */,
+				B263DC171BFB2A8200CD8D9A /* Info.plist */,
+			);
+			path = PasswordMenuTests;
+			sourceTree = "<group>";
+		};
+		B263DC1F1BFB2A8200CD8D9A /* PasswordMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */,
+				B263DC221BFB2A8200CD8D9A /* Info.plist */,
+			);
+			path = PasswordMenuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B263DBFC1BFB2A8200CD8D9A /* PasswordMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B263DC251BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenu" */;
+			buildPhases = (
+				B263DBF91BFB2A8200CD8D9A /* Sources */,
+				B263DBFA1BFB2A8200CD8D9A /* Frameworks */,
+				B263DBFB1BFB2A8200CD8D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordMenu;
+			productName = PasswordMenu;
+			productReference = B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B263DC101BFB2A8200CD8D9A /* PasswordMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B263DC281BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenuTests" */;
+			buildPhases = (
+				B263DC0D1BFB2A8200CD8D9A /* Sources */,
+				B263DC0E1BFB2A8200CD8D9A /* Frameworks */,
+				B263DC0F1BFB2A8200CD8D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B263DC131BFB2A8200CD8D9A /* PBXTargetDependency */,
+			);
+			name = PasswordMenuTests;
+			productName = PasswordMenuTests;
+			productReference = B263DC111BFB2A8200CD8D9A /* PasswordMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B263DC1B1BFB2A8200CD8D9A /* PasswordMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B263DC2B1BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenuUITests" */;
+			buildPhases = (
+				B263DC181BFB2A8200CD8D9A /* Sources */,
+				B263DC191BFB2A8200CD8D9A /* Frameworks */,
+				B263DC1A1BFB2A8200CD8D9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B263DC1E1BFB2A8200CD8D9A /* PBXTargetDependency */,
+			);
+			name = PasswordMenuUITests;
+			productName = PasswordMenuUITests;
+			productReference = B263DC1C1BFB2A8200CD8D9A /* PasswordMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B263DBF51BFB2A8200CD8D9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DaiFengyi;
+				TargetAttributes = {
+					B263DBFC1BFB2A8200CD8D9A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					B263DC101BFB2A8200CD8D9A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B263DBFC1BFB2A8200CD8D9A;
+					};
+					B263DC1B1BFB2A8200CD8D9A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B263DBFC1BFB2A8200CD8D9A;
+					};
+				};
+			};
+			buildConfigurationList = B263DBF81BFB2A8200CD8D9A /* Build configuration list for PBXProject "PasswordMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B263DBF41BFB2A8200CD8D9A;
+			productRefGroup = B263DBFE1BFB2A8200CD8D9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B263DBFC1BFB2A8200CD8D9A /* PasswordMenu */,
+				B263DC101BFB2A8200CD8D9A /* PasswordMenuTests */,
+				B263DC1B1BFB2A8200CD8D9A /* PasswordMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B263DBFB1BFB2A8200CD8D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B263DC0B1BFB2A8200CD8D9A /* LaunchScreen.storyboard in Resources */,
+				B263DC081BFB2A8200CD8D9A /* Assets.xcassets in Resources */,
+				B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC0F1BFB2A8200CD8D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC1A1BFB2A8200CD8D9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B263DBF91BFB2A8200CD8D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B263DC031BFB2A8200CD8D9A /* ViewController.swift in Sources */,
+				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC0D1BFB2A8200CD8D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B263DC161BFB2A8200CD8D9A /* PasswordMenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B263DC181BFB2A8200CD8D9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B263DC211BFB2A8200CD8D9A /* PasswordMenuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B263DC131BFB2A8200CD8D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B263DBFC1BFB2A8200CD8D9A /* PasswordMenu */;
+			targetProxy = B263DC121BFB2A8200CD8D9A /* PBXContainerItemProxy */;
+		};
+		B263DC1E1BFB2A8200CD8D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B263DBFC1BFB2A8200CD8D9A /* PasswordMenu */;
+			targetProxy = B263DC1D1BFB2A8200CD8D9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B263DC041BFB2A8200CD8D9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B263DC051BFB2A8200CD8D9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B263DC091BFB2A8200CD8D9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B263DC0A1BFB2A8200CD8D9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B263DC231BFB2A8200CD8D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B263DC241BFB2A8200CD8D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B263DC261BFB2A8200CD8D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PasswordMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B263DC271BFB2A8200CD8D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PasswordMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B263DC291BFB2A8200CD8D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PasswordMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordMenu.app/PasswordMenu";
+			};
+			name = Debug;
+		};
+		B263DC2A1BFB2A8200CD8D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PasswordMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PasswordMenu.app/PasswordMenu";
+			};
+			name = Release;
+		};
+		B263DC2C1BFB2A8200CD8D9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PasswordMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PasswordMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B263DC2D1BFB2A8200CD8D9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PasswordMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PasswordMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B263DBF81BFB2A8200CD8D9A /* Build configuration list for PBXProject "PasswordMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B263DC231BFB2A8200CD8D9A /* Debug */,
+				B263DC241BFB2A8200CD8D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B263DC251BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B263DC261BFB2A8200CD8D9A /* Debug */,
+				B263DC271BFB2A8200CD8D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B263DC281BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B263DC291BFB2A8200CD8D9A /* Debug */,
+				B263DC2A1BFB2A8200CD8D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B263DC2B1BFB2A8200CD8D9A /* Build configuration list for PBXNativeTarget "PasswordMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B263DC2C1BFB2A8200CD8D9A /* Debug */,
+				B263DC2D1BFB2A8200CD8D9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B263DBF51BFB2A8200CD8D9A /* Project object */;
+}
