@@ -51,6 +51,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func setupMagicalRecord() {
         MagicalRecord.setupCoreDataStackWithStoreNamed("myDatabase")
+        let catList = Category .MR_findAll()
+        if catList.count == 0 {
+            let array = ["网站","邮箱","游戏","聊天","银行","证券"]
+            for str in array {
+                let cat = Category.MR_createEntity()
+                cat.name = str
+                cat.itemList = NSOrderedSet()
+                NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+            }
+        }
     }
 }
 

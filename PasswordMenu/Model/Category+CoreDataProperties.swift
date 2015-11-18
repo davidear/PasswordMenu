@@ -15,6 +15,6 @@ import CoreData
 extension Category {
 
     @NSManaged var name: String?
-    @NSManaged var list: NSOrderedSet?
+    @NSManaged var itemList: NSOrderedSet?
 
 }
