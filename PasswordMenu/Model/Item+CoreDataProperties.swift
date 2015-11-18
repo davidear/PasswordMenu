@@ -1,5 +1,5 @@
 //
-//  Entity+CoreDataProperties.swift
+//  Item+CoreDataProperties.swift
 //  PasswordMenu
 //
 //  Created by DaiFengyi on 15/11/18.
@@ -12,7 +12,7 @@
 import Foundation
 import CoreData
 
-extension Entity {
+extension Item {
 
     @NSManaged var category: Category?
     @NSManaged var elementList: NSOrderedSet?

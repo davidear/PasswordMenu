@@ -10,7 +10,7 @@
         <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="elementList" inverseEntity="Item" syncable="YES"/>
     </entity>
-    <entity name="Item" representedClassName=".Entity" syncable="YES">
+    <entity name="Item" representedClassName=".Item" syncable="YES">
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="itemList" inverseEntity="Category" syncable="YES"/>
         <relationship name="elementList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Element" inverseName="item" inverseEntity="Element" syncable="YES"/>
     </entity>

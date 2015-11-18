@@ -1,5 +1,5 @@
 //
-//  Entity.swift
+//  Item.swift
 //  PasswordMenu
 //
 //  Created by DaiFengyi on 15/11/18.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class Entity: NSManagedObject {
+class Item: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

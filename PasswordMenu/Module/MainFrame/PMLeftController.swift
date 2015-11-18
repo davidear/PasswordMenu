@@ -50,7 +50,20 @@ class PMLeftController: UITableViewController {
         return cell
     }
     
-    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        if let nc = self.sideMenuViewController.contentViewController as? UINavigationController {
+            if let tableController = nc.viewControllers[0] as? PMTableController {
+                if let cat = dataArray[indexPath.row] as? Category {
+                    if let itemList = cat.itemList {
+                        tableController.dataArray = NSMutableOrderedSet(orderedSet: itemList)
+                    }
+                }
+            }
+        }
+        //        self.sideMenuViewController.contentViewController
+        self.sideMenuViewController.hideMenuViewController()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

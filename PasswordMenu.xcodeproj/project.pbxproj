@@ -26,12 +26,12 @@
 		B2774EF31BFC5E09001733B3 /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EEF1BFC5E09001733B3 /* MMTableViewController.m */; };
 		B2774EF41BFC5E09001733B3 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EF11BFC5E09001733B3 /* MMViewController.m */; };
 		B2774F1F1BFC68C3001733B3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2774F1D1BFC68C3001733B3 /* Model.xcdatamodeld */; };
-		B2774F261BFC6E1E001733B3 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F201BFC6E1E001733B3 /* Entity+CoreDataProperties.swift */; };
-		B2774F271BFC6E1E001733B3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F211BFC6E1E001733B3 /* Entity.swift */; };
 		B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F221BFC6E1E001733B3 /* Category+CoreDataProperties.swift */; };
 		B2774F291BFC6E1E001733B3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F231BFC6E1E001733B3 /* Category.swift */; };
 		B2774F2A1BFC6E1E001733B3 /* Element+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F241BFC6E1E001733B3 /* Element+CoreDataProperties.swift */; };
 		B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F251BFC6E1E001733B3 /* Element.swift */; };
+		B2774F2E1BFC879D001733B3 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */; };
+		B2774F2F1BFC879D001733B3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2D1BFC879D001733B3 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,12 +86,12 @@
 		B2774EF01BFC5E09001733B3 /* MMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		B2774EF11BFC5E09001733B3 /* MMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		B2774F1E1BFC68C3001733B3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		B2774F201BFC6E1E001733B3 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2774F211BFC6E1E001733B3 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		B2774F221BFC6E1E001733B3 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2774F231BFC6E1E001733B3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B2774F241BFC6E1E001733B3 /* Element+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Element+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2774F251BFC6E1E001733B3 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2774F2D1BFC879D001733B3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,8 +258,8 @@
 		B2774EF51BFC5F4C001733B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B2774F201BFC6E1E001733B3 /* Entity+CoreDataProperties.swift */,
-				B2774F211BFC6E1E001733B3 /* Entity.swift */,
+				B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */,
+				B2774F2D1BFC879D001733B3 /* Item.swift */,
 				B2774F221BFC6E1E001733B3 /* Category+CoreDataProperties.swift */,
 				B2774F231BFC6E1E001733B3 /* Category.swift */,
 				B2774F241BFC6E1E001733B3 /* Element+CoreDataProperties.swift */,
@@ -464,19 +464,19 @@
 			files = (
 				B2774F2A1BFC6E1E001733B3 /* Element+CoreDataProperties.swift in Sources */,
 				B2774EF41BFC5E09001733B3 /* MMViewController.m in Sources */,
+				B2774F2E1BFC879D001733B3 /* Item+CoreDataProperties.swift in Sources */,
 				B263DC3B1BFB2F5A00CD8D9A /* PMSideMenu.swift in Sources */,
 				B2774EF21BFC5E09001733B3 /* MMNavigationController.m in Sources */,
 				B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */,
 				B263DC3F1BFB35F600CD8D9A /* PMLeftController.swift in Sources */,
+				B2774F2F1BFC879D001733B3 /* Item.swift in Sources */,
 				B2774F1F1BFC68C3001733B3 /* Model.xcdatamodeld in Sources */,
-				B2774F261BFC6E1E001733B3 /* Entity+CoreDataProperties.swift in Sources */,
 				B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
 				B263DC431BFB3C4C00CD8D9A /* PMTableController.swift in Sources */,
 				B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */,
 				B2774EF31BFC5E09001733B3 /* MMTableViewController.m in Sources */,
 				B2774F291BFC6E1E001733B3 /* Category.swift in Sources */,
-				B2774F271BFC6E1E001733B3 /* Entity.swift in Sources */,
 				B2774EE81BFC5DA6001733B3 /* MMSettingTableViewController.m in Sources */,
 				B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */,
 			);
