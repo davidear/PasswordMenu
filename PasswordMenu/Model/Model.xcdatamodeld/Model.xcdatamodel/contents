@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Category" representedClassName=".Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Item" inverseName="category" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Element" representedClassName=".Element" syncable="YES">
+        <attribute name="leftText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rightText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="elementList" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName=".Entity" syncable="YES">
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="list" inverseEntity="Category" syncable="YES"/>
+        <relationship name="elementList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Element" inverseName="item" inverseEntity="Element" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Element" positionX="-45" positionY="36" width="128" height="105"/>
+    </elements>
+</model>

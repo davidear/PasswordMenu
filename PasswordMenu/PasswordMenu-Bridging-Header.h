@@ -6,3 +6,4 @@
 #import "MMConstant.h"
 #import "VENTouchLock.h"
 #import "MMTouchLockSplashViewController.h"
+#import "MagicalRecord.h"

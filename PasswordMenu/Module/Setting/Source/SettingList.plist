@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>设置密码</string>
+		<key>title2</key>
+		<string>修改密码</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>清除密码</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>指纹识别</string>
+	</dict>
+</array>
+</plist>
