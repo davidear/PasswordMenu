@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62F0BDD9A882953400E4BA93 /* libPods-PasswordMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */; };
+		B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */; };
 		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
 		B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC041BFB2A8200CD8D9A /* Main.storyboard */; };
 		B263DC081BFB2A8200CD8D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B263DC071BFB2A8200CD8D9A /* Assets.xcassets */; };
@@ -16,9 +17,7 @@
 		B263DC211BFB2A8200CD8D9A /* PasswordMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC201BFB2A8200CD8D9A /* PasswordMenuUITests.swift */; };
 		B263DC3B1BFB2F5A00CD8D9A /* PMSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC371BFB2F5A00CD8D9A /* PMSideMenu.swift */; };
 		B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B263DC3A1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m */; };
-		B263DC3F1BFB35F600CD8D9A /* PMLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */; };
 		B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC401BFB368400CD8D9A /* PMNavigationController.swift */; };
-		B263DC431BFB3C4C00CD8D9A /* PMTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */; };
 		B2774EE81BFC5DA6001733B3 /* MMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EE41BFC5DA6001733B3 /* MMSettingTableViewController.m */; };
 		B2774EE91BFC5DA6001733B3 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2774EE61BFC5DA6001733B3 /* Setting.storyboard */; };
 		B2774EEA1BFC5DA6001733B3 /* SettingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2774EE71BFC5DA6001733B3 /* SettingList.plist */; };
@@ -32,6 +31,9 @@
 		B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F251BFC6E1E001733B3 /* Element.swift */; };
 		B2774F2E1BFC879D001733B3 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */; };
 		B2774F2F1BFC879D001733B3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2D1BFC879D001733B3 /* Item.swift */; };
+		B2EB062B1BFEF12D00AEA5DB /* PMLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */; };
+		B2EB062C1BFEF12D00AEA5DB /* PMTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */; };
+		B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		538DE2F001286413AF6C154F /* Pods-PasswordMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.release.xcconfig"; sourceTree = "<group>"; };
 		55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EFD526104D8523DDA852C2 /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailControllerCell.swift; sourceTree = "<group>"; };
 		B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B263DC051BFB2A8200CD8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,9 +75,7 @@
 		B263DC391BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTouchLockSplashViewController.h; sourceTree = "<group>"; };
 		B263DC3A1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTouchLockSplashViewController.m; sourceTree = "<group>"; };
 		B263DC3D1BFB332100CD8D9A /* MMConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMConstant.h; sourceTree = "<group>"; };
-		B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
 		B263DC401BFB368400CD8D9A /* PMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationController.swift; sourceTree = "<group>"; };
-		B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableController.swift; sourceTree = "<group>"; };
 		B2774EE31BFC5DA6001733B3 /* MMSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingTableViewController.h; sourceTree = "<group>"; };
 		B2774EE41BFC5DA6001733B3 /* MMSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingTableViewController.m; sourceTree = "<group>"; };
 		B2774EE61BFC5DA6001733B3 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -92,6 +93,9 @@
 		B2774F251BFC6E1E001733B3 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2774F2D1BFC879D001733B3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
+		B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableController.swift; sourceTree = "<group>"; };
+		B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,10 @@
 		B263DC351BFB2F5A00CD8D9A /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */,
+				B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */,
+				B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */,
+				B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */,
 				B2774EE21BFC5DA6001733B3 /* Setting */,
 				B263DC361BFB2F5A00CD8D9A /* MainFrame */,
 				B263DC381BFB2F5A00CD8D9A /* TouchLock */,
@@ -207,8 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				B263DC371BFB2F5A00CD8D9A /* PMSideMenu.swift */,
-				B263DC3E1BFB35F600CD8D9A /* PMLeftController.swift */,
-				B263DC421BFB3C4C00CD8D9A /* PMTableController.swift */,
 				B263DC401BFB368400CD8D9A /* PMNavigationController.swift */,
 			);
 			path = MainFrame;
@@ -465,18 +471,20 @@
 				B2774F2A1BFC6E1E001733B3 /* Element+CoreDataProperties.swift in Sources */,
 				B2774EF41BFC5E09001733B3 /* MMViewController.m in Sources */,
 				B2774F2E1BFC879D001733B3 /* Item+CoreDataProperties.swift in Sources */,
+				B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */,
+				B2EB062C1BFEF12D00AEA5DB /* PMTableController.swift in Sources */,
 				B263DC3B1BFB2F5A00CD8D9A /* PMSideMenu.swift in Sources */,
 				B2774EF21BFC5E09001733B3 /* MMNavigationController.m in Sources */,
 				B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */,
-				B263DC3F1BFB35F600CD8D9A /* PMLeftController.swift in Sources */,
 				B2774F2F1BFC879D001733B3 /* Item.swift in Sources */,
 				B2774F1F1BFC68C3001733B3 /* Model.xcdatamodeld in Sources */,
+				B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */,
 				B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
-				B263DC431BFB3C4C00CD8D9A /* PMTableController.swift in Sources */,
 				B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */,
 				B2774EF31BFC5E09001733B3 /* MMTableViewController.m in Sources */,
 				B2774F291BFC6E1E001733B3 /* Category.swift in Sources */,
+				B2EB062B1BFEF12D00AEA5DB /* PMLeftController.swift in Sources */,
 				B2774EE81BFC5DA6001733B3 /* MMSettingTableViewController.m in Sources */,
 				B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */,
 			);
