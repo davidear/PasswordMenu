@@ -7,7 +7,7 @@
     <entity name="Element" representedClassName=".Element" syncable="YES">
         <attribute name="leftText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rightText" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="elementList" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES">
@@ -15,8 +15,8 @@
         <relationship name="elementList" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Element" inverseName="item" inverseEntity="Element" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-54" positionY="0" width="128" height="75"/>
-        <element name="Element" positionX="-45" positionY="36" width="128" height="105"/>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Category" positionX="-378" positionY="-153" width="128" height="75"/>
+        <element name="Element" positionX="-236" positionY="162" width="128" height="103"/>
+        <element name="Item" positionX="-398" positionY="-3" width="128" height="75"/>
     </elements>
 </model>

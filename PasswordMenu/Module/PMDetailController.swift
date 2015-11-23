@@ -9,6 +9,7 @@
 import UIKit
 
 class PMDetailController: UITableViewController {
+    let elementTypeList = ["text", "date", "image", "password"]
     var it : Item?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,27 +80,18 @@ class PMDetailController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath {
         case NSIndexPath(forRow: 0, inSection: 1):
-            print("add button")
             let ac = UIAlertController(title: "选择类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-            let aa1 = UIAlertAction(title: "abc", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
-                
-            })
-            let aa2 = UIAlertAction(title: "def", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
-                
-            })
-            let aa3 = UIAlertAction(title: "ghi", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
-                
-            })
-            let aa4 = UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
-                
-            })
-            ac.addAction(aa1)
-            ac.addAction(aa2)
-            ac.addAction(aa3)
-            ac.addAction(aa4)
-            self.presentViewController(ac, animated: true, completion: { () -> Void in
-                
-            })
+            for eleType in elementTypeList {
+                ac.addAction(UIAlertAction(title: eleType, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
+                    let ele = ModelFactory.element(alertAction.title!)
+                    ele.item = self.it
+                    self.it?.elementList?.addObject(ele)
+                    self.tableView.reloadData()
+                    }))
+            }
+            ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
+            }))
+            self.presentViewController(ac, animated: true, completion:nil)
         default:
             break
         }

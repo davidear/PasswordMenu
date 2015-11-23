@@ -16,7 +16,7 @@ extension Element {
 
     @NSManaged var leftText: String?
     @NSManaged var rightText: String?
-    @NSManaged var type: NSNumber?
+    @NSManaged var type: String?
     @NSManaged var item: Item?
 
 }

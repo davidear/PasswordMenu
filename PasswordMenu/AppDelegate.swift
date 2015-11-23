@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let ele = Element.MR_createEntity()
                 ele.leftText = "\(str)名称"
                 ele.rightText = nil
-                ele.type = 0
+                ele.type = "text"
                 ele.item = it
                 it.elementList = [ele,ele,ele,ele,ele]
                 

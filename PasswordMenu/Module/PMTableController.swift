@@ -44,8 +44,7 @@ class PMTableController: UITableViewController {
                 }))
             }
         }
-        ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { [unowned self](UIAlertAction) -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
+        ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
             }))
         self.presentViewController(ac, animated: true, completion: nil)
     }
@@ -116,10 +115,9 @@ class PMTableController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if let dvc = segue.destinationViewController as? PMDetailController {
-            if ((sender?.isKindOfClass(UIBarButtonItem.self)) != false) {
-            }
-        }
+        
+//        if let dvc = segue.destinationViewController as? PMDetailController {
+//        }
     }
     
     
