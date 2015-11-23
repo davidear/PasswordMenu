@@ -35,6 +35,7 @@
 		B2EB062B1BFEF12D00AEA5DB /* PMLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */; };
 		B2EB062C1BFEF12D00AEA5DB /* PMTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */; };
 		B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */; };
+		B2F10D581C033C5B009159BD /* PMConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F10D571C033C5B009159BD /* PMConfigHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
 		B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableController.swift; sourceTree = "<group>"; };
 		B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailController.swift; sourceTree = "<group>"; };
+		B2F10D571C033C5B009159BD /* PMConfigHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMConfigHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 		B263DC341BFB2F5A00CD8D9A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B2F10D571C033C5B009159BD /* PMConfigHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */,
 				B2774F2F1BFC879D001733B3 /* Item.swift in Sources */,
 				B2774F1F1BFC68C3001733B3 /* Model.xcdatamodeld in Sources */,
+				B2F10D581C033C5B009159BD /* PMConfigHelper.swift in Sources */,
 				B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */,
 				B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,

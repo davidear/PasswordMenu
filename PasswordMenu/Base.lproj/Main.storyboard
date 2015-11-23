@@ -120,7 +120,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="VBj-9h-AnG">
                         <barButtonItem key="rightBarButtonItem" title="新增" id="1hD-UY-82B">
                             <connections>
-                                <segue destination="ktO-iL-l4h" kind="show" id="fSy-hZ-2G3"/>
+                                <action selector="AddNewItem:" destination="HQu-eH-IO5" id="TJx-yQ-bWG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -140,7 +140,7 @@
         <!--Detail Controller-->
         <scene sceneID="tsV-zX-gxf">
             <objects>
-                <tableViewController id="ktO-iL-l4h" customClass="PMDetailController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PMDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ktO-iL-l4h" customClass="PMDetailController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Brq-tV-sEG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,4 @@
         <image name="QQ" width="20" height="22"/>
         <image name="iconfont-augiczhiwentubiao" width="64" height="64"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="dKg-wd-akd"/>
-    </inferredMetricsTieBreakers>
 </document>

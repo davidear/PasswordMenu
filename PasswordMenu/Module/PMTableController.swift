@@ -23,6 +23,32 @@ class PMTableController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    @IBAction func AddNewItem(sender: UIBarButtonItem) {
+        
+        let ac = UIAlertController(title: "新增类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        if let arr = PMConfigHelper.defaultTypeList() {
+            for dic in arr {
+                ac.addAction(UIAlertAction(title: dic["category"] as? String, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
+                    if let arr = PMConfigHelper.defaultTypeList() {
+                        for aDic in arr {
+                            if aDic["category"] as? String == alertAction.title {
+                                let eleList = Element.MR_importFromArray(aDic["elementList"] as? [AnyObject])
+                                let dvc = self.storyboard?.instantiateViewControllerWithIdentifier("PMDetailController") as!PMDetailController
+                                dvc.it = Item.MR_createEntity()
+                                dvc.it!.elementList = NSMutableOrderedSet(array: eleList)
+                                self.showViewController(dvc, sender: sender)
+                            }
+                        }
+                        
+                    }
+                }))
+            }
+        }
+        ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { [unowned self](UIAlertAction) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+            }))
+        self.presentViewController(ac, animated: true, completion: nil)
+    }
     
     // MARK: - Table view data source
     
@@ -92,22 +118,6 @@ class PMTableController: UITableViewController {
         // Pass the selected object to the new view controller.
         if let dvc = segue.destinationViewController as? PMDetailController {
             if ((sender?.isKindOfClass(UIBarButtonItem.self)) != false) {
-                let path = NSBundle.mainBundle().pathForResource("template", ofType: "json")
-                do {
-                    let data = NSData(contentsOfFile: path!)
-                    if let arr = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? NSArray {
-                        for aDic in arr {
-                            if aDic["category"] as? String == "website" {
-                                let eleList = Element.MR_importFromArray(aDic["elementList"] as? [AnyObject])
-                                dvc.it = Item.MR_createEntity()
-                                dvc.it!.elementList = NSMutableOrderedSet(array: eleList)
-                            }
-                        }
-                        
-                    }
-                } catch {
-                    print("read Template fail")
-                }
             }
         }
     }
