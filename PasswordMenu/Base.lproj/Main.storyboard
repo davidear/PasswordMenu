@@ -102,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qny-HZ-pm1" id="aAF-6q-EnD">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -117,9 +117,23 @@
                             <outlet property="delegate" destination="HQu-eH-IO5" id="T2f-ku-Ccw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="VBj-9h-AnG"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="VBj-9h-AnG">
+                        <barButtonItem key="rightBarButtonItem" title="新增" id="1hD-UY-82B">
+                            <connections>
+                                <segue destination="ktO-iL-l4h" kind="show" id="fSy-hZ-2G3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2t7-8m-Uze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationBar contentMode="scaleToFill" id="nht-Bj-01k">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <items>
+                        <navigationItem title="Title" id="Kil-he-4vT"/>
+                    </items>
+                </navigationBar>
             </objects>
             <point key="canvasLocation" x="1018" y="-280"/>
         </scene>
@@ -280,4 +294,7 @@
         <image name="QQ" width="20" height="22"/>
         <image name="iconfont-augiczhiwentubiao" width="64" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dKg-wd-akd"/>
+    </inferredMetricsTieBreakers>
 </document>

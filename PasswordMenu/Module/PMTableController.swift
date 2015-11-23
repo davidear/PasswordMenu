@@ -37,15 +37,15 @@ class PMTableController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("TableControllerCell", forIndexPath: indexPath)
-    
-    // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableControllerCell", forIndexPath: indexPath)
+        
+        // Configure the cell...
         if let it = dataArray[indexPath.row] as? Item {
             if let ele = it.elementList?.objectAtIndex(0) as? Element {
                 cell.textLabel?.text = ele.leftText
             }
         }
-    return cell
+        return cell
     }
     
     /*
@@ -83,14 +83,34 @@ class PMTableController: UITableViewController {
     }
     */
     
-    /*
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if let dvc = segue.destinationViewController as? PMDetailController {
+            if ((sender?.isKindOfClass(UIBarButtonItem.self)) != false) {
+                let path = NSBundle.mainBundle().pathForResource("template", ofType: "json")
+                do {
+                    let data = NSData(contentsOfFile: path!)
+                    if let arr = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? NSArray {
+                        for aDic in arr {
+                            if aDic["category"] as? String == "website" {
+                                let eleList = Element.MR_importFromArray(aDic["elementList"] as? [AnyObject])
+                                dvc.it = Item.MR_createEntity()
+                                dvc.it!.elementList = NSMutableOrderedSet(array: eleList)
+                            }
+                        }
+                        
+                    }
+                } catch {
+                    print("read Template fail")
+                }
+            }
+        }
     }
-    */
+    
     
 }

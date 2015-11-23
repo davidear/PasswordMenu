@@ -1,0 +1,47 @@
+[
+ {
+ "category" : "website",
+ "elementList" :[
+                 {
+                 "leftText": "账号",
+                 "rightText": null,
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "密码",
+                 "rightText": null,
+                 "type": "password"
+                 },
+                 {
+                 "leftText": "网址",
+                 "rightText": null,
+                 "type": "text"
+                 }
+                 ]
+ },
+ {
+ "category": "game",
+ "elementList": [
+                 {
+                 "leftText": "账号",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "密码",
+                 "rightText": "",
+                 "type": "password"
+                 },
+                 {
+                 "leftText": "注册码",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "密保",
+                 "rightText": "",
+                 "type": "text"
+                 }
+                 ]
+ }
+ ]

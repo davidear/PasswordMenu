@@ -15,6 +15,5 @@ import CoreData
 extension Item {
 
     @NSManaged var category: Category?
-    @NSManaged var elementList: NSOrderedSet?
-
+    @NSManaged var elementList: NSMutableOrderedSet? 
 }

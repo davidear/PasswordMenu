@@ -9,7 +9,7 @@
 import UIKit
 
 class PMDetailController: UITableViewController {
-    
+    var it : Item?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,7 @@ class PMDetailController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return 5
+            return (it?.elementList?.count)!
         case 1:
             return 1
         default:
@@ -52,8 +52,14 @@ class PMDetailController: UITableViewController {
         case 0:
             cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             if let c = cell as? PMDetailControllerCell {
-                c.leftLabel.text = "hello|\(indexPath.row))"
-                c.rightField.text = "world\(indexPath.row)"
+                if let ele = it?.elementList![indexPath.row] as? Element {
+                    if let lt = ele.leftText {
+                        c.leftLabel.text = "\(lt)"
+                    }
+                    if let rt = ele.rightText {
+                        c.rightField.text = "\(rt)"
+                    }
+                }
             }
         case 1:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
@@ -138,10 +144,10 @@ class PMDetailController: UITableViewController {
         }
         return proposedDestinationIndexPath
     }
-
-//    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-//        return UITableViewCellEditingStyle.Delete
-//    }
+    
+    //    override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+    //        return UITableViewCellEditingStyle.Delete
+    //    }
     
     
     /*
