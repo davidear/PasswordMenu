@@ -93,6 +93,7 @@
 		B2774F251BFC6E1E001733B3 /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2774F2D1BFC879D001733B3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B28B32991C030262001994F0 /* Template.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Template.geojson; sourceTree = "<group>"; };
 		B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
 		B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMTableController.swift; sourceTree = "<group>"; };
 		B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailController.swift; sourceTree = "<group>"; };
@@ -271,6 +272,7 @@
 				B2774F241BFC6E1E001733B3 /* Element+CoreDataProperties.swift */,
 				B2774F251BFC6E1E001733B3 /* Element.swift */,
 				B2774F1D1BFC68C3001733B3 /* Model.xcdatamodeld */,
+				B28B32991C030262001994F0 /* Template.geojson */,
 			);
 			path = Model;
 			sourceTree = "<group>";
