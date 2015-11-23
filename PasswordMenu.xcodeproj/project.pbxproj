@@ -640,10 +640,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: fengyi dai (C8D6ERL39C)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fengyi dai (C8D6ERL39C)";
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c97d749f-2231-4967-969c-bc7bece6b622";
 				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMenu/PasswordMenu-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -655,10 +658,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: fengyi dai (24EL9XJBYB)";
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39f66da3-8340-48a0-ac88-73da39542220";
 				SWIFT_OBJC_BRIDGING_HEADER = "PasswordMenu/PasswordMenu-Bridging-Header.h";
 			};
 			name = Release;
