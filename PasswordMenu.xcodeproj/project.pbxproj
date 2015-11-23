@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200F2E331C037E200008DF31 /* PMCategorySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */; };
 		62F0BDD9A882953400E4BA93 /* libPods-PasswordMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */; };
 		B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */; };
 		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCategorySelectionController.swift; sourceTree = "<group>"; };
 		538DE2F001286413AF6C154F /* Pods-PasswordMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.release.xcconfig"; sourceTree = "<group>"; };
 		55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EFD526104D8523DDA852C2 /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				B2EB062A1BFEF12D00AEA5DB /* PMTableController.swift */,
 				B2EB062D1BFEF16800AEA5DB /* PMDetailController.swift */,
 				B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */,
+				200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */,
 				B2774EE21BFC5DA6001733B3 /* Setting */,
 				B263DC361BFB2F5A00CD8D9A /* MainFrame */,
 				B263DC381BFB2F5A00CD8D9A /* TouchLock */,
@@ -493,6 +496,7 @@
 				B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */,
 				B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
+				200F2E331C037E200008DF31 /* PMCategorySelectionController.swift in Sources */,
 				B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */,
 				B2774EF31BFC5E09001733B3 /* MMTableViewController.m in Sources */,
 				B2774F291BFC6E1E001733B3 /* Category.swift in Sources */,
