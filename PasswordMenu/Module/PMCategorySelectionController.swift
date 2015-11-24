@@ -50,9 +50,9 @@ class PMCategorySelectionController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.navigationController?.popViewControllerAnimated(true)
-    }
+    //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    //        self.navigationController?.popViewControllerAnimated(true)
+    //    }
     
     /*
     // Override to support conditional editing of the table view.
@@ -89,14 +89,20 @@ class PMCategorySelectionController: UITableViewController {
     }
     */
     
-    /*
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if let vc = segue.destinationViewController as? PMDetailController {
+            if let cell = sender as? UITableViewCell {
+                let cat = Category.MR_findFirstByAttribute("name", withValue: cell.textLabel!.text)
+                vc.it?.category = cat
+            }
+        }
     }
-    */
+    
     
 }

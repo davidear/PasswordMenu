@@ -37,6 +37,11 @@ class PMDetailController: UITableViewController {
         }
     }
     
+    // MARK; - Segue
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+        tableView .reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -61,6 +66,11 @@ class PMDetailController: UITableViewController {
         switch indexPath.section {
         case 0:
             cell = tableView.dequeueReusableCellWithIdentifier("CategoryCell", forIndexPath: indexPath)
+            if let text = it?.category?.name {
+                cell.textLabel?.text = text
+            }else {
+                cell.textLabel?.text = "请选择分类"
+            }
         case 1:
             cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             if let c = cell as? PMDetailControllerCell {
