@@ -26,15 +26,19 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
-    // MARK: - TextField 
+    
+    // MARK: - TextField
     func textFieldDidEndEditing(textField: UITextField) {
-        ele?.rightText = textField.text
+        if textField == leftField {
+            ele?.leftText = textField.text
+        }else {
+            ele?.rightText = textField.text
+        }
     }
 }
