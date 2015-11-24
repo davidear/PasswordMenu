@@ -56,10 +56,12 @@ class PMDetailController: UITableViewController {
                 self.performSegueWithIdentifier("unWindToTableController", sender: nil)
             }
             self.editButtonItem().title = "编辑"
-
+            self.tableView.userInteractionEnabled = false
         }else { //  点击编辑
             self.editButtonItem().title = "保存"
+            self.tableView.userInteractionEnabled = true
         }
+        tableView.reloadData()
     }
     
     // MARK; - Segue
@@ -70,10 +72,14 @@ class PMDetailController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 3
+        return !self.editing ? 1 : 3
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if !self.editing {
+            return (it?.elementList?.count)!
+        }
+        
         switch section {
         case 0:
             return 1
@@ -87,6 +93,12 @@ class PMDetailController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if !self.editing {
+            let cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
+            cell.ele = it?.elementList![indexPath.row] as? Element
+            return cell
+        }
+        
         var cell : UITableViewCell
         switch indexPath.section {
         case 0:
