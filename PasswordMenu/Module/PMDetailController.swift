@@ -21,9 +21,8 @@ class PMDetailController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         setupData()
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        self.editing = true
+        self.setEditing(newType != nil ? true : false, animated: false)
         self.tableView.allowsSelectionDuringEditing = true
-        
     }
     
     private func setupData() {
@@ -41,7 +40,7 @@ class PMDetailController: UITableViewController {
             }
             
         }
-
+        
     }
     //    func setupSubviews() {
     //        let rightButton = UIBarButtonItem(title: "保存", style: UIBarButtonItemStyle.Plain , target: self, action: Selector("save"))
@@ -49,10 +48,17 @@ class PMDetailController: UITableViewController {
     //    }
     //
     // MARK: - Button action
-    override func setEditing(editing: Bool, animated: Bool) {
+    override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
         super.setEditing(editing, animated: animated)
-        if !editing { // save
-            NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+        if !editing { // 点击保存
+            if animated {
+                NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
+                self.performSegueWithIdentifier("unWindToTableController", sender: nil)
+            }
+            self.editButtonItem().title = "编辑"
+
+        }else { //  点击编辑
+            self.editButtonItem().title = "保存"
         }
     }
     
