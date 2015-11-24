@@ -367,6 +367,7 @@
 				TargetAttributes = {
 					B263DBFC1BFB2A8200CD8D9A = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 24EL9XJBYB;
 					};
 					B263DC101BFB2A8200CD8D9A = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -644,7 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: fengyi dai (C8D6ERL39C)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fengyi dai (C8D6ERL39C)";
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -662,7 +663,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: fengyi dai (24EL9XJBYB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChildrenOurFuture.PasswordMenu;
