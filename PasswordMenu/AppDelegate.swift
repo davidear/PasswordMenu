@@ -59,19 +59,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let cat = Category.MR_createEntity()
                 cat.name = str
                 
-                let it = Item.MR_createEntity()
-                it.category = cat
-                
-                let ele = Element.MR_createEntity()
-                ele.leftText = "\(str)名称"
-                ele.rightText = nil
-                ele.type = "text"
-                ele.item = it
-                it.elementList = [ele,ele,ele,ele,ele]
-                
-                it.category = cat
-                let orderedSet = NSMutableOrderedSet(object: it)
-                cat.itemList = orderedSet
+//                let it = Item.MR_createEntity()
+//                it.category = cat
+//                
+//                let ele = Element.MR_createEntity()
+//                ele.leftText = "\(str)名称"
+//                ele.rightText = nil
+//                ele.type = "text"
+//                ele.item = it
+//                it.elementList = [ele,ele,ele,ele,ele]
+//                
+//                it.category = cat
+//                let orderedSet = NSMutableOrderedSet(object: it)
+//                cat.itemList = orderedSet
                 
                 NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
             }
