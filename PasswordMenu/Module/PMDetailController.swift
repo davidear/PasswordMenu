@@ -12,6 +12,7 @@ class PMDetailController: UITableViewController {
     private let elementTypeList = ["text", "date", "image", "password"]
     var newType : String?
     var it : Item?
+    private var enableDelete = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,6 +61,7 @@ class PMDetailController: UITableViewController {
         }else { //  点击编辑
             self.editButtonItem().title = "保存"
             self.tableView.userInteractionEnabled = true
+            self.enableDelete = true
         }
         tableView.reloadData()
     }
@@ -72,7 +74,7 @@ class PMDetailController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return !self.editing ? 1 : 3
+        return !self.editing ? 1 : 3 + (self.enableDelete ? 1: 0)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -86,6 +88,8 @@ class PMDetailController: UITableViewController {
         case 1:
             return (it?.elementList?.count)!
         case 2:
+            return 1
+        case 3:
             return 1
         default:
             return 0
@@ -115,6 +119,8 @@ class PMDetailController: UITableViewController {
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
+        case 3:
+            cell = tableView.dequeueReusableCellWithIdentifier("DeleteButtonCell", forIndexPath: indexPath)
         default:
             cell = UITableViewCell()
             break
@@ -144,6 +150,15 @@ class PMDetailController: UITableViewController {
             ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
             }))
             self.presentViewController(ac, animated: true, completion:nil)
+        case NSIndexPath(forRow: 0, inSection: 3):
+            let ac = UIAlertController(title: "确认删除", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+            ac.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Destructive, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
+                self.it?.MR_deleteEntity()
+                self.performSegueWithIdentifier("unWindToTableController", sender: nil)
+                }))
+            ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
+            }))
+            self.presentViewController(ac, animated: true, completion:nil)
         default:
             break
         }
@@ -151,7 +166,7 @@ class PMDetailController: UITableViewController {
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath == NSIndexPath(forRow: 1, inSection: 1) || indexPath.section == 0 {
+        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath == NSIndexPath(forRow: 1, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
             return false
         }
         return true
@@ -176,7 +191,7 @@ class PMDetailController: UITableViewController {
     
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if indexPath.section == 2 || indexPath.section == 0 {
+        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath == NSIndexPath(forRow: 1, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
             return false
         }
         return true
