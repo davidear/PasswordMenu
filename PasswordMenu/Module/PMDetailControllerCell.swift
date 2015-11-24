@@ -12,7 +12,7 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
     var ele: Element? {
         didSet {
             if let lt = ele?.leftText {
-                leftLabel.text = "\(lt)"
+                leftField.text = "\(lt)"
             }
             if let rt = ele?.rightText {
                 rightField.text = "\(rt)"
@@ -20,7 +20,7 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         }
     }
     
-    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var leftField: UITextField!
     @IBOutlet weak var rightField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()

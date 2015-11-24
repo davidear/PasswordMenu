@@ -175,18 +175,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwj-y2-hkS">
-                                            <rect key="frame" x="8" y="13" width="120" height="18"/>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="120" id="WHg-xn-Tft"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pz9-8b-dra">
-                                            <rect key="frame" x="136" y="7" width="456" height="30"/>
+                                            <rect key="frame" x="148" y="7" width="444" height="30"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -195,25 +185,32 @@
                                                 <outlet property="delegate" destination="wTO-T4-Sbi" id="RwK-Ah-6tz"/>
                                             </connections>
                                         </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-3w-u6p">
+                                            <rect key="frame" x="8" y="7" width="120" height="30"/>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="af2-yh-Lae"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="wTO-T4-Sbi" id="TOP-5X-q1b"/>
+                                            </connections>
+                                        </textField>
                                     </subviews>
                                     <animations/>
                                     <constraints>
-                                        <constraint firstItem="Pz9-8b-dra" firstAttribute="leading" secondItem="Rwj-y2-hkS" secondAttribute="trailing" constant="8" id="4k9-cc-KCE"/>
-                                        <constraint firstItem="Rwj-y2-hkS" firstAttribute="leading" secondItem="IIO-Oe-AZB" secondAttribute="leading" constant="8" id="7aC-9D-o3q"/>
-                                        <constraint firstItem="Rwj-y2-hkS" firstAttribute="centerY" secondItem="IIO-Oe-AZB" secondAttribute="centerY" id="GNo-ff-Fzb"/>
+                                        <constraint firstItem="Pz9-8b-dra" firstAttribute="leading" secondItem="yW2-3w-u6p" secondAttribute="trailing" constant="20" id="6yj-ib-9WZ"/>
+                                        <constraint firstItem="yW2-3w-u6p" firstAttribute="centerY" secondItem="IIO-Oe-AZB" secondAttribute="centerY" id="Mfe-eP-bwL"/>
                                         <constraint firstItem="Pz9-8b-dra" firstAttribute="centerY" secondItem="IIO-Oe-AZB" secondAttribute="centerY" id="P29-ZQ-84y"/>
-                                        <constraint firstItem="Pz9-8b-dra" firstAttribute="centerY" secondItem="Rwj-y2-hkS" secondAttribute="centerY" id="Vz7-MP-2Yv"/>
+                                        <constraint firstItem="yW2-3w-u6p" firstAttribute="leading" secondItem="IIO-Oe-AZB" secondAttribute="leading" constant="8" id="YLQ-FQ-maN"/>
                                         <constraint firstAttribute="trailing" secondItem="Pz9-8b-dra" secondAttribute="trailing" constant="8" id="qPO-6R-OaI"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="Vz7-MP-2Yv"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="leftLabel" destination="Rwj-y2-hkS" id="1EN-DN-9mt"/>
+                                    <outlet property="leftField" destination="yW2-3w-u6p" id="uQi-N6-Yzk"/>
                                     <outlet property="rightField" destination="Pz9-8b-dra" id="Lwj-hI-C7n"/>
                                 </connections>
                             </tableViewCell>
