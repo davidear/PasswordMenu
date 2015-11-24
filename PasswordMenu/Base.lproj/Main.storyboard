@@ -198,6 +198,9 @@
                                             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="wTO-T4-Sbi" id="RwK-Ah-6tz"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <animations/>

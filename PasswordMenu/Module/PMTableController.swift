@@ -29,18 +29,9 @@ class PMTableController: UITableViewController {
         if let arr = PMConfigHelper.defaultTypeList() {
             for dic in arr {
                 ac.addAction(UIAlertAction(title: dic["category"] as? String, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
-                    if let arr = PMConfigHelper.defaultTypeList() {
-                        for aDic in arr {
-                            if aDic["category"] as? String == alertAction.title {
-                                let eleList = Element.MR_importFromArray(aDic["elementList"] as? [AnyObject])
-                                let dvc = self.storyboard?.instantiateViewControllerWithIdentifier("PMDetailController") as!PMDetailController
-                                dvc.it = Item.MR_createEntity()
-                                dvc.it!.elementList = NSMutableOrderedSet(array: eleList)
-                                self.showViewController(dvc, sender: sender)
-                            }
-                        }
-                        
-                    }
+                    let dvc = self.storyboard?.instantiateViewControllerWithIdentifier("PMDetailController") as!PMDetailController
+                    dvc.newType = alertAction.title
+                    self.showViewController(dvc, sender: sender)
                 }))
             }
         }
@@ -67,7 +58,7 @@ class PMTableController: UITableViewController {
         // Configure the cell...
         if let it = dataArray[indexPath.row] as? Item {
             if let ele = it.elementList?.objectAtIndex(0) as? Element {
-                cell.textLabel?.text = ele.leftText
+                cell.textLabel?.text = ele.rightText
             }
         }
         return cell
@@ -115,9 +106,9 @@ class PMTableController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-//        if let dvc = segue.destinationViewController as? PMDetailController {
-//        }
+        if let dvc = segue.destinationViewController as? PMDetailController {
+            dvc.it = dataArray[tableView.indexPathForCell(sender as! UITableViewCell)!.row] as? Item
+        }
     }
     
     

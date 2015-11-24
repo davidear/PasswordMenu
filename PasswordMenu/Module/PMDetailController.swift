@@ -9,7 +9,8 @@
 import UIKit
 
 class PMDetailController: UITableViewController {
-    let elementTypeList = ["text", "date", "image", "password"]
+    private let elementTypeList = ["text", "date", "image", "password"]
+    var newType : String?
     var it : Item?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,11 +19,30 @@ class PMDetailController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        setupData()
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.editing = true
         self.tableView.allowsSelectionDuringEditing = true
+        
     }
     
+    private func setupData() {
+        if newType == nil {//   非新增
+            return
+        }
+        //  新增
+        if let arr = PMConfigHelper.defaultTypeList() {
+            for aDic in arr {
+                if aDic["category"] as? String == newType {
+                    let eleList = Element.MR_importFromArray(aDic["elementList"] as? [AnyObject])
+                    it = Item.MR_createEntity()
+                    it!.elementList = NSMutableOrderedSet(array: eleList)
+                }
+            }
+            
+        }
+
+    }
     //    func setupSubviews() {
     //        let rightButton = UIBarButtonItem(title: "保存", style: UIBarButtonItemStyle.Plain , target: self, action: Selector("save"))
     //        self.navigationItem.rightBarButtonItem = rightButton
@@ -32,7 +52,6 @@ class PMDetailController: UITableViewController {
     override func setEditing(editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         if !editing { // save
-            
             NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
         }
     }
@@ -74,14 +93,7 @@ class PMDetailController: UITableViewController {
         case 1:
             cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             if let c = cell as? PMDetailControllerCell {
-                if let ele = it?.elementList![indexPath.row] as? Element {
-                    if let lt = ele.leftText {
-                        c.leftLabel.text = "\(lt)"
-                    }
-                    if let rt = ele.rightText {
-                        c.rightField.text = "\(rt)"
-                    }
-                }
+                c.ele = it?.elementList![indexPath.row] as? Element
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
@@ -141,7 +153,7 @@ class PMDetailController: UITableViewController {
     
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-        
+        it?.elementList?.moveObjectsAtIndexes(NSIndexSet(index: fromIndexPath.row), toIndex: toIndexPath.row)
     }
     
     // Override to support conditional rearranging of the table view.

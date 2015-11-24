@@ -8,7 +8,18 @@
 
 import UIKit
 
-class PMDetailControllerCell: UITableViewCell {
+class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
+    var ele: Element? {
+        didSet {
+            if let lt = ele?.leftText {
+                leftLabel.text = "\(lt)"
+            }
+            if let rt = ele?.rightText {
+                rightField.text = "\(rt)"
+            }
+        }
+    }
+    
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightField: UITextField!
     override func awakeFromNib() {
@@ -22,4 +33,8 @@ class PMDetailControllerCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    // MARK: - TextField 
+    func textFieldDidEndEditing(textField: UITextField) {
+        ele?.rightText = textField.text
+    }
 }
