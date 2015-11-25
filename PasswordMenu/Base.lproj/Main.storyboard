@@ -571,9 +571,10 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="digitSwitch" destination="S4e-jV-z2P" id="YRF-Pk-ycf"/>
                         <outlet property="lengthLabel" destination="S9W-4b-Uim" id="TN7-ev-O0V"/>
                         <outlet property="lowercaseSwitch" destination="bLT-n4-eMP" id="Km2-w5-iPG"/>
-                        <outlet property="numberSwitch" destination="S4e-jV-z2P" id="plq-WE-Hes"/>
+                        <outlet property="randomPasswordLabel" destination="X8d-Sy-RXp" id="LrC-a3-hqk"/>
                         <outlet property="symbolSwitch" destination="Rje-mm-THM" id="hpE-E2-bSP"/>
                         <outlet property="uppercaseSwitch" destination="KPj-0r-xNA" id="mtZ-md-PN0"/>
                     </connections>

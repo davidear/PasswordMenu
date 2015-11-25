@@ -9,7 +9,8 @@
 import UIKit
 
 class PMPasswordGeneratorController: UITableViewController {
-    @IBOutlet weak var numberSwitch: UISwitch!
+    @IBOutlet weak var randomPasswordLabel: UILabel!
+    @IBOutlet weak var digitSwitch: UISwitch!
     @IBOutlet weak var lowercaseSwitch: UISwitch!
     @IBOutlet weak var uppercaseSwitch: UISwitch!
     @IBOutlet weak var symbolSwitch: UISwitch!
@@ -47,6 +48,7 @@ class PMPasswordGeneratorController: UITableViewController {
         switch indexPath.section {
         case 2:
             print("generate new password")
+            randomPasswordLabel.text = RandomStringGenerator.randomString(Int(lengthLabel.text!)!, enableLowercase: lowercaseSwitch.on, enableUppercase: uppercaseSwitch.on, enableDigit: digitSwitch.on, enableSymbol: symbolSwitch.on)
         case 3:
             print("comfirm")
         default:
