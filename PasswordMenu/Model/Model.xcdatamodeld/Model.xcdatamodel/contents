@@ -7,7 +7,7 @@
     <entity name="Element" representedClassName=".Element" syncable="YES">
         <attribute name="leftText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rightText" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="String" syncable="YES"/>
         <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="elementList" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES">
