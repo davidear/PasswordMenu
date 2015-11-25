@@ -32,27 +32,69 @@ class PMCategorySelectionController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (catList != nil) ? (catList?.count)! : 0
+        if section == 0 {
+            return (catList != nil) ? (catList?.count)! : 0
+        }else {
+            return 1
+        }
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CategorySelectionCell", forIndexPath: indexPath)
-        
-        // Configure the cell...
-        if let cat = catList![indexPath.row] as? Category {
-            cell.textLabel?.text = cat.name
+        var cell : UITableViewCell
+        switch indexPath.section {
+        case 0:
+            cell = tableView.dequeueReusableCellWithIdentifier("CategorySelectionCell", forIndexPath: indexPath)
+            if let cat = catList![indexPath.row] as? Category {
+                cell.textLabel?.text = cat.name
+            }
+        case 1:
+            cell = tableView.dequeueReusableCellWithIdentifier("CategoryAddCell", forIndexPath: indexPath)
+        default:
+            cell = UITableViewCell()
+            break
         }
         return cell
     }
     
-    //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    //        self.navigationController?.popViewControllerAnimated(true)
-    //    }
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let ac = UIAlertController(title: "新建分类名", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        ac.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
+            
+        }
+        ac.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: { [unowned self](alertAction: UIAlertAction) -> Void in
+            guard var name = ac.textFields?.first?.text else {
+                return
+            }
+            name = name.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            
+            guard let list = self.catList else {
+                return
+            }
+            for cat in list {
+                if cat.name == name {
+                    return
+                }
+            }
+            
+            MagicalRecord.saveWithBlock({ (localContext: NSManagedObjectContext!) -> Void in
+                let cat = Category.MR_createEntityInContext(localContext)
+                if let textField = ac.textFields?.first {
+                    cat.name = textField.text
+                }
+                }, completion: { [unowned self](success: Bool, error: NSError!) -> Void in
+                    self.performSegueWithIdentifier("unwindToPMDetailController", sender: ac.textFields?.first)
+                })
+            }))
+        ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
+        }))
+        self.presentViewController(ac, animated: true, completion:nil)
+    }
     
     /*
     // Override to support conditional editing of the table view.
@@ -99,6 +141,9 @@ class PMCategorySelectionController: UITableViewController {
         if let vc = segue.destinationViewController as? PMDetailController {
             if let cell = sender as? UITableViewCell {
                 let cat = Category.MR_findFirstByAttribute("name", withValue: cell.textLabel!.text)
+                vc.it?.category = cat
+            }else if let textField = sender as? UITextField {
+                let cat = Category.MR_findFirstByAttribute("name", withValue: textField.text)
                 vc.it?.category = cat
             }
         }
