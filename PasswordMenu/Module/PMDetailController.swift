@@ -61,7 +61,9 @@ class PMDetailController: UITableViewController {
         }else { //  点击编辑
             self.editButtonItem().title = "保存"
             self.tableView.userInteractionEnabled = true
-            self.enableDelete = true
+            if animated {
+                self.enableDelete = true
+            }
         }
         tableView.reloadData()
     }
