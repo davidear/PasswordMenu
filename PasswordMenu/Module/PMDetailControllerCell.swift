@@ -17,11 +17,19 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
             if let rt = ele?.rightText {
                 rightField.text = "\(rt)"
             }
+            switch ele!.type {
+            case "password":
+                rightField.keyboardType = UIKeyboardType.ASCIICapable
+                rightField.secureTextEntry = true
+            default:
+                break
+            }
         }
     }
     
     @IBOutlet weak var leftField: UITextField!
     @IBOutlet weak var rightField: UITextField!
+    @IBOutlet weak var rightButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -31,6 +39,15 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        //        if editing  {
+        //            rightButton.hidden = false
+        //        }else {
+        //            rightButton.hidden = true
+        //        }
     }
     
     // MARK: - TextField
