@@ -68,11 +68,6 @@ class PMDetailController: UITableViewController {
         tableView.reloadData()
     }
     
-    // MARK; - Segue
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
-        tableView .reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
-    }
-    
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -118,6 +113,7 @@ class PMDetailController: UITableViewController {
             cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             if let c = cell as? PMDetailControllerCell {
                 c.ele = it?.elementList![indexPath.row] as? Element
+                c.superController = self
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
@@ -215,7 +211,15 @@ class PMDetailController: UITableViewController {
     //        return UITableViewCellEditingStyle.Delete
     //    }
     
-    
+    // MARK: - Segue
+    @IBAction func unwindToPMDetailController(segue: UIStoryboardSegue) {
+        if segue.sourceViewController.isKindOfClass(PMCategorySelectionController) {
+        tableView .reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+        if segue.sourceViewController.isKindOfClass(PMPasswordGeneratorController) {
+            tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
     /*
     // MARK: - Navigation
     
