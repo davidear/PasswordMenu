@@ -196,13 +196,13 @@ class PMDetailController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, targetIndexPathForMoveFromRowAtIndexPath sourceIndexPath: NSIndexPath, toProposedIndexPath proposedDestinationIndexPath: NSIndexPath) -> NSIndexPath {
-        if proposedDestinationIndexPath.section == 2 {
-            let count = tableView.numberOfRowsInSection(1)
-            return NSIndexPath(forRow: count - 1, inSection: 1)
+        if proposedDestinationIndexPath.section == 0 {
+            return NSIndexPath(forRow: 2, inSection: 1)
         }else if proposedDestinationIndexPath == NSIndexPath(forRow: 0, inSection: 1) || proposedDestinationIndexPath == NSIndexPath(forRow: 1, inSection: 1) {
             return NSIndexPath(forRow: 2, inSection: 1)
-        }else if proposedDestinationIndexPath.section == 0 {
-            return NSIndexPath(forRow: 2, inSection: 1)
+        }else if proposedDestinationIndexPath.section == 2 || proposedDestinationIndexPath.section == 3 {
+            let count = tableView.numberOfRowsInSection(1)
+            return NSIndexPath(forRow: count - 1, inSection: 1)
         }
         return proposedDestinationIndexPath
     }
