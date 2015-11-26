@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
-class PMLeftController: UITableViewController {
+import SnapKit
+class PMLeftController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    
     var dataArray = NSMutableArray()
     
     override func viewDidLoad() {
@@ -20,27 +22,23 @@ class PMLeftController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        tableView.snp_updateConstraints { (make) -> Void in
+            make.width.equalTo(self.view.snp_width).multipliedBy(0.7)
+        }
     }
     
     // MARK: - Table view data source
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataArray.count
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LeftControllerCell", forIndexPath: indexPath)
         
         // Configure the cell...
@@ -50,7 +48,7 @@ class PMLeftController: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         if let nc = self.sideMenuViewController.contentViewController as? UINavigationController {
             if let itemListController = nc.viewControllers[0] as? PMItemListController {
