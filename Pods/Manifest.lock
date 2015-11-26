@@ -4,6 +4,7 @@ PODS:
   - Masonry (0.6.3)
   - MBProgressHUD (0.9.1)
   - RESideMenu (4.0.7)
+  - SnapKit (0.18.0)
   - SSKeychain (1.2.3)
   - VENTouchLock (1.11.0):
     - SSKeychain (~> 1.0)
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD (~> 0.9.1)
   - RESideMenu
+  - SnapKit
   - VENTouchLock (~> 1.0)
 
 SPEC CHECKSUMS:
@@ -22,6 +24,7 @@ SPEC CHECKSUMS:
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
   SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
   VENTouchLock: f3145d6fbff243d6692dfb1107b88db06dc216c9
 

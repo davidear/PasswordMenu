@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200F2E331C037E200008DF31 /* PMCategorySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */; };
-		62F0BDD9A882953400E4BA93 /* libPods-PasswordMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */; };
+		67FA6E6A68F8D519178BEAD8 /* Pods_PasswordMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2E5ED2097D32CEBAC53B /* Pods_PasswordMenu.framework */; };
 		B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */; };
 		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
 		B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC041BFB2A8200CD8D9A /* Main.storyboard */; };
@@ -61,8 +61,8 @@
 
 /* Begin PBXFileReference section */
 		200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCategorySelectionController.swift; sourceTree = "<group>"; };
+		52FB2E5ED2097D32CEBAC53B /* Pods_PasswordMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538DE2F001286413AF6C154F /* Pods-PasswordMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.release.xcconfig"; sourceTree = "<group>"; };
-		55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PasswordMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99EFD526104D8523DDA852C2 /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailControllerCell.swift; sourceTree = "<group>"; };
 		B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F0BDD9A882953400E4BA93 /* libPods-PasswordMenu.a in Frameworks */,
+				67FA6E6A68F8D519178BEAD8 /* Pods_PasswordMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 		349E294A3F64DC879E46AA31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55C263B1656F4F4300A1667E /* libPods-PasswordMenu.a */,
+				52FB2E5ED2097D32CEBAC53B /* Pods_PasswordMenu.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

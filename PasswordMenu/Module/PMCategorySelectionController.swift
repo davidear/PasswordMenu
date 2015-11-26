@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MagicalRecord
 class PMCategorySelectionController: UITableViewController {
     var catList: NSMutableArray?
     override func viewDidLoad() {

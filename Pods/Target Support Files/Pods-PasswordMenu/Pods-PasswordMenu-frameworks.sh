@@ -82,3 +82,24 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-PasswordMenu/Colours.framework"
+  install_framework "Pods-PasswordMenu/MBProgressHUD.framework"
+  install_framework "Pods-PasswordMenu/MagicalRecord.framework"
+  install_framework "Pods-PasswordMenu/Masonry.framework"
+  install_framework "Pods-PasswordMenu/RESideMenu.framework"
+  install_framework "Pods-PasswordMenu/SSKeychain.framework"
+  install_framework "Pods-PasswordMenu/SnapKit.framework"
+  install_framework "Pods-PasswordMenu/VENTouchLock.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-PasswordMenu/Colours.framework"
+  install_framework "Pods-PasswordMenu/MBProgressHUD.framework"
+  install_framework "Pods-PasswordMenu/MagicalRecord.framework"
+  install_framework "Pods-PasswordMenu/Masonry.framework"
+  install_framework "Pods-PasswordMenu/RESideMenu.framework"
+  install_framework "Pods-PasswordMenu/SSKeychain.framework"
+  install_framework "Pods-PasswordMenu/SnapKit.framework"
+  install_framework "Pods-PasswordMenu/VENTouchLock.framework"
+fi

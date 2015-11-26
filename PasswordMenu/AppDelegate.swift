@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MagicalRecord
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
