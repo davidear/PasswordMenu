@@ -54,7 +54,7 @@ class PMDetailController: UITableViewController {
         if !editing { // 点击保存
             if animated {
                 NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
-                self.performSegueWithIdentifier("unWindToTableController", sender: nil)
+                self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
             }
             self.editButtonItem().title = "编辑"
             self.tableView.userInteractionEnabled = false
@@ -152,7 +152,7 @@ class PMDetailController: UITableViewController {
             let ac = UIAlertController(title: "确认删除", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
             ac.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Destructive, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
                 self.it?.MR_deleteEntity()
-                self.performSegueWithIdentifier("unWindToTableController", sender: nil)
+                self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
                 }))
             ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
             }))

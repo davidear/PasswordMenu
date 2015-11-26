@@ -1,5 +1,5 @@
 //
-//  PMTableController.swift
+//  PMItemListController.swift
 //  PasswordMenu
 //
 //  Created by DaiFengyi on 15/11/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PMTableController: UITableViewController {
+class PMItemListController: UITableViewController {
     var dataArray = NSMutableOrderedSet() {
         didSet {
             self.tableView.reloadData()
@@ -53,7 +53,7 @@ class PMTableController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TableControllerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("PMItemListControllerCell", forIndexPath: indexPath)
         
         // Configure the cell...
         if let it = dataArray[indexPath.row] as? Item {
@@ -111,7 +111,7 @@ class PMTableController: UITableViewController {
         }
     }
     
-    @IBAction func unWindToTableController(segue: UIStoryboardSegue) {
+    @IBAction func unWindToItemListController(segue: UIStoryboardSegue) {
         
     }
     
