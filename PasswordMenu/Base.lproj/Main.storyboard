@@ -691,9 +691,30 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="PhB-YZ-wVJ"/>
                                 </constraints>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="1n9-qX-bju">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oh-5a-Dv9">
+                                            <rect key="frame" x="8" y="28" width="44" height="44"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="RGs-Y1-1aK"/>
+                                                <constraint firstAttribute="height" constant="44" id="pX4-KO-bwi"/>
+                                            </constraints>
+                                            <state key="normal" image="QQ"/>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="8oh-5a-Dv9" firstAttribute="leading" secondItem="1n9-qX-bju" secondAttribute="leading" constant="8" id="jGa-l3-faS"/>
+                                        <constraint firstItem="8oh-5a-Dv9" firstAttribute="top" secondItem="1n9-qX-bju" secondAttribute="top" constant="28" id="nE3-yK-yMk"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftControllerCell" textLabel="g42-1q-aAM" detailTextLabel="TOC-Aw-Tg0" style="IBUITableViewCellStyleValue1" id="VFm-o7-QOy">
-                                        <rect key="frame" x="0.0" y="28" width="200" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="200" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VFm-o7-QOy" id="Z8T-jK-O4S">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="43.5"/>
