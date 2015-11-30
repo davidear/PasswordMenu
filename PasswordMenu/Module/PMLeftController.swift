@@ -31,6 +31,7 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         catList = NSMutableArray(array: Category.MR_findAll())
     }
     
+    // MARK: - Button Action
     @IBAction func addNewCategory(sender: UIButton) {
         let ac = UIAlertController(title: "新建分类名", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         ac.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
@@ -66,11 +67,14 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.presentViewController(ac, animated: true, completion:nil)
     }
     
-    // MARK: - Button Action
     @IBAction func settingButtonAction(sender: UIButton) {
         if let settingNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("SettingNavigationController") as? PMNavigationController {
             self.showViewController(settingNavigationController, sender: sender)
         }
+    }
+    @IBAction func EditButtonAction(sender: UIButton) {
+        sender.selected = !sender.selected
+        tableView.editing = sender.selected
     }
     // MARK: - Table view data source
     
@@ -107,7 +111,6 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
                 }
             }
         }
-        //        self.sideMenuViewController.contentViewController
         self.sideMenuViewController.hideMenuViewController()
     }
     
@@ -126,38 +129,56 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         return NSBundle.mainBundle().loadNibNamed("LeftControllerSectionHeader", owner: self, options: nil).last as? UIView
     }
     
-    /*
+    // MARK: Edition
     // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
-    return true
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
     }
-    */
     
-    /*
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
-    // Delete the row from the data source
-    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
-    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            let alertController = UIAlertController(title: "请输入“Delete”确认删除", message: "该分类及其所属的密码将被删除", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addTextFieldWithConfigurationHandler({ (textField: UITextField) -> Void in
+                
+                })
+            alertController.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Destructive, handler: { (alertAction: UIAlertAction) -> Void in
+                if alertController.textFields?.first?.text != "Delete" {
+                    return
+                }
+                guard let cat = self.catList![indexPath.row] as? Category else{
+                    return
+                }
+                MagicalRecord.saveWithBlock({ (localContext: NSManagedObjectContext!) -> Void in
+                    cat.MR_deleteEntityInContext(localContext)
+                    }, completion: { (success: Bool, error: NSError!) -> Void in
+                        self.setupData()
+                        self.tableView.reloadData()
+                        // todo better animation,if use code below, the section footer will misplace
+//                        self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                })
+            }))
+            alertController.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
+            }))
+            self.showViewController(alertController, sender: nil)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
     }
-    }
-    */
     
     /*
     // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
+    func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
     }
     */
     
     /*
     // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
     // Return false if you do not want the item to be re-orderable.
-    return true
+    return false
     }
     */
     
