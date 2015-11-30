@@ -11,6 +11,7 @@
 		67FA6E6A68F8D519178BEAD8 /* Pods_PasswordMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2E5ED2097D32CEBAC53B /* Pods_PasswordMenu.framework */; };
 		B20A7A761C0732D300B2E87C /* LeftControllerSecitonFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20A7A751C0732D300B2E87C /* LeftControllerSecitonFooter.xib */; };
 		B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */; };
+		B24F5E851C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24F5E841C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib */; };
 		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
 		B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B263DC041BFB2A8200CD8D9A /* Main.storyboard */; };
 		B263DC081BFB2A8200CD8D9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B263DC071BFB2A8200CD8D9A /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		99EFD526104D8523DDA852C2 /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B20A7A751C0732D300B2E87C /* LeftControllerSecitonFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftControllerSecitonFooter.xib; sourceTree = "<group>"; };
 		B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailControllerCell.swift; sourceTree = "<group>"; };
+		B24F5E841C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftControllerSectionHeader.xib; sourceTree = "<group>"; };
 		B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B263DC051BFB2A8200CD8D9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		B263DC351BFB2F5A00CD8D9A /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B24F5E841C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib */,
 				B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */,
 				B20A7A751C0732D300B2E87C /* LeftControllerSecitonFooter.xib */,
 				B2EB062A1BFEF12D00AEA5DB /* PMItemListController.swift */,
@@ -418,6 +421,7 @@
 				B263DC081BFB2A8200CD8D9A /* Assets.xcassets in Resources */,
 				B2774EEA1BFC5DA6001733B3 /* SettingList.plist in Resources */,
 				B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */,
+				B24F5E851C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib in Resources */,
 				B2774EE91BFC5DA6001733B3 /* Setting.storyboard in Resources */,
 				B20A7A761C0732D300B2E87C /* LeftControllerSecitonFooter.xib in Resources */,
 			);

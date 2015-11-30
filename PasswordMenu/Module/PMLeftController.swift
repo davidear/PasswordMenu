@@ -65,6 +65,13 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         }))
         self.presentViewController(ac, animated: true, completion:nil)
     }
+    
+    // MARK: - Button Action
+    @IBAction func settingButtonAction(sender: UIButton) {
+        if let settingNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("SettingNavigationController") as? PMNavigationController {
+            self.showViewController(settingNavigationController, sender: sender)
+        }
+    }
     // MARK: - Table view data source
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -111,6 +118,14 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
     func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return NSBundle.mainBundle().loadNibNamed("LeftControllerSecitonFooter", owner: self, options: nil).last as? UIButton
     }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 80
+    }
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return NSBundle.mainBundle().loadNibNamed("LeftControllerSectionHeader", owner: self, options: nil).last as? UIView
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

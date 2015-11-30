@@ -10,7 +10,7 @@ import UIKit
 
 class PMSideMenu: RESideMenu {
     override func awakeFromNib() {
-        self.contentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController");
+        self.contentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentNavigationController");
         self.leftMenuViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LeftMenuViewController");
     }
     override func viewDidLoad() {
