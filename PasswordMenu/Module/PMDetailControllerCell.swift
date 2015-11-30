@@ -10,6 +10,11 @@ import UIKit
 
 class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
     weak var superController: PMDetailController?
+    
+    /**
+     *
+     通过ele的didSet来实现自定义类型cell
+     */
     var ele: Element? {
         didSet {
             if let lt = ele?.leftText {
@@ -22,6 +27,8 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
             case "password":
                 rightField.keyboardType = UIKeyboardType.ASCIICapable
                 rightField.secureTextEntry = true
+            case "date":
+                rightButton.setImage(UIImage(named: "QQ"), forState: UIControlState.Normal)
             default:
                 break
             }
@@ -50,13 +57,13 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         //            rightButton.hidden = true
         //        }
     }
-
+    
     // MARK: - Button action
     @IBAction func rightButtonAction(sender: UIButton) {
         if let passwordGeneratorController = superController?.storyboard?.instantiateViewControllerWithIdentifier("PMPasswordGeneratorController") as? PMPasswordGeneratorController {
-            passwordGeneratorController.success = { [unowned self](randomString: String) -> Void in 
+            passwordGeneratorController.success = { [unowned self](randomString: String) -> Void in
                 self.ele?.rightText = randomString
-                }
+            }
             superController?.showViewController(passwordGeneratorController, sender: nil)
         }
     }
