@@ -13,7 +13,7 @@
             <fontDescription key="fontDescription" type="system" pointSize="16"/>
             <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
             <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-            <state key="normal" title="新增分类" image="QQ">
+            <state key="normal" title="新增分类" image="add">
                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             </state>
             <connections>
@@ -23,6 +23,6 @@
         </button>
     </objects>
     <resources>
-        <image name="QQ" width="20" height="22"/>
+        <image name="add" width="30" height="30"/>
     </resources>
 </document>

@@ -17,7 +17,7 @@
                         <constraint firstAttribute="height" constant="44" id="QgX-SP-U97"/>
                         <constraint firstAttribute="width" constant="44" id="s0p-hm-0O4"/>
                     </constraints>
-                    <state key="normal" image="QQ"/>
+                    <state key="normal" image="setting"/>
                     <connections>
                         <action selector="settingButtonAction:" destination="-1" eventType="touchUpInside" id="Bke-VH-SVi"/>
                     </connections>
@@ -49,5 +49,6 @@
     </objects>
     <resources>
         <image name="QQ" width="20" height="22"/>
+        <image name="setting" width="30" height="30"/>
     </resources>
 </document>
