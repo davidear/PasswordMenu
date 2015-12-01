@@ -1,9 +1,19 @@
 //
-//  Use this file to import your target's public headers that you would like to expose to Swift.
+//  PasswordMenu-Bridging-Header.h
+//  PasswordMenu
 //
-#import "ReSideMenu.h"
-#import "Colours.h"
+//  Created by DaiFengyi on 15/12/1.
+//  Copyright © 2015年 DaiFengyi. All rights reserved.
+//
+
+#ifndef PasswordMenu_Bridging_Header_h
+#define PasswordMenu_Bridging_Header_h
+#import <Foundation/Foundation.h>
+#import <Colours/Colours.h>
+#import <RESideMenu/RESideMenu.h>
 #import "MMConstant.h"
-#import "VENTouchLock.h"
-#import "MMTouchLockSplashViewController.h"
+#import <VENTouchLock/VENTouchLock.h>
+#import <MMTouchLockSplashViewController/MMTouchLockSplashViewController.h>
 #import "MagicalRecord.h"
+
+#endif /* PasswordMenu_Bridging_Header_h */
