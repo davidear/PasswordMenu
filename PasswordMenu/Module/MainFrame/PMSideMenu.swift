@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RESideMenu
 class PMSideMenu: RESideMenu {
     override func awakeFromNib() {
         self.contentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentNavigationController");

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MagicalRecord
 class PMDetailController: UITableViewController {
     private let elementTypeList = ["text", "date", "image", "password"]
     var newType : String?

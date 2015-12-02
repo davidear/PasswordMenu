@@ -8,6 +8,7 @@
 
 import UIKit
 import MagicalRecord
+import VENTouchLock
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     

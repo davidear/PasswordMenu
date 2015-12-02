@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 childrenOurFuture. All rights reserved.
 //
 
-#import "VENTouchLockSplashViewController.h"
+#import <VENTouchLock/VENTouchLockSplashViewController.h>
 
 @interface MMTouchLockSplashViewController : VENTouchLockSplashViewController
 

@@ -8,12 +8,7 @@
 
 #ifndef PasswordMenu_Bridging_Header_h
 #define PasswordMenu_Bridging_Header_h
-#import <Foundation/Foundation.h>
-#import <Colours/Colours.h>
-#import <RESideMenu/RESideMenu.h>
 #import "MMConstant.h"
-#import <VENTouchLock/VENTouchLock.h>
-#import <MMTouchLockSplashViewController/MMTouchLockSplashViewController.h>
-#import "MagicalRecord.h"
+#import "MMTouchLockSplashViewController.h"
 
 #endif /* PasswordMenu_Bridging_Header_h */
