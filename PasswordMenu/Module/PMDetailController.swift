@@ -9,7 +9,7 @@
 import UIKit
 import MagicalRecord
 class PMDetailController: UITableViewController {
-    private let elementTypeList = ["text", "date", "image", "password"]
+    private let elementTypeList = ["文本", "日期", "图片", "密码"]
     var newType : String?
     var it : Item?
     private var enableDelete = false

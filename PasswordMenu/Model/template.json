@@ -1,6 +1,6 @@
 [
  {
- "category" : "website",
+ "category" : "网站",
  "elementList" :[
                  {
                  "leftText": "账号",
@@ -20,7 +20,47 @@
                  ]
  },
  {
- "category": "game",
+ "category": "邮箱",
+ "elementList": [
+                 {
+                 "leftText": "邮箱地址",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "密码",
+                 "rightText": "",
+                 "type": "password"
+                 },
+                 {
+                 "leftText": "网址",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "用户名",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "绑定手机号",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "安全码",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "备注",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 ]
+ },
+ {
+ "category": "游戏",
  "elementList": [
                  {
                  "leftText": "账号",
