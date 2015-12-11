@@ -164,7 +164,7 @@ class PMDetailController: UITableViewController {
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath == NSIndexPath(forRow: 1, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
+        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
             return false
         }
         return true
