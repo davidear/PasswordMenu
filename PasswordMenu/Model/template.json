@@ -4,17 +4,17 @@
  "elementList" :[
                  {
                  "leftText": "账号",
-                 "rightText": null,
+                 "rightText": "",
                  "type": "text"
                  },
                  {
                  "leftText": "密码",
-                 "rightText": null,
+                 "rightText": "",
                  "type": "password"
                  },
                  {
                  "leftText": "网址",
-                 "rightText": null,
+                 "rightText": "",
                  "type": "text"
                  }
                  ]
@@ -49,6 +49,31 @@
                  },
                  {
                  "leftText": "安全码",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "备注",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 ]
+ },
+ {
+ "category": "证件",
+ "elementList": [
+                 {
+                 "leftText": "证件名称",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "姓名",
+                 "rightText": "",
+                 "type": "text"
+                 },
+                 {
+                 "leftText": "证件号码",
                  "rightText": "",
                  "type": "text"
                  },

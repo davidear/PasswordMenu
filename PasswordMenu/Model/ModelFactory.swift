@@ -11,16 +11,16 @@ import UIKit
 class ModelFactory: NSObject {
     class func element(type: String) -> Element {
         let ele = Element.MR_createEntity()
-        ele.type = type
+        ele.leftText = type
         switch type {
-        case "text":
-            ele.leftText = "文本"
-        case "password":
-            ele.leftText = "密码"
-        case "date":
-            ele.leftText = "日期"
-        case "image":
-            ele.leftText = "图像"
+        case "文本":
+            ele.type = "text"
+        case "密码":
+            ele.type = "password"
+        case "日期":
+            ele.type = "date"
+        case "图像":
+            ele.type = "image"
         default:
             break
         }

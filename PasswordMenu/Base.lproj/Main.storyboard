@@ -224,8 +224,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="QQ" id="QxJ-BE-miQ">
-                                            <rect key="frame" x="15" y="10" width="20" height="22"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="add" id="QxJ-BE-miQ">
+                                            <rect key="frame" x="15" y="11" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -732,6 +732,7 @@
     </scenes>
     <resources>
         <image name="QQ" width="20" height="22"/>
+        <image name="add" width="20" height="20"/>
         <image name="category" width="26" height="19"/>
         <image name="generate" width="20" height="20"/>
         <image name="iconfont-augiczhiwentubiao" width="64" height="64"/>
