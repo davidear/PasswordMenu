@@ -135,7 +135,7 @@ class PMDetailController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView .deselectRowAtIndexPath(indexPath, animated: true)
         switch indexPath {
-        case NSIndexPath(forRow: 0, inSection: 2):
+        case NSIndexPath(forRow: 0, inSection: 2):  //  新增element
             let ac = UIAlertController(title: "选择类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
             for eleType in elementTypeList {
                 ac.addAction(UIAlertAction(title: eleType, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
@@ -175,6 +175,7 @@ class PMDetailController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            it?.elementList?[indexPath.row].MR_deleteEntity()
             it?.elementList?.removeObjectAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
@@ -220,7 +221,7 @@ class PMDetailController: UITableViewController {
             tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: UITableViewRowAnimation.Automatic)
         }
     }
-    /*
+
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -228,6 +229,11 @@ class PMDetailController: UITableViewController {
     // Get the new view controller using segue.destinationViewController.
     // Pass the selected object to the new view controller.
     }
-    */
     
+    override func didMoveToParentViewController(parent: UIViewController?) {
+        super.didMoveToParentViewController(parent)
+        if parent == nil { // pop out
+            NSNotificationCenter.defaultCenter().postNotificationName("kRefreshData", object: nil)
+        }
+    }
 }

@@ -105,9 +105,7 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         if let nc = self.sideMenuViewController.contentViewController as? UINavigationController {
             if let itemListController = nc.viewControllers[0] as? PMItemListController {
                 if let cat = catList![indexPath.row] as? Category {
-                    if let itemList = cat.itemList {
-                        itemListController.dataArray = NSMutableOrderedSet(orderedSet: itemList)
-                    }
+                    itemListController.cat = cat
                 }
             }
         }

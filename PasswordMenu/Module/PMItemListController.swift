@@ -5,15 +5,17 @@
 //  Created by DaiFengyi on 15/11/17.
 //  Copyright © 2015年 DaiFengyi. All rights reserved.
 //
-
+/// PMDetailController通过NSNotification来通知更新数据源
+/// PMLeftController通过setter更新数据源
 import UIKit
 
 class PMItemListController: UITableViewController {
-    var dataArray = NSMutableOrderedSet() {
+    var cat: Category? {
         didSet {
             self.tableView.reloadData()
         }
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +24,11 @@ class PMItemListController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        addNotificationCenterObservers()
+    }
+    
+    deinit {
+        removeNotificationCenterObservers()
     }
     @IBAction func AddNewItem(sender: UIBarButtonItem) {
         
@@ -40,23 +47,37 @@ class PMItemListController: UITableViewController {
         self.presentViewController(ac, animated: true, completion: nil)
     }
     
+    func addNotificationCenterObservers() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: NSSelectorFromString("refreshData"), name: "kRefreshData", object: nil)
+    }
+    func removeNotificationCenterObservers() {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    func refreshData() {
+        if let c = cat {
+            cat = Category.MR_findFirstByAttribute("name", withValue: c.name)
+            self.tableView.reloadData()
+        }else {
+//            cat = Category.MR_findAll()
+        }
+    }
     // MARK: - Table view data source
-    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return dataArray.count
+        if let c = cat {
+            return c.itemList!.count
+        }
+        return 0
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PMItemListControllerCell", forIndexPath: indexPath)
         
         // Configure the cell...
-        if let it = dataArray[indexPath.row] as? Item {
+        if let it = cat?.itemList![indexPath.row] as? Item {
             if let ele = it.elementList?.objectAtIndex(0) as? Element {
                 cell.textLabel?.text = ele.rightText
             }
@@ -107,12 +128,14 @@ class PMItemListController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if let dvc = segue.destinationViewController as? PMDetailController {
-            dvc.it = dataArray[tableView.indexPathForCell(sender as! UITableViewCell)!.row] as? Item
+            dvc.it = cat?.itemList![tableView.indexPathForCell(sender as! UITableViewCell)!.row] as? Item
         }
     }
     
     @IBAction func unWindToItemListController(segue: UIStoryboardSegue) {
-        
+        if segue.sourceViewController.isKindOfClass(PMDetailController.self) {
+            NSNotificationCenter.defaultCenter().postNotificationName("kRefreshData", object: nil)
+        }
     }
     
 }
