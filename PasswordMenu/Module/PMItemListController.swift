@@ -8,17 +8,18 @@
 /// PMDetailController通过NSNotification来通知更新数据源
 /// PMLeftController通过setter更新数据源
 import UIKit
-
+class PMItemListCell: UITableViewCell {
+    var indexPath: NSIndexPath?
+}
 class PMItemListController: UITableViewController {
-    var cat: Category? {
-        didSet {
-            self.tableView.reloadData()
-        }
-    }
-
+    var catList : NSMutableArray?
+    var expansionList : Array<Bool>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        catList = NSMutableArray(array: Category.MR_findAll())
+        expansionList = Array(count: (catList?.count)!, repeatedValue: false)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -39,11 +40,11 @@ class PMItemListController: UITableViewController {
                     let dvc = self.storyboard?.instantiateViewControllerWithIdentifier("PMDetailController") as!PMDetailController
                     dvc.newType = alertAction.title
                     self.showViewController(dvc, sender: sender)
-                }))
+                    }))
             }
         }
         ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (UIAlertAction) -> Void in
-            }))
+        }))
         self.presentViewController(ac, animated: true, completion: nil)
     }
     
@@ -54,33 +55,75 @@ class PMItemListController: UITableViewController {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     func refreshData() {
-        if let c = cat {
-            cat = Category.MR_findFirstByAttribute("name", withValue: c.name)
-            self.tableView.reloadData()
-        }else {
-//            cat = Category.MR_findAll()
+        catList = NSMutableArray(array: Category.MR_findAll())
+        self.tableView.reloadData()
+    }
+    
+    // MARK: - Button Action
+    @IBAction func setting(sender: UIBarButtonItem) {
+        if let settingNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("SettingNavigationController") as? PMNavigationController {
+            self.showViewController(settingNavigationController, sender: sender)
         }
+    }
+    func sectionHeaderClick(sender: UIButton) {
+        expansionList![sender.tag] = !expansionList![sender.tag]
+        tableView.reloadSections(NSIndexSet(index: sender.tag), withRowAnimation: UITableViewRowAnimation.Automatic)
     }
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let c = cat {
-            return c.itemList!.count
+        if let count = catList?.count {
+            return count
         }
         return 0
     }
     
+//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "hello,world"
+//    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if expansionList![section] == false {
+            return 0
+        }
+        if let c = catList?[section] as? Category {
+            if let count = c.itemList?.count {
+                return count
+            }
+        }
+        return 0
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let btn = UIButton(frame:CGRectMake(0,0,0,44))
+//        btn.backgroundColor = UIColor.blueColor()
+        btn.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
+        btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
+        btn.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0)
+//        btn.titleLabel?.textAlignment = NSTextAlignment.Left
+        btn.titleLabel?.font = UIFont.systemFontOfSize(12)
+        if let cat = catList?[section] as? Category {
+            btn .setTitle(cat.name, forState: UIControlState.Normal)
+        }
+        btn.addTarget(self, action: NSSelectorFromString("sectionHeaderClick:"), forControlEvents: UIControlEvents.TouchUpInside)
+        btn.tag = section
+        return btn
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PMItemListControllerCell", forIndexPath: indexPath)
-        
-        // Configure the cell...
-        if let it = cat?.itemList![indexPath.row] as? Item {
-            if let ele = it.elementList?.objectAtIndex(0) as? Element {
-                cell.textLabel?.text = ele.rightText
+        if let cat = catList?[indexPath.section] as? Category {
+            if let it = cat.itemList![indexPath.row] as? Item {
+                if let ele = it.elementList?.objectAtIndex(0) as? Element {
+                    cell.textLabel?.text = ele.rightText
+                }
             }
+        }
+        if let c = cell as? PMItemListCell {
+            c.indexPath = indexPath
         }
         return cell
     }
@@ -128,7 +171,11 @@ class PMItemListController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if let dvc = segue.destinationViewController as? PMDetailController {
-            dvc.it = cat?.itemList![tableView.indexPathForCell(sender as! UITableViewCell)!.row] as? Item
+            if let cat = catList?[(sender?.indexPath.section)!] as? Category {
+                if let it = cat.itemList?[(sender?.indexPath.row)!] as? Item {
+                    dvc.it = it
+                }
+            }
         }
     }
     

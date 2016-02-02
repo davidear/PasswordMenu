@@ -100,17 +100,16 @@ class PMLeftController: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        if let nc = self.sideMenuViewController.contentViewController as? UINavigationController {
-            if let itemListController = nc.viewControllers[0] as? PMItemListController {
-                if let cat = catList![indexPath.row] as? Category {
-                    itemListController.cat = cat
-                }
-            }
-        }
-        self.sideMenuViewController.hideMenuViewController()
-    }
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+//        if let nc = self.sideMenuViewController.contentViewController as? UINavigationController {
+//            if let itemListController = nc.viewControllers[0] as? PMItemListController {
+//                if let cat = catList![indexPath.row] as? Category {
+//                    itemListController.cat = cat
+//                }
+//            }
+//        }
+//    }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 44
