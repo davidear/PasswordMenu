@@ -24,7 +24,7 @@ class PMItemListController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem()
         addNotificationCenterObservers()
     }
     
@@ -77,10 +77,6 @@ class PMItemListController: UITableViewController {
         return 0
     }
     
-//    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "hello,world"
-//    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if expansionList![section] == false {
             return 0
@@ -119,6 +115,9 @@ class PMItemListController: UITableViewController {
             if let it = cat.itemList![indexPath.row] as? Item {
                 if let ele = it.elementList?.objectAtIndex(0) as? Element {
                     cell.textLabel?.text = ele.rightText
+                }
+                if let ele = it.elementList?.objectAtIndex(1) as? Element {
+                    cell.detailTextLabel?.text = ele.rightText
                 }
             }
         }
