@@ -10,6 +10,8 @@
 		200F2E331C037E200008DF31 /* PMCategorySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F2E321C037E200008DF31 /* PMCategorySelectionController.swift */; };
 		67FA6E6A68F8D519178BEAD8 /* Pods_PasswordMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FB2E5ED2097D32CEBAC53B /* Pods_PasswordMenu.framework */; };
 		B20A7A761C0732D300B2E87C /* LeftControllerSecitonFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20A7A751C0732D300B2E87C /* LeftControllerSecitonFooter.xib */; };
+		B223DBCB1C61AB5E0084DD65 /* PMCategoryEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223DBCA1C61AB5E0084DD65 /* PMCategoryEditController.swift */; };
+		B223DBCF1C61CFAD0084DD65 /* PMSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B223DBCE1C61CFAD0084DD65 /* PMSettingController.swift */; };
 		B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */; };
 		B24F5E851C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24F5E841C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib */; };
 		B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC001BFB2A8200CD8D9A /* AppDelegate.swift */; };
@@ -21,7 +23,6 @@
 		B263DC3C1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B263DC3A1BFB2F5A00CD8D9A /* MMTouchLockSplashViewController.m */; };
 		B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B263DC401BFB368400CD8D9A /* PMNavigationController.swift */; };
 		B2774EE81BFC5DA6001733B3 /* MMSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EE41BFC5DA6001733B3 /* MMSettingTableViewController.m */; };
-		B2774EE91BFC5DA6001733B3 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2774EE61BFC5DA6001733B3 /* Setting.storyboard */; };
 		B2774EEA1BFC5DA6001733B3 /* SettingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2774EE71BFC5DA6001733B3 /* SettingList.plist */; };
 		B2774EF21BFC5E09001733B3 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EED1BFC5E09001733B3 /* MMNavigationController.m */; };
 		B2774EF31BFC5E09001733B3 /* MMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2774EEF1BFC5E09001733B3 /* MMTableViewController.m */; };
@@ -67,6 +68,8 @@
 		538DE2F001286413AF6C154F /* Pods-PasswordMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.release.xcconfig"; sourceTree = "<group>"; };
 		99EFD526104D8523DDA852C2 /* Pods-PasswordMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PasswordMenu/Pods-PasswordMenu.debug.xcconfig"; sourceTree = "<group>"; };
 		B20A7A751C0732D300B2E87C /* LeftControllerSecitonFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftControllerSecitonFooter.xib; sourceTree = "<group>"; };
+		B223DBCA1C61AB5E0084DD65 /* PMCategoryEditController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMCategoryEditController.swift; sourceTree = "<group>"; };
+		B223DBCE1C61CFAD0084DD65 /* PMSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMSettingController.swift; sourceTree = "<group>"; };
 		B240B7201BFEF57700168CA0 /* PMDetailControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMDetailControllerCell.swift; sourceTree = "<group>"; };
 		B24F5E841C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftControllerSectionHeader.xib; sourceTree = "<group>"; };
 		B263DBFD1BFB2A8200CD8D9A /* PasswordMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,7 +91,6 @@
 		B263DC401BFB368400CD8D9A /* PMNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMNavigationController.swift; sourceTree = "<group>"; };
 		B2774EE31BFC5DA6001733B3 /* MMSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSettingTableViewController.h; sourceTree = "<group>"; };
 		B2774EE41BFC5DA6001733B3 /* MMSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSettingTableViewController.m; sourceTree = "<group>"; };
-		B2774EE61BFC5DA6001733B3 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B2774EE71BFC5DA6001733B3 /* SettingList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingList.plist; sourceTree = "<group>"; };
 		B2774EEC1BFC5E09001733B3 /* MMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMNavigationController.h; sourceTree = "<group>"; };
 		B2774EED1BFC5E09001733B3 /* MMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMNavigationController.m; sourceTree = "<group>"; };
@@ -258,6 +260,8 @@
 			children = (
 				B2774EE31BFC5DA6001733B3 /* MMSettingTableViewController.h */,
 				B2774EE41BFC5DA6001733B3 /* MMSettingTableViewController.m */,
+				B223DBCA1C61AB5E0084DD65 /* PMCategoryEditController.swift */,
+				B223DBCE1C61CFAD0084DD65 /* PMSettingController.swift */,
 				B2774EE51BFC5DA6001733B3 /* Source */,
 			);
 			path = Setting;
@@ -266,7 +270,6 @@
 		B2774EE51BFC5DA6001733B3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				B2774EE61BFC5DA6001733B3 /* Setting.storyboard */,
 				B2774EE71BFC5DA6001733B3 /* SettingList.plist */,
 			);
 			path = Source;
@@ -424,7 +427,6 @@
 				B2774EEA1BFC5DA6001733B3 /* SettingList.plist in Resources */,
 				B263DC061BFB2A8200CD8D9A /* Main.storyboard in Resources */,
 				B24F5E851C0BFFDA00DF01A5 /* LeftControllerSectionHeader.xib in Resources */,
-				B2774EE91BFC5DA6001733B3 /* Setting.storyboard in Resources */,
 				B20A7A761C0732D300B2E87C /* LeftControllerSecitonFooter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B223DBCF1C61CFAD0084DD65 /* PMSettingController.swift in Sources */,
 				B2774F2A1BFC6E1E001733B3 /* Element+CoreDataProperties.swift in Sources */,
 				B2774EF41BFC5E09001733B3 /* MMViewController.m in Sources */,
 				B2F10D5C1C034B15009159BD /* ModelFactory.swift in Sources */,
@@ -514,6 +517,7 @@
 				B2F10D581C033C5B009159BD /* PMConfigHelper.swift in Sources */,
 				B2EB062E1BFEF16800AEA5DB /* PMDetailController.swift in Sources */,
 				B2774F281BFC6E1E001733B3 /* Category+CoreDataProperties.swift in Sources */,
+				B223DBCB1C61AB5E0084DD65 /* PMCategoryEditController.swift in Sources */,
 				B263DC011BFB2A8200CD8D9A /* AppDelegate.swift in Sources */,
 				200F2E331C037E200008DF31 /* PMCategorySelectionController.swift in Sources */,
 				B2774F2B1BFC6E1E001733B3 /* Element.swift in Sources */,
@@ -665,6 +669,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: fengyi dai (C8D6ERL39C)";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -683,6 +689,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PasswordMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

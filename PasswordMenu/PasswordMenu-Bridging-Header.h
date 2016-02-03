@@ -11,5 +11,7 @@
 #import "MMConstant.h"
 #import "PMUtil.h"
 #import "MMTouchLockSplashViewController.h"
+#import "MMTableViewController.h"
+#import "MMNavigationController.h"
 
 #endif /* PasswordMenu_Bridging_Header_h */
