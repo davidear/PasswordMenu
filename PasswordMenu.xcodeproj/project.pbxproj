@@ -34,6 +34,7 @@
 		B2774F2E1BFC879D001733B3 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */; };
 		B2774F2F1BFC879D001733B3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2774F2D1BFC879D001733B3 /* Item.swift */; };
 		B28B329A1C031E94001994F0 /* template.json in Resources */ = {isa = PBXBuildFile; fileRef = B28B32991C030262001994F0 /* template.json */; };
+		B2DC58591C605EC100BAD3FE /* PMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC58581C605EC100BAD3FE /* PMUtil.m */; };
 		B2E50C8E1C059524009DB6F8 /* PMPasswordGeneratorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E50C8D1C059524009DB6F8 /* PMPasswordGeneratorController.swift */; };
 		B2E50C901C05B592009DB6F8 /* RandomStringGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E50C8F1C05B592009DB6F8 /* RandomStringGenerator.swift */; };
 		B2EB062B1BFEF12D00AEA5DB /* PMLeftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */; };
@@ -103,6 +104,8 @@
 		B2774F2C1BFC879D001733B3 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2774F2D1BFC879D001733B3 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B28B32991C030262001994F0 /* template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = template.json; sourceTree = "<group>"; };
+		B2DC58571C605EC100BAD3FE /* PMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMUtil.h; sourceTree = "<group>"; };
+		B2DC58581C605EC100BAD3FE /* PMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMUtil.m; sourceTree = "<group>"; };
 		B2E50C8D1C059524009DB6F8 /* PMPasswordGeneratorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMPasswordGeneratorController.swift; sourceTree = "<group>"; };
 		B2E50C8F1C05B592009DB6F8 /* RandomStringGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomStringGenerator.swift; sourceTree = "<group>"; };
 		B2EB06291BFEF12D00AEA5DB /* PMLeftController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMLeftController.swift; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 		B263DC341BFB2F5A00CD8D9A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B2DC58571C605EC100BAD3FE /* PMUtil.h */,
+				B2DC58581C605EC100BAD3FE /* PMUtil.m */,
 				B2F10D571C033C5B009159BD /* PMConfigHelper.swift */,
 				B2E50C8F1C05B592009DB6F8 /* RandomStringGenerator.swift */,
 			);
@@ -500,6 +505,7 @@
 				B240B7211BFEF57700168CA0 /* PMDetailControllerCell.swift in Sources */,
 				B2E50C901C05B592009DB6F8 /* RandomStringGenerator.swift in Sources */,
 				B2EB062C1BFEF12D00AEA5DB /* PMItemListController.swift in Sources */,
+				B2DC58591C605EC100BAD3FE /* PMUtil.m in Sources */,
 				B2774EF21BFC5E09001733B3 /* MMNavigationController.m in Sources */,
 				B2E50C8E1C059524009DB6F8 /* PMPasswordGeneratorController.swift in Sources */,
 				B263DC411BFB368400CD8D9A /* PMNavigationController.swift in Sources */,

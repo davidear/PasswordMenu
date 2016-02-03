@@ -89,9 +89,9 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
     // MARK: - TextField
     func textFieldDidEndEditing(textField: UITextField) {
         if textField == leftField {
-            ele?.leftText = textField.text
+            ele?.leftText = textField.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         }else {
-            ele?.rightText = textField.text
+            ele?.rightText = textField.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         }
     }
 }

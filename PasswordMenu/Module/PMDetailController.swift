@@ -50,9 +50,14 @@ class PMDetailController: UITableViewController {
     //
     // MARK: - Button action
     override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
-        super.setEditing(editing, animated: animated)
         if !editing { // 点击保存
             if animated {
+                self.tableView.endEditing(true)
+                // 验证
+                if !passValidation() {
+                    return
+                }
+                
                 NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
                 self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
             }
@@ -65,7 +70,29 @@ class PMDetailController: UITableViewController {
                 self.enableDelete = true
             }
         }
+        super.setEditing(editing, animated: animated)
         tableView.reloadData()
+    }
+    
+    // MARK: - Validation
+    func passValidation() -> Bool {
+        if let ele = it?.elementList![0] as? Element {
+            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 {
+                PMUtil.showMsg("请填写账户名")
+                return false
+            }
+        }
+        if let ele = it?.elementList![1] as? Element {
+            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 {
+                PMUtil.showMsg("请填写密码")
+                return false
+            }
+        }
+        if it?.category == nil {
+            PMUtil.showMsg("请选择类别")
+            return false
+        }
+        return true
     }
     
     // MARK: - Table view data source
@@ -164,7 +191,7 @@ class PMDetailController: UITableViewController {
     
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
+        if indexPath.section == 2 || indexPath == NSIndexPath(forRow: 0, inSection: 1) || indexPath == NSIndexPath(forRow: 1, inSection: 1) || indexPath.section == 0 || indexPath.section == 3 {
             return false
         }
         return true
@@ -215,19 +242,19 @@ class PMDetailController: UITableViewController {
     // MARK: - Segue
     @IBAction func unwindToPMDetailController(segue: UIStoryboardSegue) {
         if segue.sourceViewController.isKindOfClass(PMCategorySelectionController) {
-        tableView .reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
+            tableView .reloadSections(NSIndexSet(index: 0), withRowAnimation: UITableViewRowAnimation.Automatic)
         }
         if segue.sourceViewController.isKindOfClass(PMPasswordGeneratorController) {
             tableView.reloadSections(NSIndexSet(index: 1), withRowAnimation: UITableViewRowAnimation.Automatic)
         }
     }
-
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
     
     override func didMoveToParentViewController(parent: UIViewController?) {

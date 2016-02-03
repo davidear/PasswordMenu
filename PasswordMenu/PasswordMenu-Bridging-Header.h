@@ -9,6 +9,7 @@
 #ifndef PasswordMenu_Bridging_Header_h
 #define PasswordMenu_Bridging_Header_h
 #import "MMConstant.h"
+#import "PMUtil.h"
 #import "MMTouchLockSplashViewController.h"
 
 #endif /* PasswordMenu_Bridging_Header_h */

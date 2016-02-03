@@ -8,6 +8,7 @@
 /// PMDetailController通过NSNotification来通知更新数据源
 /// PMLeftController通过setter更新数据源
 import UIKit
+import MagicalRecord
 class PMItemListCell: UITableViewCell {
     var indexPath: NSIndexPath?
 }
@@ -18,8 +19,7 @@ class PMItemListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        catList = NSMutableArray(array: Category.MR_findAll())
-        expansionList = Array(count: (catList?.count)!, repeatedValue: false)
+        self.refreshData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -56,6 +56,7 @@ class PMItemListController: UITableViewController {
     }
     func refreshData() {
         catList = NSMutableArray(array: Category.MR_findAll())
+        expansionList = Array(count: (catList?.count)!, repeatedValue: false)
         self.tableView.reloadData()
     }
     
@@ -68,6 +69,42 @@ class PMItemListController: UITableViewController {
     func sectionHeaderClick(sender: UIButton) {
         expansionList![sender.tag] = !expansionList![sender.tag]
         tableView.reloadSections(NSIndexSet(index: sender.tag), withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    @IBAction func addCategory(sender: UIButton) {
+        let ac = UIAlertController(title: "新建分类名", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        ac.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
+            
+        }
+        ac.addAction(UIAlertAction(title: "确定", style: UIAlertActionStyle.Default, handler: { [unowned self](alertAction: UIAlertAction) -> Void in
+            guard var name = ac.textFields?.first?.text else {
+                return
+            }
+            name = name.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+            
+            guard let list = self.catList else {
+                return
+            }
+            for cat in list {
+                if cat.name == name {
+                    return
+                }
+            }
+            
+            MagicalRecord.saveWithBlock({ (localContext: NSManagedObjectContext!) -> Void in
+                let cat = Category.MR_createEntityInContext(localContext)
+                if let textField = ac.textFields?.first {
+                    cat.name = textField.text
+                }
+                }, completion: { [unowned self](success: Bool, error: NSError!) -> Void in
+                    if success {
+                        self.refreshData()
+                    }
+                })
+            }))
+        ac.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: { (alertAction:UIAlertAction) -> Void in
+        }))
+        self.presentViewController(ac, animated: true, completion:nil)
+
     }
     // MARK: - Table view data source
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
