@@ -260,10 +260,4 @@ class PMDetailController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     
-    override func didMoveToParentViewController(parent: UIViewController?) {
-        super.didMoveToParentViewController(parent)
-        if parent == nil { // pop out
-            NSNotificationCenter.defaultCenter().postNotificationName("kRefreshData", object: nil)
-        }
-    }
 }
