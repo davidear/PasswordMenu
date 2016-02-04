@@ -7,13 +7,23 @@
 //
 /**
 *   为什么不用accessoryView，因为在edit的状态下，accessoryView会被替换成移动的icon，所以坚持自己加rightButton
-    通过cell的edit来控制cell的各种形态不是个很好的注意，定制化太高，code很敏感，还是应该在数据源中设置type或者edit标签来控制
+通过cell的edit来控制cell的各种形态不是个很好的注意，定制化太高，code很敏感，还是应该在数据源中设置type或者edit标签来控制
+目前已更新为通过两个参数：hasRightButton和showRightButton来决定是否显示
 */
 import UIKit
 import SnapKit
 class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
     weak var superController: PMDetailController?
-    var rightButtonHidden = false
+    var hasRightButton = false // 该参数表示cell本身是否具有右侧按钮，由element的type决定
+    var showRightButton = false {// 该参数是提供给controller根据情况设置的，表示是否显示右侧按钮
+        didSet {
+            let show = showRightButton && hasRightButton
+            rightButton.hidden = !show
+            rightButton.snp_updateConstraints(closure: { (make) -> Void in
+                make.width.equalTo(show ? 30 : 0)
+            })
+        }
+    }
     /**
      *
      通过ele的didSet来实现自定义类型cell
@@ -32,13 +42,14 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
                 rightButton.snp_updateConstraints(closure: { (make) -> Void in
                     make.width.equalTo(0)
                 })
-                rightButtonHidden = true
+                hasRightButton = false
             case "password":
                 rightField.keyboardType = UIKeyboardType.ASCIICapable
                 rightField.secureTextEntry = true
+                hasRightButton = true
             case "date":
                 rightButton.setImage(UIImage(named: "QQ"), forState: UIControlState.Normal)
-                
+                hasRightButton = true
             default:
                 break
             }
@@ -57,24 +68,6 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
-    }
-    
-    override func setEditing(editing: Bool, animated: Bool) {
-        super.setEditing(editing, animated: animated)
-        if rightButtonHidden {
-            return
-        }
-        if editing {
-            rightButton.hidden = false
-            rightButton.snp_updateConstraints(closure: { (make) -> Void in
-                make.width.equalTo(30)
-            })
-        }else {
-            rightButton.hidden = true
-            rightButton.snp_updateConstraints(closure: { (make) -> Void in
-                make.width.equalTo(0)
-            })
-        }
     }
     
     // MARK: - Button action

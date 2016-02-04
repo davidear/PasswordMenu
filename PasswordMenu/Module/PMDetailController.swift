@@ -121,12 +121,14 @@ class PMDetailController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if !self.editing {
+        if !self.editing { // 非编辑状态
             let cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             cell.ele = it?.elementList![indexPath.row] as? Element
+            cell.showRightButton = false
             return cell
         }
         
+        // 编辑状态
         var cell : UITableViewCell
         switch indexPath.section {
         case 0:
@@ -141,6 +143,7 @@ class PMDetailController: UITableViewController {
             if let c = cell as? PMDetailControllerCell {
                 c.ele = it?.elementList![indexPath.row] as? Element
                 c.superController = self
+                c.showRightButton = true
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
