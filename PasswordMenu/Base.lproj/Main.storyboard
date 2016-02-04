@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="-689" y="-280"/>
         </scene>
-        <!--Root View Controller-->
+        <!--PasswordMenu-->
         <scene sceneID="Oh5-NJ-xi6">
             <objects>
                 <tableViewController id="HQu-eH-IO5" customClass="PMItemListController" customModule="PasswordMenu" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,7 +116,7 @@
                             <outlet property="delegate" destination="HQu-eH-IO5" id="T2f-ku-Ccw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="VBj-9h-AnG">
+                    <navigationItem key="navigationItem" title="PasswordMenu" id="VBj-9h-AnG">
                         <barButtonItem key="leftBarButtonItem" image="setting" id="4zQ-yL-JNV">
                             <connections>
                                 <action selector="setting:" destination="HQu-eH-IO5" id="Kcj-Mm-eWX"/>
@@ -174,21 +174,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-3w-u6p">
-                                            <rect key="frame" x="8" y="7" width="80" height="30"/>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="80" id="af2-yh-Lae"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <connections>
-                                                <outlet property="delegate" destination="wTO-T4-Sbi" id="TOP-5X-q1b"/>
-                                            </connections>
-                                        </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pz9-8b-dra">
                                             <rect key="frame" x="108" y="7" width="446" height="30"/>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
@@ -206,6 +194,18 @@
                                                 <action selector="rightButtonAction:" destination="wTO-T4-Sbi" eventType="touchUpInside" id="0uS-vs-apv"/>
                                             </connections>
                                         </button>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yW2-3w-u6p">
+                                            <rect key="frame" x="8" y="7" width="80" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="af2-yh-Lae"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="wTO-T4-Sbi" id="TOP-5X-q1b"/>
+                                            </connections>
+                                        </textField>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Pz9-8b-dra" firstAttribute="leading" secondItem="yW2-3w-u6p" secondAttribute="trailing" constant="20" id="6yj-ib-9WZ"/>
