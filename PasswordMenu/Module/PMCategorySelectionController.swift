@@ -9,6 +9,7 @@
 import UIKit
 import MagicalRecord
 class PMCategorySelectionController: UITableViewController {
+    var selectedCatName: String?
     var catList: NSMutableArray?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,11 @@ class PMCategorySelectionController: UITableViewController {
             cell = tableView.dequeueReusableCellWithIdentifier("CategorySelectionCell", forIndexPath: indexPath)
             if let cat = catList![indexPath.row] as? Category {
                 cell.textLabel?.text = cat.name
+                if cat.name == selectedCatName {
+                    cell.accessoryType = .Checkmark
+                }else {
+                    cell.accessoryType = .None
+                }
             }
         case 1:
             cell = tableView.dequeueReusableCellWithIdentifier("CategoryAddCell", forIndexPath: indexPath)

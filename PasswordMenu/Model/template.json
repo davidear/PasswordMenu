@@ -1,6 +1,6 @@
 [
  {
- "category" : "网站",
+ "category" : "默认",
  "elementList" :[
                  {
                  "leftText": "账号",
@@ -84,29 +84,4 @@
                  },
                  ]
  },
- {
- "category": "游戏",
- "elementList": [
-                 {
-                 "leftText": "账号",
-                 "rightText": "",
-                 "type": "text"
-                 },
-                 {
-                 "leftText": "密码",
-                 "rightText": "",
-                 "type": "password"
-                 },
-                 {
-                 "leftText": "注册码",
-                 "rightText": "",
-                 "type": "text"
-                 },
-                 {
-                 "leftText": "密保",
-                 "rightText": "",
-                 "type": "text"
-                 }
-                 ]
- }
  ]

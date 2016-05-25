@@ -17,13 +17,18 @@ class ModelFactory: NSObject {
             ele.type = "text"
         case "密码":
             ele.type = "password"
-        case "日期":
-            ele.type = "date"
-        case "图像":
-            ele.type = "image"
+        // todo
+//        case "日期":
+//            ele.type = "date"
+//        case "图像":
+//            ele.type = "image"
         default:
             break
         }
         return ele
+    }
+    
+    class func elementTypeList() -> [String] {
+        return ["文本", "密码"]
     }
 }

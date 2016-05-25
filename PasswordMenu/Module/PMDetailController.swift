@@ -9,7 +9,6 @@
 import UIKit
 import MagicalRecord
 class PMDetailController: UITableViewController {
-    private let elementTypeList = ["文本", "日期", "图片", "密码"]
     var newType : String?
     var it : Item?
     private var enableDelete = false
@@ -50,8 +49,8 @@ class PMDetailController: UITableViewController {
     //
     // MARK: - Button action
     override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
-        if !editing { // 点击保存
-            if animated {
+        if !editing {
+            if animated { // 点击保存
                 self.tableView.endEditing(true)
                 // 验证
                 if !passValidation() {
@@ -124,6 +123,8 @@ class PMDetailController: UITableViewController {
         if !self.editing { // 非编辑状态
             let cell = tableView.dequeueReusableCellWithIdentifier("DetailControllerCell", forIndexPath: indexPath) as!PMDetailControllerCell
             cell.ele = it?.elementList![indexPath.row] as? Element
+            cell.leftField.borderStyle = .None
+            cell.rightField.borderStyle = .None
             cell.showRightButton = false
             return cell
         }
@@ -144,6 +145,8 @@ class PMDetailController: UITableViewController {
                 c.ele = it?.elementList![indexPath.row] as? Element
                 c.superController = self
                 c.showRightButton = true
+                c.leftField.borderStyle = .RoundedRect
+                c.rightField.borderStyle = .RoundedRect
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
@@ -167,7 +170,7 @@ class PMDetailController: UITableViewController {
         switch indexPath {
         case NSIndexPath(forRow: 0, inSection: 2):  //  新增element
             let ac = UIAlertController(title: "选择类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-            for eleType in elementTypeList {
+            for eleType in ModelFactory.elementTypeList() {
                 ac.addAction(UIAlertAction(title: eleType, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
                     let ele = ModelFactory.element(alertAction.title!)
                     ele.item = self.it
@@ -258,6 +261,11 @@ class PMDetailController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let vc = segue.destinationViewController as? PMCategorySelectionController {
+            if let cell = sender as? UITableViewCell {
+                vc.selectedCatName = cell.textLabel?.text
+            }
+        }
     }
     
 }

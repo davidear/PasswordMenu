@@ -44,8 +44,9 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
                 })
                 hasRightButton = false
             case "password":
-                rightField.keyboardType = UIKeyboardType.ASCIICapable
-                rightField.secureTextEntry = true
+//                rightField.keyboardType = UIKeyboardType.ASCIICapable
+//                rightField.secureTextEntry = true
+                rightField.textColor = UIColor.orangeColor()
                 hasRightButton = true
             case "date":
                 rightButton.setImage(UIImage(named: "QQ"), forState: UIControlState.Normal)

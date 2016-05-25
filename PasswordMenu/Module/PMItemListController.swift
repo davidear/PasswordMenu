@@ -33,7 +33,7 @@ class PMItemListController: UITableViewController {
     }
     @IBAction func AddNewItem(sender: UIBarButtonItem) {
         
-        let ac = UIAlertController(title: "新增类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let ac = UIAlertController(title: "新建类型", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         if let arr = PMConfigHelper.defaultTypeList() {
             for dic in arr {
                 ac.addAction(UIAlertAction(title: dic["category"] as? String, style: UIAlertActionStyle.Default, handler: {[unowned self] (alertAction: UIAlertAction) -> Void in
