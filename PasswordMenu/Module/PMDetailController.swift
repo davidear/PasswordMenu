@@ -51,11 +51,16 @@ class PMDetailController: UITableViewController {
     override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
         if !editing {
             if animated { // 点击保存
+                guard it?.elementList != nil else {
+                    return
+                }
                 self.tableView.endEditing(true)
                 // 验证
                 if !passValidation() {
                     return
                 }
+                // 去空值
+                it?.elementList = trimItemsByEmptyValue((it?.elementList)!)
                 
                 NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
                 self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
@@ -73,16 +78,16 @@ class PMDetailController: UITableViewController {
         tableView.reloadData()
     }
     
-    // MARK: - Validation
-    func passValidation() -> Bool {
+    // MARK: - Helper
+    private func passValidation() -> Bool {
         if let ele = it?.elementList![0] as? Element {
-            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 {
+            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 || ele.rightText == nil {
                 PMUtil.showMsg("请填写账户名")
                 return false
             }
         }
         if let ele = it?.elementList![1] as? Element {
-            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 {
+            if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 || ele.rightText == nil {
                 PMUtil.showMsg("请填写密码")
                 return false
             }
@@ -92,6 +97,22 @@ class PMDetailController: UITableViewController {
             return false
         }
         return true
+    }
+    
+    // 去集合中的空值项
+    private func trimItemsByEmptyValue(list: NSMutableOrderedSet) -> NSMutableOrderedSet {
+        let predicate = NSPredicate { (object, _) -> Bool in
+            if let ele = object as? Element {
+                if ele.rightText?.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 0 || ele.rightText == nil {
+                    return false
+                }else {
+                    return true
+                }
+            }else {
+                return false
+            }
+        }
+        return NSMutableOrderedSet(orderedSet: list.filteredOrderedSetUsingPredicate(predicate))
     }
     
     // MARK: - Table view data source
