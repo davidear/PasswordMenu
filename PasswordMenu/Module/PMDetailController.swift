@@ -61,10 +61,10 @@ class PMDetailController: UITableViewController {
                 self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
             }
             self.editButtonItem().title = "编辑"
-            self.tableView.userInteractionEnabled = false
+//            self.tableView.userInteractionEnabled = false
         }else { //  点击编辑
             self.editButtonItem().title = "保存"
-            self.tableView.userInteractionEnabled = true
+//            self.tableView.userInteractionEnabled = true
             if animated {
                 self.enableDelete = true
             }
@@ -125,6 +125,8 @@ class PMDetailController: UITableViewController {
             cell.ele = it?.elementList![indexPath.row] as? Element
             cell.leftField.borderStyle = .None
             cell.rightField.borderStyle = .None
+            cell.leftField.enabled = false
+            cell.rightField.enabled = false
             cell.showRightButton = false
             return cell
         }
@@ -147,6 +149,8 @@ class PMDetailController: UITableViewController {
                 c.showRightButton = true
                 c.leftField.borderStyle = .RoundedRect
                 c.rightField.borderStyle = .RoundedRect
+                c.leftField.enabled = true
+                c.rightField.enabled = true
             }
         case 2:
             cell = tableView.dequeueReusableCellWithIdentifier("AddButtonCell", forIndexPath: indexPath)
@@ -245,6 +249,11 @@ class PMDetailController: UITableViewController {
     //        return UITableViewCellEditingStyle.Delete
     //    }
     
+    // MARK: - UIScrollViewDelegate
+    
+    override func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        view.endEditing(true)
+    }
     // MARK: - Segue
     @IBAction func unwindToPMDetailController(segue: UIStoryboardSegue) {
         if segue.sourceViewController.isKindOfClass(PMCategorySelectionController) {

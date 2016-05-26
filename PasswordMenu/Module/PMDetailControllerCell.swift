@@ -32,9 +32,13 @@ class PMDetailControllerCell: UITableViewCell , UITextFieldDelegate {
         didSet {
             if let lt = ele?.leftText {
                 leftField.text = "\(lt)"
+            }else {
+                leftField.text = nil
             }
             if let rt = ele?.rightText {
                 rightField.text = "\(rt)"
+            }else {
+                rightField.text = nil
             }
             switch ele!.type {
             case "text":
