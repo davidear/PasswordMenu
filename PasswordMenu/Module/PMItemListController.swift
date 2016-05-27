@@ -15,7 +15,17 @@ class PMItemListCell: UITableViewCell {
 class PMItemListController: UITableViewController {
     var catList : NSMutableArray?
     var expansionList : Array<Bool>?
-    
+    var expand = false {
+        didSet {
+            if let count = expansionList?.count {
+                for i in 0...count - 1 {
+                    expansionList![i] = expand
+                }
+//                tableView.reloadSections(NSIndexSet(indexesInRange: NSMakeRange(0, count)), withRowAnimation: .None)
+                tableView.reloadData()
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +34,13 @@ class PMItemListController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let titleButton = UIButton()
+        titleButton.setTitle("PasswordMenu", forState: .Normal)
+        titleButton.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        titleButton.addTarget(self, action: #selector(PMItemListController.expandTable), forControlEvents: .TouchUpInside)
+        self.navigationItem.titleView = titleButton
         addNotificationCenterObservers()
     }
     
@@ -70,6 +86,11 @@ class PMItemListController: UITableViewController {
         expansionList![sender.tag] = !expansionList![sender.tag]
         tableView.reloadSections(NSIndexSet(index: sender.tag), withRowAnimation: UITableViewRowAnimation.Automatic)
     }
+    
+    func expandTable() {
+        expand = !expand;
+    }
+    
     @IBAction func addCategory(sender: UIButton) {
         let ac = UIAlertController(title: "新建分类名", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
         ac.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in
@@ -132,11 +153,10 @@ class PMItemListController: UITableViewController {
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let btn = UIButton(frame:CGRectMake(0,0,0,44))
-//        btn.backgroundColor = UIColor.blueColor()
         btn.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         btn.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0)
-//        btn.titleLabel?.textAlignment = NSTextAlignment.Left
+        //        btn.titleLabel?.textAlignment = NSTextAlignment.Left
         btn.titleLabel?.font = UIFont.systemFontOfSize(12)
         if let cat = catList?[section] as? Category {
             btn .setTitle(cat.name, forState: UIControlState.Normal)
@@ -165,39 +185,39 @@ class PMItemListController: UITableViewController {
     }
     
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the specified item to be editable.
-    return true
-    }
-    */
+     // Override to support conditional editing of the table view.
+     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
     
     /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-    if editingStyle == .Delete {
-    // Delete the row from the data source
-    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-    } else if editingStyle == .Insert {
-    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }
-    }
-    */
+     // Override to support editing the table view.
+     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+     if editingStyle == .Delete {
+     // Delete the row from the data source
+     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+     } else if editingStyle == .Insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
     
     /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-    
-    }
-    */
+     // Override to support rearranging the table view.
+     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+     
+     }
+     */
     
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-    // Return false if you do not want the item to be re-orderable.
-    return true
-    }
-    */
+     // Override to support conditional rearranging of the table view.
+     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
     
     
     // MARK: - Navigation
