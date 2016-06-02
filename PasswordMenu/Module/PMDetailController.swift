@@ -49,6 +49,7 @@ class PMDetailController: UITableViewController {
     //
     // MARK: - Button action
     override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
+        super.setEditing(editing, animated: animated)
         if !editing {
             if animated { // 点击保存
                 guard it?.elementList != nil else {
@@ -74,7 +75,6 @@ class PMDetailController: UITableViewController {
                 self.enableDelete = true
             }
         }
-        super.setEditing(editing, animated: animated)
         tableView.reloadData()
     }
     
