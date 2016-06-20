@@ -49,26 +49,27 @@ class PMDetailController: UITableViewController {
     //
     // MARK: - Button action
     override func setEditing(editing: Bool, animated: Bool) {   //如何区分初始代码设置和点击事件: 通过animated
-        super.setEditing(editing, animated: animated)
         if !editing {
             if animated { // 点击保存
                 guard it?.elementList != nil else {
                     return
                 }
-                self.tableView.endEditing(true)
                 // 验证
                 if !passValidation() {
                     return
                 }
+                self.tableView.endEditing(true)
                 // 去空值
                 it?.elementList = trimItemsByEmptyValue((it?.elementList)!)
                 
                 NSManagedObjectContext.MR_defaultContext().MR_saveToPersistentStoreAndWait()
                 self.performSegueWithIdentifier("unWindToItemListController", sender: nil)
             }
+            super.setEditing(editing, animated: animated)
             self.editButtonItem().title = "编辑"
 //            self.tableView.userInteractionEnabled = false
         }else { //  点击编辑
+            super.setEditing(editing, animated: animated)
             self.editButtonItem().title = "保存"
 //            self.tableView.userInteractionEnabled = true
             if animated {
